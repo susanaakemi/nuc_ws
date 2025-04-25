@@ -1,0 +1,2 @@
+Invoking command in '/home/robotec/ros2_ws/build/odometry': /usr/bin/cmake /home/robotec/ros2_ws/src/odometry -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/odometry
+Invoked command in '/home/robotec/ros2_ws/build/odometry' returned '1': /usr/bin/cmake /home/robotec/ros2_ws/src/odometry -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/odometry

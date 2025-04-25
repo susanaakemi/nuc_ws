@@ -1,0 +1,191 @@
+[0.010s] Invoking command in '/home/robotec/ros2_ws/build/astra_camera': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/astra_camera
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.206s] -- Detecting C compiler ABI info - done
+[0.214s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.215s] -- Detecting C compile features
+[0.215s] -- Detecting C compile features - done
+[0.218s] -- Detecting CXX compiler ABI info
+[0.303s] -- Detecting CXX compiler ABI info - done
+[0.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.313s] -- Detecting CXX compile features
+[0.314s] -- Detecting CXX compile features - done
+[0.316s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.481s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.576s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.578s] -- Found astra_camera_msgs: 1.0.1 (/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake)
+[0.625s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.630s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.639s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.652s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.669s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.756s] -- Found camera_info_manager: 3.1.11 (/opt/ros/humble/share/camera_info_manager/cmake)
+[0.817s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.821s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.922s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.950s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.990s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.000s] -- Looking for pthread.h
+[1.078s] -- Looking for pthread.h - found
+[1.078s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.158s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.159s] -- Found Threads: TRUE  
+[1.224s] -- Found class_loader: 2.2.0 (/opt/ros/humble/share/class_loader/cmake)
+[1.235s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.250s] -- Found message_filters: 4.3.6 (/opt/ros/humble/share/message_filters/cmake)
+[1.262s] -- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+[1.267s] -- Found image_publisher: 3.0.7 (/opt/ros/humble/share/image_publisher/cmake)
+[1.331s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.335s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.359s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.367s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[1.458s] -- Found tf2_sensor_msgs: 0.25.12 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[1.470s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.471s] -- Checking for one of the modules 'libuvc'
+[1.524s] -- Checking for one of the modules 'libglog'
+[1.581s] -- ORRBEC Machine : x86_64
+[1.581s] 
+[1.581s] -- ORRBEC Machine Bits : 64
+[1.581s] 
+[1.582s] -- ORRBEC : x64
+[1.630s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.708s] -- Configuring done
+[1.835s] -- Generating done
+[1.861s] -- Build files have been written to: /home/robotec/ros2_ws/build/astra_camera
+[1.877s] Invoked command in '/home/robotec/ros2_ws/build/astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/astra_camera
+[1.879s] Invoking command in '/home/robotec/ros2_ws/build/astra_camera': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera -- -j4 -l4
+[1.941s] [ 10%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_context.cpp.o[0m
+[1.941s] [ 21%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o[0m
+[1.941s] [ 21%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/dynamic_params.cpp.o[0m
+[1.942s] [ 10%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o[0m
+[13.437s] [ 26%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o[0m
+[16.366s] [ 31%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_timer_filter.cpp.o[0m
+[33.041s] [ 36%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_node.cpp.o[0m
+[34.036s] [ 42%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o[0m
+[93.512s] [ 47%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/utils.cpp.o[0m
+[94.475s] [ 52%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ros_service.cpp.o[0m
+[95.494s] [ 57%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ros_param_backend.cpp.o[0m
+[99.381s] [ 63%] [32mBuilding CXX object CMakeFiles/astra_camera.dir/src/uvc_camera_driver.cpp.o[0m
+[128.889s] [ 68%] [32m[1mLinking CXX shared library libastra_camera.so[0m
+[130.438s] [ 68%] Built target astra_camera
+[130.477s] [ 73%] [32mBuilding CXX object CMakeFiles/list_devices_node.dir/src/list_devices_node.cpp.o[0m
+[130.477s] [ 78%] [32mBuilding CXX object CMakeFiles/astra_camera_node.dir/src/main.cpp.o[0m
+[130.478s] [ 84%] [32mBuilding CXX object CMakeFiles/clean_shm_node.dir/src/clean_up_shm_node.cpp.o[0m
+[131.233s] [ 89%] [32m[1mLinking CXX executable clean_shm_node[0m
+[133.794s] [ 89%] Built target clean_shm_node
+[136.288s] [ 94%] [32m[1mLinking CXX executable list_devices_node[0m
+[136.964s] [ 94%] Built target list_devices_node
+[144.206s] [100%] [32m[1mLinking CXX executable astra_camera_node[0m
+[144.878s] [100%] Built target astra_camera_node
+[144.958s] Invoked command in '/home/robotec/ros2_ws/build/astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera -- -j4 -l4
+[145.008s] Invoking command in '/home/robotec/ros2_ws/build/astra_camera': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera
+[145.018s] -- Install configuration: "Debug"
+[145.019s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib/libastra_camera.so
+[145.064s] -- Set runtime path of "/home/robotec/ros2_ws/install/astra_camera/lib/libastra_camera.so" to ""
+[145.064s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib/libOpenNI2.so
+[145.065s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2
+[145.066s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers
+[145.066s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/liborbbec.so
+[145.071s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/OniFile.ini
+[145.071s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/libOniFile.so
+[145.073s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib//OpenNI2/Drivers/orbbec.ini
+[145.073s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/list_devices_node
+[145.074s] -- Set runtime path of "/home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/list_devices_node" to ""
+[145.074s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/clean_shm_node
+[145.075s] -- Set runtime path of "/home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/clean_shm_node" to ""
+[145.075s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/astra_camera_node
+[145.084s] -- Set runtime path of "/home/robotec/ros2_ws/install/astra_camera/lib/astra_camera/astra_camera_node" to ""
+[145.084s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include
+[145.084s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/magic_enum
+[145.084s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/magic_enum/magic_enum.hpp
+[145.084s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera
+[145.084s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_xyz.h
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/point_cloud_proc.h
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/point_cloud_proc/depth_traits.h
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node_factory.h
+[145.085s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/ob_context.h
+[145.086s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/types.h
+[145.086s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/ros_param_backend.h
+[145.086s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/uvc_camera_driver.h
+[145.086s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/constants.h
+[145.086s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/json.hpp
+[145.089s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/utils.h
+[145.089s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/ob_camera_node.h
+[145.089s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/dynamic_params.h
+[145.089s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/astra_camera/ob_timer_filter.h
+[145.089s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2
+[145.090s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniEnums.h
+[145.090s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/PSLink.h
+[145.090s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/SonixCamera.h
+[145.090s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/MacOSX
+[145.091s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/MacOSX/OniPlatformMacOSX.h
+[145.091s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OpenNI.h
+[145.091s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniProperties.h
+[145.091s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/PrimeSense.h
+[145.091s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniCProperties.h
+[145.092s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/PS1080.h
+[145.092s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniTest.h
+[145.092s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Linux-Arm
+[145.092s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Linux-Arm/OniPlatformLinux-Arm.h
+[145.092s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Driver
+[145.093s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverTypes.h
+[145.093s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Driver/OniDriverAPI.h
+[145.094s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/util.h
+[145.094s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Linux-x86
+[145.094s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Linux-x86/OniPlatformLinux-x86.h
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniCTypes.h
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Android-Arm
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/Android-Arm/OniPlatformAndroid-Arm.h
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniCAPI.h
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/KinectProperties.h
+[145.095s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniPlatform.h
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniVersion.h
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/include/openni2/OniCEnums.h
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_dcw.launch.xml
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_deeyea.launch.xml
+[145.096s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/gemini.launch.xml
+[145.097s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_gemini.launch.xml
+[145.097s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/stereo_s.launch.xml
+[145.097s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/embedded_s.launch.xml
+[145.097s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dc1.launch.xml
+[145.097s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/astro_pro_plus.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/deeyea.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/embedded_u3.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/list_devices.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_astra.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/gemini_e.launch.xml
+[145.098s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/gemini_e_lite.launch.xml
+[145.099s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/astra_pro.launch.xml
+[145.099s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dcw.launch.xml
+[145.099s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_pro.launch.xml
+[145.099s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/.gitkeep
+[145.099s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/multi_dabai_pro.launch.xml
+[145.100s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_u3.launch.xml
+[145.100s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/stereo_s_u3.launch.xml
+[145.100s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/astra.launch.xml
+[145.100s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera//launch/dabai_dw.launch.xml
+[145.101s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.sh
+[145.102s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/library_path.dsv
+[145.103s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/ament_index/resource_index/package_run_dependencies/astra_camera
+[145.103s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/ament_index/resource_index/parent_prefix_path/astra_camera
+[145.104s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.sh
+[145.104s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/ament_prefix_path.dsv
+[145.105s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/path.sh
+[145.105s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/environment/path.dsv
+[145.105s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/local_setup.bash
+[145.105s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/local_setup.sh
+[145.106s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/local_setup.zsh
+[145.106s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/local_setup.dsv
+[145.106s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.dsv
+[145.106s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/ament_index/resource_index/packages/astra_camera
+[145.107s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[145.107s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[145.108s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[145.108s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig.cmake
+[145.108s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/cmake/astra_cameraConfig-version.cmake
+[145.109s] -- Installing: /home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.xml
+[145.126s] Invoked command in '/home/robotec/ros2_ws/build/astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera

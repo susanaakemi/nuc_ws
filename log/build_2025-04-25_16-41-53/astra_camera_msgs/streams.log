@@ -1,0 +1,34 @@
+[0.020s] Invoking command in '/home/robotec/ros2_ws/build/astra_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera_msgs -- -j4 -l4
+[0.153s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_generator_c[0m
+[0.159s] [  1%] Built target astra_camera_msgs__cpp
+[0.189s] [  1%] Built target ament_cmake_python_copy_astra_camera_msgs
+[0.190s] [ 12%] Built target astra_camera_msgs__rosidl_generator_c
+[0.194s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_cpp[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.253s] [ 24%] Built target astra_camera_msgs__rosidl_typesupport_cpp
+[0.258s] [ 35%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.280s] [ 47%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.300s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.307s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c[0m
+[0.322s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_c[0m
+[0.340s] [ 58%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c
+[0.345s] [ 70%] Built target astra_camera_msgs__rosidl_typesupport_c
+[0.348s] [ 82%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.379s] [ 82%] Built target astra_camera_msgs
+[0.411s] [ 83%] Built target astra_camera_msgs__py
+[0.437s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_generator_py[0m
+[0.468s] [ 93%] Built target astra_camera_msgs__rosidl_generator_py
+[0.488s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.491s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.499s] [35m[1mConsolidate compiler generated dependencies of target astra_camera_msgs__rosidl_typesupport_c__pyext[0m
+[0.514s] [ 95%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[0.519s] [ 97%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.526s] [100%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext
+[0.619s] running egg_info
+[0.620s] writing astra_camera_msgs.egg-info/PKG-INFO
+[0.621s] writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt
+[0.621s] writing top-level names to astra_camera_msgs.egg-info/top_level.txt
+[0.624s] reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[0.625s] writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'
+[0.659s] [100%] Built target ament_cmake_python_build_astra_camera_msgs_egg

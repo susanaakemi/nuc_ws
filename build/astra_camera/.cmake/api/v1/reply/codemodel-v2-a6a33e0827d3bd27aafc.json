@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-48c702748c46007bf813.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "astra_camera",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "astra_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-astra_camera-Debug-eb3f8f9502e9fe52def7.json",
+					"name" : "astra_camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "astra_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-astra_camera_node-Debug-c2bb7ab3c8378d974de0.json",
+					"name" : "astra_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "astra_camera_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-astra_camera_uninstall-Debug-48a9ea732a2d9262f495.json",
+					"name" : "astra_camera_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clean_shm_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clean_shm_node-Debug-6d1212f27183ccf1f35b.json",
+					"name" : "clean_shm_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_devices_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_devices_node-Debug-ecf21d4894276d3afcd2.json",
+					"name" : "list_devices_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-ccf0c019250b7a2b6c50.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/robotec/ros2_ws/build/astra_camera",
+		"source" : "/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

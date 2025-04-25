@@ -1,0 +1,15 @@
+/home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0.0.7
+/home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0
+/home/robotec/ros2_ws/install/libuvc/lib/libuvc.so
+/home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+/home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+/home/robotec/ros2_ws/install/libuvc/lib/libuvc.a
+/home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+/home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets.cmake
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets-release.cmake
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindLibUSB.cmake
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindJpegPkg.cmake
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfigVersion.cmake
+/home/robotec/ros2_ws/install/libuvc/lib/pkgconfig/libuvc.pc
+/home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfig.cmake
