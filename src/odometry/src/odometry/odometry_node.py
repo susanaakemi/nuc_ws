@@ -58,13 +58,10 @@ class OdometryNode(Node):
         # Calcular el tiempo transcurrido en segundos usando el reloj de ROS
         elapsed_time = (self.get_clock().now() - self.start_time).nanoseconds/ 1e9  # Segundos    #time.time() - self.start_time  # Calculamos el tiempo transcurrido para detenerse antes de los 10min
 
-        """ Si han pasado 8 minutos (480 segundos) y aún no estamos regresando, activamos el regreso a origen"""
         #Si han pasado 8 minutos (480 segundos) y aún no estamos regresando, activamos el regreso a origen
         if not self.returning_home and elapsed_time >= 480:
             self.get_logger().info("Tiempo cumplido. Regresando al origen.")
             self.returning_home = True
-            # Aquí puedes agregar la lógica para regresar a la posición inicial
-            # Por ejemplo, podrías establecer un nuevo waypoint en la posición inicial
             self.waypoints.append([0.0, 0.0]) #(waypoint de coordenada de origen)
             self.idxWaypoint = 0  # Reiniciar el índice de waypoint
 
