@@ -20,8 +20,8 @@ class OdometryNode(Node):
         self.wheel_pub = self.create_publisher(WheelInfo, '/wheel_setter', 10)
         self.timer = self.create_timer(0.05, self.timer_callback)  # 20 Hz
 
-        self.start_time = time.time()  # Guardar el tiempo de inicio
-        
+        #self.start_time = time.time()  # Guardar el tiempo de inicio
+        self.start_time = self.get_clock().now()  # Tiempo usando reloj de ROS
         # Agregar clases para lectura de sensores
         self.sync_data = SynchronizedData()
         self.imu_listener = IMUListener(self.sync_data)
@@ -46,33 +46,53 @@ class OdometryNode(Node):
         self.waypoints = []  # Dynamic waypoint list
         self.coordenadas_camara = CoordinatesListener()
 
+        ## Inicializar variables para el regreso a origen
+        self.returning_home = False
+        self.home_position = [0.0, 0.0]  # O el punto de inicio real
+
+
         # Inicializar la conexión serial para enviar comandos de RPM
         self.ser = initialize_serial(SERIAL_PORT, BAUD_RATE, TIMEOUT)
 
     def timer_callback(self):
-        elapsed_time = time.time() - self.start_time  # Calculamos el tiempo transcurrido para detenerse antes de los 10min
+        # Calcular el tiempo transcurrido en segundos usando el reloj de ROS
+        elapsed_time = (self.get_clock().now() - self.start_time).nanoseconds/ 1e9  # Segundos    #time.time() - self.start_time  # Calculamos el tiempo transcurrido para detenerse antes de los 10min
 
-        # Get next waypoint
-        piedras = self.coordenadas_camara.get_new_coords()
-        piedra_x = piedras[0]
-        piedra_dist = piedras[1]
-        stopping_point = find_stopping_point(piedra_x, piedra_dist, self.xhat[0], self.xhat[1], self.xhat[2])
-        if robot_stop(stopping_point, self.odom_x, self.odom_y):
-            send_rpm_command(self.ser, 0, 0, 0, 0)  # Detiene las 4 ruedas
-            self.get_logger().info("Robot detenido en el punto de parada.")
-            return  # Opcional: aquí puede ir la lógica de recolección
+        """ Si han pasado 8 minutos (480 segundos) y aún no estamos regresando, activamos el regreso a origen"""
+        #Si han pasado 8 minutos (480 segundos) y aún no estamos regresando, activamos el regreso a origen
+        if not self.returning_home and elapsed_time >= 480:
+            self.get_logger().info("Tiempo cumplido. Regresando al origen.")
+            self.returning_home = True
+            # Aquí puedes agregar la lógica para regresar a la posición inicial
+            # Por ejemplo, podrías establecer un nuevo waypoint en la posición inicial
+            self.waypoints.append([0.0, 0.0]) #(waypoint de coordenada de origen)
+            self.idxWaypoint = 0  # Reiniciar el índice de waypoint
 
-        next_point = generar_ruta_prioritaria(stopping_point, use_push_front=False)
 
-        if next_point is None and not self.waypoints:
-            self.get_logger().info("No more waypoints or stones.")
-            return
+        # Solo buscar piedras si no estamos regresando
+        if not self.returning_home:
+            # Get next waypoint
+            piedras = self.coordenadas_camara.get_new_coords()
+            piedra_x = piedras[0]
+            piedra_dist = piedras[1]
+            stopping_point = find_stopping_point(piedra_x, piedra_dist, self.xhat[0], self.xhat[1], self.xhat[2])
 
-        if next_point:
-            self.waypoints.append(next_point)
-            # Keep waypoints list manageable (e.g., remove old points)
-            if len(self.waypoints) > 100:
-                self.waypoints = self.waypoints[-50:]
+            if robot_stop(stopping_point, self.odom_x, self.odom_y):
+                send_rpm_command(self.ser, 0, 0, 0, 0)  # Detiene las 4 ruedas
+                self.get_logger().info("Robot detenido en el punto de parada.")
+                return  # Opcional: aquí puede ir la lógica de recolección
+
+            next_point = generar_ruta_prioritaria(stopping_point, use_push_front=False)
+
+            #if next_point is None and not self.waypoints:
+                #self.get_logger().info("No more waypoints or stones.")
+                #return
+
+            if next_point:
+                self.waypoints.append(next_point)
+                # Keep waypoints list manageable (e.g., remove old points)
+                if len(self.waypoints) > 100:
+                    self.waypoints = self.waypoints[-50:]
 
         if not self.waypoints:
             return
@@ -186,6 +206,15 @@ class OdometryNode(Node):
 
         self.odom_pub.publish(odom_msg)
         self.wheel_pub.publish(wheel_msg)
+        
+         # Verificar si ya llegamos al origen
+        if self.returning_home:
+            distance_to_home = np.hypot(self.home_position[0] - self.odom_x, self.home_position[1] - self.odom_y)
+            if distance_to_home <= 0.3:
+                send_rpm_command(self.ser, 0, 0, 0, 0)
+                self.get_logger().info("Llegamos al origen. Robot detenido.")
+                rclpy.shutdown()
+                return
 
 def main(args=None):
     rclpy.init(args=args)
