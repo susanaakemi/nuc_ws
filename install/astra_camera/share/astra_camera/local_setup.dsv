@@ -1,3 +1,1 @@
-source;share/astra_camera/environment/ament_prefix_path.sh
-source;share/astra_camera/environment/library_path.sh
-source;share/astra_camera/environment/path.sh
+/home/robotec/ros2_ws/build/astra_camera/ament_cmake_environment_hooks/local_setup.dsv

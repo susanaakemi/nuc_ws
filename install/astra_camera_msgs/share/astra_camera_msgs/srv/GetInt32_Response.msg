@@ -1,4 +1,1 @@
-
-int32 data
-bool success
-string message
+/home/robotec/ros2_ws/build/astra_camera_msgs/rosidl_cmake/srv/GetInt32_Response.msg

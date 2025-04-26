@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/robotec/ros2_ws/build/astra_camera_msgs/ament_cmake_environment_hooks/path.dsv

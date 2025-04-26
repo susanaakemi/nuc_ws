@@ -1,4 +1,1 @@
-
-DeviceInfo info
-bool success
-string message
+/home/robotec/ros2_ws/build/astra_camera_msgs/rosidl_cmake/srv/GetDeviceInfo_Response.msg

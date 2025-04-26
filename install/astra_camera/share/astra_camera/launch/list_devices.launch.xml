@@ -1,4 +1,1 @@
-<launch>
-    <node name="camera" pkg="astra_camera" exec="list_devices_node" output="screen">
-    </node>
-</launch>
+/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera/launch/list_devices.launch.xml
