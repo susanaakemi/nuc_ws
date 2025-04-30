@@ -19,7 +19,10 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+    'console_scripts': [
+        'rock_detector_node = camera_pkg.framepublisher:main',
+        'pixel_to_point3d = camera_pkg.pixel_to_point3d:main',
         ],
     },
+
 )
