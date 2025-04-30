@@ -25,7 +25,7 @@ class RockDetectorNode(Node):
         )
         self.bridge = CvBridge()
         # 3) Cargar el modelo YOLOv8 (ajusta 'path/to/your_model.pt')
-        self.model = YOLO('path/to/your_yolo8_model.pt')
+        self.model = YOLO('/home/robotec/ros2_ws/src/camera_pkg/models/best.pt')
 
     def image_callback(self, msg: Image):
         # Convertir ROS Image a OpenCV
