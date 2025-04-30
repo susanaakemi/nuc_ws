@@ -1,5 +1,7 @@
 /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/__init__.py
+/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/framepublisher.py
 /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/__pycache__/__init__.cpython-310.pyc
+/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/__pycache__/framepublisher.cpython-310.pyc
 /home/robotec/ros2_ws/install/camera_pkg/share/ament_index/resource_index/packages/camera_pkg
 /home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.xml
 /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.0.0-py3.10.egg-info/top_level.txt
