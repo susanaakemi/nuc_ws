@@ -13,7 +13,7 @@ class RockDetectorNode(Node):
         # 1) Subscripción a la imagen raw IR
         self.image_sub = self.create_subscription(
             Image,
-            '/camera/ir/image_raw',
+            '/camera/color/image_raw',
             self.image_callback,
             10
         )
@@ -30,7 +30,8 @@ class RockDetectorNode(Node):
     def image_callback(self, msg: Image):
         # Convertir ROS Image a OpenCV
         try:
-            cv_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='mono8')
+		cv_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+		results = self.model(cv_img)
         except Exception as e:
             self.get_logger().error(f'Error CvBridge: {e}')
             return

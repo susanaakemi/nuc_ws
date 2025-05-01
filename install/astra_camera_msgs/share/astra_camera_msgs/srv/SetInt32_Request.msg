@@ -1,0 +1,1 @@
+/home/robotec/ros2_ws/build/astra_camera_msgs/rosidl_cmake/srv/SetInt32_Request.msg
