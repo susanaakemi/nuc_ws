@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "C:/Users/peped/OneDrive/Root/Robotec/nuc_ws/src/odometry"
+    "cmake.sourceDirectory": "C:/Users/peped/OneDrive/Root/Robotec/nuc_ws/src/odometry",
+    "files.associations": {
+        "cstdlib": "cpp"
+    }
 }

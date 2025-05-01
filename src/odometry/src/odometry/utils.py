@@ -45,174 +45,72 @@ class ListQueueSimple:
         with self.lock:
             return len(self.items)
 
-class IMUListener(Node):
-    def __init__(self, serial_port='/dev/ttyUSB0', baud_rate=115200, timeout=1):  # Cambiar puerto serial
-        super().__init__('imu_listener')
-        self.serial_port = serial_port
-        self.baud_rate = baud_rate
-        self.timeout = timeout
-        self.ser = self.initialize_serial()
-
-        self.imu_data = {
-            'yaw': 0.0, 'pitch': 0.0, 'roll': 0.0,
-            'accel': {'x': 0.0, 'y': 0.0, 'z': 0.0},
-            'gyro': {'x': 0.0, 'y': 0.0, 'z': 0.0},
-            'std_dev': {
-                'yaw': 0.0, 'pitch': 0.0, 'roll': 0.0,
-                'accel_x': 0.0, 'accel_y': 0.0, 'accel_z': 0.0,
-                'gyro_x': 0.0, 'gyro_y': 0.0, 'gyro_z': 0.0
-            }
-        }
-
-    def initialize_serial(self):
-        try:
-            ser = serial.Serial(self.serial_port, self.baud_rate, timeout=self.timeout)
-            self.get_logger().info(f"Conectado al puerto {self.serial_port} a {self.baud_rate} baudios.")
-            time.sleep(2)
-            return ser
-        except serial.SerialException as e:
-            self.get_logger().error(f"Error al conectar al puerto {self.serial_port}: {e}")
-            return None
-
-    def read_data(self):
-        if self.ser is None or not self.ser.is_open:
-            self.get_logger().error("Error: No hay conexión serial activa.")
-            return
-
-        try:
-            line = self.ser.readline().decode('utf-8').strip()
-            if line:
-                data = line.split(',')
-                label = data[0]
-
-                if label == "YPR":
-                    self.imu_data['yaw'] = float(data[1])
-                    self.imu_data['pitch'] = float(data[2])
-                    self.imu_data['roll'] = float(data[3])
-
-                elif label == "ACC":
-                    self.imu_data['accel']['x'] = float(data[1])
-                    self.imu_data['accel']['y'] = float(data[2])
-                    self.imu_data['accel']['z'] = float(data[3])
-
-                elif label == "GYRO":
-                    self.imu_data['gyro']['x'] = float(data[1])
-                    self.imu_data['gyro']['y'] = float(data[2])
-                    self.imu_data['gyro']['z'] = float(data[3])
-
-                elif label == "STD_ACC":
-                    self.imu_data['std_dev']['accel_x'] = float(data[1])
-                    self.imu_data['std_dev']['accel_y'] = float(data[2])
-                    self.imu_data['std_dev']['accel_z'] = float(data[3])
-
-                elif label == "STD_GYRO":
-                    self.imu_data['std_dev']['gyro_x'] = float(data[1])
-                    self.imu_data['std_dev']['gyro_y'] = float(data[2])
-                    self.imu_data['std_dev']['gyro_z'] = float(data[3])
-
-                elif label == "STD_YPR":
-                    self.imu_data['std_dev']['yaw'] = float(data[1])
-                    self.imu_data['std_dev']['pitch'] = float(data[2])
-                    self.imu_data['std_dev']['roll'] = float(data[3])
-        except (UnicodeDecodeError, ValueError, IndexError) as e:
-            self.get_logger().error(f"Error procesando línea: {line} -> {e}")
-
-    def get_data(self):
-        return self.imu_data
-
 
 def compute_quaternion(theta):
     return tft.quaternion_from_euler(0, 0, theta)
 
+class IMU_VESCListener(Node):
+    def __init__(self):
+        super().__init__('subscriber_node')
+        # Storage with timestamps
+        self.imu_data = {
+            'stamp': None,
+            'orientation': {'x': 0.0, 'y': 0.0, 'z': 0.0},
+            'linear_acceleration': {'x': 0.0, 'y': 0.0, 'z': 0.0},
+            'angular_velocity': {'x': 0.0, 'y': 0.0, 'z': 0.0}
+        }
+        self.rpms = {'stamp': None, 'data': [0.0] * 4}
+        self.stddev = {'stamp': None, 'data': [0.0] * 13}
 
-class RPMReader:
-    def __init__(self, window_size=50, alpha=0.1):
-        self.rpm_1 = 0.0
-        self.rpm_3 = 0.0
-        self.rpm_2 = 0.0
-        self.rpm_4 = 0.0
+        # Subscribers
+        self.imu_sub = self.create_subscription(
+            Imu, '/imu_data', self.imu_callback, 10)
+        self.rpm_sub = self.create_subscription(
+            Float32MultiArray, '/vesc_rpms', self.rpm_callback, 10)
+        self.stddev_sub = self.create_subscription(
+            Float32MultiArray, '/imu_rpm_stddev', self.stddev_callback, 10)
 
-        self.window_size = window_size
-        self.alpha = alpha
+    def imu_callback(self, msg):
+        self.imu_data['stamp'] = msg.header.stamp
+        self.imu_data['orientation']['x'] = msg.orientation.x
+        self.imu_data['orientation']['y'] = msg.orientation.y
+        self.imu_data['orientation']['z'] = msg.orientation.z
+        self.imu_data['linear_acceleration']['x'] = msg.linear_acceleration.x
+        self.imu_data['linear_acceleration']['y'] = msg.linear_acceleration.y
+        self.imu_data['linear_acceleration']['z'] = msg.linear_acceleration.z
+        self.imu_data['angular_velocity']['x'] = msg.angular_velocity.x
+        self.imu_data['angular_velocity']['y'] = msg.angular_velocity.y
+        self.imu_data['angular_velocity']['z'] = msg.angular_velocity.z
+        stamp_time = self.imu_data['stamp'].sec + self.imu_data['stamp'].nanosec / 1e9
+        self.get_logger().info(
+            f'IMU Data: Time={stamp_time:.3f}, '
+            f'Yaw={self.imu_data["orientation"]["z"]:.2f} deg, '
+            f'Accel=[{self.imu_data["linear_acceleration"]["x"]:.2f}, '
+            f'{self.imu_data["linear_acceleration"]["y"]:.2f}, '
+            f'{self.imu_data["linear_acceleration"]["z"]:.2f}] m/s^2, '
+            f'Angular Vel=[{self.imu_data["angular_velocity"]["x"]:.2f}, '
+            f'{self.imu_data["angular_velocity"]["y"]:.2f}, '
+            f'{self.imu_data["angular_velocity"]["z"]:.2f}] deg/s'
+        )
 
-        self.buffer_1 = []
-        self.buffer_3 = []
-        self.buffer_2 = []
-        self.buffer_4 = []
+    def rpm_callback(self, msg):
+        self.rpms['stamp'] = self.imu_data['stamp']
+        self.rpms['data'] = list(msg.data)
+        stamp_time = self.rpms['stamp'].sec + self.rpms['stamp'].nanosec / 1e9 if self.rpms['stamp'] else 0.0
+        self.get_logger().info(
+            f'RPM Data: Time={stamp_time:.3f}, '
+            f'RPMs={self.rpms["data"]}'
+        )
 
-        self.std_1 = 0.0
-        self.std_3 = 0.0
-        self.std_2 = 0.0
-        self.std_4 = 0.0
-
-    def update_from_serial(self, line):
-        if line.startswith("RPM_ALL"):
-            try:
-                parts = line.strip().split(",")
-                if len(parts) == 5:
-                    self.rpm_1 = float(parts[1])
-                    self.rpm_3 = float(parts[2])
-                    self.rpm_2 = float(parts[3])
-                    self.rpm_4 = float(parts[4])
-
-                    self._update_buffer_and_std(self.rpm_1, self.buffer_1, 'f1')
-                    self._update_buffer_and_std(self.rpm_3, self.buffer_3, 'f3')
-                    self._update_buffer_and_std(self.rpm_2, self.buffer_2, 'r2')
-                    self._update_buffer_and_std(self.rpm_4, self.buffer_4, 'r4')
-
-                    self._update_linear_velocity()
-
-                else:
-                    self.get_logger().warn(f"[RPMReader] Formato incorrecto: {line}")
-            except (ValueError, IndexError) as e:
-                self.get_logger().warn(f"[RPMReader] Error al parsear la línea: {line}")
-                self.get_logger().warn(f"→ {e}")
-
-    def _update_buffer_and_std(self, value, buffer, wheel):
-        buffer.append(value)
-        if len(buffer) > self.window_size:
-            buffer.pop(0)
-
-        if len(buffer) == self.window_size:
-            std = np.std(buffer)
-            if wheel == 'f1':
-                self.std_1 = self._ema(self.std_1, std)
-            elif wheel == 'f3':
-                self.std_3 = self._ema(self.std_3, std)
-            elif wheel == 'r2':
-                self.std_2 = self._ema(self.std_2, std)
-            elif wheel == 'r4':
-                self.std_4 = self._ema(self.std_4, std)
-
-    def _ema(self, prev, current):
-        return self.alpha * current + (1 - self.alpha) * prev
-    
-    def _update_linear_velocity(self):
-        # Calcular la circunferencia de la rueda
-        wheel_circumference = 2 * np.pi * 0.12
-
-        # Convertir RPM a velocidad lineal para cada rueda
-        rpms = [self.rpm_1, self.rpm_3, self.rpm_2, self.rpm_4]
-        velocities = [(rpm / 60.0) * wheel_circumference for rpm in rpms]
-
-        self.linear_velocity = np.mean(velocities)
-        self.linear_velocity_std = np.std(velocities)
-    
-    def get_linear_velocity_with_std(self):
-        return self.linear_velocity, self.linear_velocity_std
-
-    def get_all_rpms(self):
-        return self.rpm_1, self.rpm_3, self.rpm_2, self.rpm_4
-
-    def get_all_stds(self):
-        return self.std_1, self.std_3, self.std_2, self.std_4
-
-    def __str__(self):
-        return (f"RPMs - FL: {self.rpm_1:.2f} (σ={self.std_1:.2f}), "
-                f"FR: {self.rpm_3:.2f} (σ={self.std_3:.2f}), "
-                f"RL: {self.rpm_2:.2f} (σ={self.std_2:.2f}), "
-                f"RR: {self.rpm_4:.2f} (σ={self.std_4:.2f})")
-
+    def stddev_callback(self, msg):
+        self.stddev['stamp'] = self.imu_data['stamp']
+        self.stddev['data'] = list(msg.data)
+        stamp_time = self.stddev['stamp'].sec + self.stddev['stamp'].nanosec / 1e9 if self.stddev['stamp'] else 0.0
+        self.get_logger().info(
+            f'Stddev Data: Time={stamp_time:.3f}, '
+            f'Std Yaw={self.stddev["data"][6]:.2f} deg, '
+            f'Std RPMs={self.stddev["data"][9:13]}'
+        )
 
 class CoordinatesListener(Node):
     def __init__(self):
@@ -226,37 +124,6 @@ class CoordinatesListener(Node):
 
     def get_new_coords(self):
         return self.rock_coords
-
-class SynchronizedData:
-    def __init__(self):
-        self.lock = Lock()
-        self.last_update_time = 0
-        self.imu_data = {}
-        self.rpm_data = (0, 0, 0, 0)
-        self.linear_velocity = 0.0
-        self.linear_velocity_std = 0.0
-
-    def update_imu(self, imu_dict):
-        with self.lock:
-            self.imu_data = imu_dict
-            self.last_update_time = time.time()
-
-    def update_rpm(self, rpm_tuple, linear_vel=0.0, linear_std=0.0):
-        with self.lock:
-            self.rpm_data = rpm_tuple
-            self.linear_velocity = linear_vel
-            self.linear_velocity_std = linear_std
-            self.last_update_time = time.time()
-
-    def get_latest_data(self):
-        with self.lock:
-            return {
-                'imu': self.imu_data,
-                'rpm': self.rpm_data,
-                'linear_velocity': self.linear_velocity,
-                'linear_velocity_std': self.linear_velocity_std,
-                'timestamp': self.last_update_time
-            }
 
 
 def initialize_serial(port, baud_rate, timeout):
