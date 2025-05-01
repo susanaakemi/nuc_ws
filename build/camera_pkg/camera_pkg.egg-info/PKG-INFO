@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: camera-pkg
 Version: 0.1.0
-Summary: Detección de rocas con YOLOv8 en ROS 2 Humble
+Summary: Detección de rocas con YOLOv8 en ROS 2 Humble y mapeo de píxeles a 3D
 Home-page: UNKNOWN
 Maintainer: robotec
 Maintainer-email: a01640939@tec.mx

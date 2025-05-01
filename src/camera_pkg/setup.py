@@ -13,15 +13,15 @@ setup(
     ],
     install_requires=[
         'setuptools',
-        'opencv-python',
-        'ultralytics',
-        'numpy<2'                # ← here!
-        'ros2-numpy',
+        'numpy<2',                # NumPy for numerical operations
+        'ros2_numpy',             # ros2_numpy for PointCloud2 processing
+        'opencv-python',          # OpenCV for image processing
+        'ultralytics'             # YOLOv8 detection
     ],
     zip_safe=True,
     maintainer='robotec',
     maintainer_email='a01640939@tec.mx',
-    description='Detección de rocas con YOLOv8 en ROS 2 Humble',
+    description='Detección de rocas con YOLOv8 en ROS 2 Humble y mapeo de píxeles a 3D',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
