@@ -16,6 +16,7 @@ setup(
         'opencv-python',
         'ultralytics',
         'numpy<2'                # ← here!
+        'ros2-numpy',
     ],
     zip_safe=True,
     maintainer='robotec',

@@ -1,0 +1,26 @@
+[0.713s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[1.561s] [35m[1mConsolidate compiler generated dependencies of target uvc[0m
+[1.562s] [ 45%] Built target uvc
+[1.562s] [35m[1mConsolidate compiler generated dependencies of target uvc_static[0m
+[1.562s] [ 90%] Built target uvc_static
+[1.562s] [35m[1mConsolidate compiler generated dependencies of target example[0m
+[1.562s] [100%] Built target example
+[1.591s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[1.631s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
+[1.682s] -- Install configuration: "Release"
+[1.683s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0.0.7
+[1.683s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.a
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[1.684s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets.cmake
+[1.685s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets-release.cmake
+[1.685s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindLibUSB.cmake
+[1.685s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindJpegPkg.cmake
+[1.685s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfigVersion.cmake
+[1.695s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/pkgconfig/libuvc.pc
+[1.695s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfig.cmake
+[1.696s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc

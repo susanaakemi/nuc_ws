@@ -1,0 +1,40 @@
+[1.566s] Invoking command in '/home/robotec/ros2_ws/build/camera_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build
+[2.230s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+[2.230s]   warnings.warn(
+[2.375s] running develop
+[2.736s] Removing /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera-pkg.egg-link (link to .)
+[2.826s] Invoked command in '/home/robotec/ros2_ws/build/camera_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build
+[2.830s] Invoking command in '/home/robotec/ros2_ws/src/camera_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/robotec/ros2_ws/build/camera_pkg/build install --record /home/robotec/ros2_ws/build/camera_pkg/install.log --single-version-externally-managed install_data --force
+[3.437s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+[3.438s]   warnings.warn(
+[3.482s] running egg_info
+[3.484s] writing ../../build/camera_pkg/camera_pkg.egg-info/PKG-INFO
+[3.485s] writing dependency_links to ../../build/camera_pkg/camera_pkg.egg-info/dependency_links.txt
+[3.485s] writing entry points to ../../build/camera_pkg/camera_pkg.egg-info/entry_points.txt
+[3.485s] writing requirements to ../../build/camera_pkg/camera_pkg.egg-info/requires.txt
+[3.485s] writing top-level names to ../../build/camera_pkg/camera_pkg.egg-info/top_level.txt
+[3.490s] reading manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.497s] writing manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.497s] running build
+[3.497s] running build_py
+[3.497s] copying camera_pkg/pixel_to_point3d.py -> /home/robotec/ros2_ws/build/camera_pkg/build/lib/camera_pkg
+[3.497s] copying camera_pkg/framepublisher.py -> /home/robotec/ros2_ws/build/camera_pkg/build/lib/camera_pkg
+[3.498s] running install
+[3.498s] running install_lib
+[3.499s] creating /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.500s] copying /home/robotec/ros2_ws/build/camera_pkg/build/lib/camera_pkg/__init__.py -> /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.500s] copying /home/robotec/ros2_ws/build/camera_pkg/build/lib/camera_pkg/pixel_to_point3d.py -> /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.500s] copying /home/robotec/ros2_ws/build/camera_pkg/build/lib/camera_pkg/framepublisher.py -> /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.501s] byte-compiling /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/__init__.py to __init__.cpython-310.pyc
+[3.502s] byte-compiling /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/pixel_to_point3d.py to pixel_to_point3d.cpython-310.pyc
+[3.504s] byte-compiling /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/framepublisher.py to framepublisher.cpython-310.pyc
+[3.507s] running install_data
+[3.509s] copying resource/camera_pkg -> /home/robotec/ros2_ws/install/camera_pkg/share/ament_index/resource_index/packages
+[3.509s] copying package.xml -> /home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg
+[3.513s] running install_egg_info
+[3.518s] Copying ../../build/camera_pkg/camera_pkg.egg-info to /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info
+[3.522s] running install_scripts
+[3.574s] Installing framepublisher script to /home/robotec/ros2_ws/install/camera_pkg/lib/camera_pkg
+[3.575s] Installing pixel_to_point3d script to /home/robotec/ros2_ws/install/camera_pkg/lib/camera_pkg
+[3.575s] writing list of installed files to '/home/robotec/ros2_ws/build/camera_pkg/install.log'
+[3.661s] Invoked command in '/home/robotec/ros2_ws/src/camera_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/robotec/ros2_ws/build/camera_pkg/build install --record /home/robotec/ros2_ws/build/camera_pkg/install.log --single-version-externally-managed install_data --force
