@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'framepublisher = camera_pkg.framepublisher:main',
+            'pixel_to_point3d = camera_pkg.pixel_to_point3d:main',
         ],
     },
 )
