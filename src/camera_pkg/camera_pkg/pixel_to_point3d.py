@@ -26,55 +26,76 @@ class PixelToPoint3D(Node):
         # Publicador del punto 3D en metros
         self.point_pub = self.create_publisher(
             PointStamped,
-            '/clicked_point',
+            '/clicked_point',  # Este es el tópico donde se publicarán las coordenadas 3D
             10)
 
-        self.latest_pixel = None  # (u, v)
-        self.latest_pc = None     # PointCloud2
+        self.latest_pixel = None  # Coordenadas (u, v)
+        self.latest_pc = None     # Nube de puntos (PointCloud2)
 
     def pixel_callback(self, msg: Point):
+        # Guardar las coordenadas del píxel
         self.latest_pixel = (int(msg.x), int(msg.y))
+        self.get_logger().info(f"Recibido píxel: {self.latest_pixel}")
+        # Intentar publicar el punto 3D
         self.try_publish_point()
 
     def pc_callback(self, msg):
+        # Guardar la nube de puntos recibida
         self.latest_pc = msg
-        self.try_publish_point()
+        self.get_logger().info(f'Tipo de datos de la nube de puntos: {type(self.latest_pc)}')
+    	self.get_logger().info(f"Recibida nube de puntos: {self.latest_pc.width}x{self.latest_pc.height}")
+    
+    # Intentar publicar el punto 3D
+    self.try_publish_point()
+
 
     def try_publish_point(self):
-        if self.latest_pixel is None or self.latest_pc is None:
-            return
+	    # Verificar si ambos datos (píxel y nube de puntos) están disponibles
+	    if self.latest_pixel is None or self.latest_pc is None:
+		return
 
-        u, v = self.latest_pixel
-        pc = rnp.numpify(self.latest_pc)
-        width = self.latest_pc.width
-        height = self.latest_pc.height
+	    u, v = self.latest_pixel
+	    # Convertir la nube de puntos a un arreglo NumPy (asegúrate de que sea un ndarray)
+	    pc = rnp.numpify(self.latest_pc)
 
-        if u < 0 or u >= width or v < 0 or v >= height:
-            self.get_logger().warn(f'Pixel fuera de rango: (u={u}, v={v})')
-            return
+	    # Verificar si la conversión fue exitosa
+	    if not isinstance(pc, np.ndarray):
+		self.get_logger().warn(f'La conversión de la nube de puntos falló: {type(pc)}')
+		return
 
-        index = v * width + u
-        point = pc.reshape(-1)[index]
-        x = point['x']
-        y = point['y']
-        z = point['z']
+	    width = self.latest_pc.width
+	    height = self.latest_pc.height
 
-        if any(np.isnan([x, y, z])) or any(np.isinf([x, y, z])):
-            self.get_logger().warn('Punto inválido (NaN o Inf)')
-            return
+	    # Verificar que el píxel esté dentro de los límites de la imagen
+	    if u < 0 or u >= width or v < 0 or v >= height:
+		self.get_logger().warn(f'Pixel fuera de rango: (u={u}, v={v})')
+		return
 
-        # Publicar como coordenada 3D en metros
-        point_msg = PointStamped()
-        point_msg.header.stamp = self.get_clock().now().to_msg()
-        point_msg.header.frame_id = self.latest_pc.header.frame_id
-        point_msg.point.x = x
-        point_msg.point.y = y
-        point_msg.point.z = z
+	    # Calcular el índice del punto en la nube de puntos
+	    index = v * width + u
+	    point = pc.reshape(-1)[index]
+	    x = point['x']
+	    y = point['y']
+	    z = point['z']
 
-        self.point_pub.publish(point_msg)
-        self.get_logger().info(f'Publicado clicked_point (m): ({x:.2f}, {y:.2f}, {z:.2f})')
+	    # Verificar si el punto es válido (no NaN ni Inf)
+	    if any(np.isnan([x, y, z])) or any(np.isinf([x, y, z])):
+		self.get_logger().warn('Punto inválido (NaN o Inf)')
+		return
 
-        self.latest_pixel = None  # Espera una nueva coordenada
+	    # Crear y publicar el mensaje de punto 3D
+	    point_msg = PointStamped()
+	    point_msg.header.stamp = self.get_clock().now().to_msg()
+	    point_msg.header.frame_id = self.latest_pc.header.frame_id
+	    point_msg.point.x = x
+	    point_msg.point.y = y
+	    point_msg.point.z = z
+
+	    self.point_pub.publish(point_msg)
+	    self.get_logger().info(f'Publicado clicked_point (m): ({x:.2f}, {y:.2f}, {z:.2f})')
+
+	    # Resetear la coordenada del píxel para esperar una nueva
+	    self.latest_pixel = None 
 
 def main(args=None):
     rclpy.init(args=args)
@@ -82,3 +103,8 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+
+
