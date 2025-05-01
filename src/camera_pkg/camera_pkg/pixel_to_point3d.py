@@ -9,93 +9,71 @@ class PixelToPoint3D(Node):
     def __init__(self):
         super().__init__('pixel_to_point3d')
 
-        # Suscripción a coordenadas de píxel (en realidad, publicadas como geometry_msgs/Point)
         self.pixel_sub = self.create_subscription(
             Point,
-            '/rock_center_px',  # Este es el tópico publicado por RockDetectorNode
+            '/rock_center_px',
             self.pixel_callback,
             10)
 
-        # Suscripción a la nube de puntos de la cámara
         self.pc_sub = self.create_subscription(
             PointCloud2,
             '/camera/depth/points',
             self.pc_callback,
             10)
 
-        # Publicador del punto 3D en metros
         self.point_pub = self.create_publisher(
             PointStamped,
-            '/clicked_point',  # Este es el tópico donde se publicarán las coordenadas 3D
+            '/clicked_point',
             10)
 
-        self.latest_pixel = None  # Coordenadas (u, v)
-        self.latest_pc = None     # Nube de puntos (PointCloud2)
+        self.latest_pixel = None
+        self.latest_pc = None
 
     def pixel_callback(self, msg: Point):
-        # Guardar las coordenadas del píxel
         self.latest_pixel = (int(msg.x), int(msg.y))
         self.get_logger().info(f"Recibido píxel: {self.latest_pixel}")
-        # Intentar publicar el punto 3D
         self.try_publish_point()
 
     def pc_callback(self, msg):
-        # Guardar la nube de puntos recibida
         self.latest_pc = msg
-        self.get_logger().info(f'Tipo de datos de la nube de puntos: {type(self.latest_pc)}')
-    	self.get_logger().info(f"Recibida nube de puntos: {self.latest_pc.width}x{self.latest_pc.height}")
-    
-    # Intentar publicar el punto 3D
-    self.try_publish_point()
-
+        self.get_logger().info(f"Recibida nube de puntos: {msg.width}x{msg.height}")
+        self.try_publish_point()
 
     def try_publish_point(self):
-	    # Verificar si ambos datos (píxel y nube de puntos) están disponibles
 	    if self.latest_pixel is None or self.latest_pc is None:
 		return
 
 	    u, v = self.latest_pixel
-	    # Convertir la nube de puntos a un arreglo NumPy (asegúrate de que sea un ndarray)
-	    pc = rnp.numpify(self.latest_pc)
-
-	    # Verificar si la conversión fue exitosa
-	    if not isinstance(pc, np.ndarray):
-		self.get_logger().warn(f'La conversión de la nube de puntos falló: {type(pc)}')
-		return
 
 	    width = self.latest_pc.width
 	    height = self.latest_pc.height
 
-	    # Verificar que el píxel esté dentro de los límites de la imagen
 	    if u < 0 or u >= width or v < 0 or v >= height:
 		self.get_logger().warn(f'Pixel fuera de rango: (u={u}, v={v})')
 		return
 
-	    # Calcular el índice del punto en la nube de puntos
-	    index = v * width + u
-	    point = pc.reshape(-1)[index]
-	    x = point['x']
-	    y = point['y']
-	    z = point['z']
+	    try:
+		point = rnp.get_point(self.latest_pc, (v, u))
+		x, y, z = point['x'], point['y'], point['z']
+	    except Exception as e:
+		self.get_logger().error(f"Error al obtener punto 3D: {e}")
+		return
 
-	    # Verificar si el punto es válido (no NaN ni Inf)
 	    if any(np.isnan([x, y, z])) or any(np.isinf([x, y, z])):
 		self.get_logger().warn('Punto inválido (NaN o Inf)')
 		return
 
-	    # Crear y publicar el mensaje de punto 3D
 	    point_msg = PointStamped()
 	    point_msg.header.stamp = self.get_clock().now().to_msg()
 	    point_msg.header.frame_id = self.latest_pc.header.frame_id
-	    point_msg.point.x = x
-	    point_msg.point.y = y
-	    point_msg.point.z = z
+	    point_msg.point.x = float(x)
+	    point_msg.point.y = float(y)
+	    point_msg.point.z = float(z)
 
 	    self.point_pub.publish(point_msg)
 	    self.get_logger().info(f'Publicado clicked_point (m): ({x:.2f}, {y:.2f}, {z:.2f})')
 
-	    # Resetear la coordenada del píxel para esperar una nueva
-	    self.latest_pixel = None 
+	    self.latest_pixel = None
 
 def main(args=None):
     rclpy.init(args=args)
@@ -106,5 +84,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
 
