@@ -1,1 +1,0 @@
-/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera/include/astra_camera/utils.h

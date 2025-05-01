@@ -1,1 +1,0 @@
-/home/robotec/ros2_ws/build/astra_camera_msgs/rosidl_generator_c/astra_camera_msgs/srv/set_int32.h

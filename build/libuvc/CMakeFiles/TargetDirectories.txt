@@ -1,9 +1,0 @@
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/uvc.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/uvc_static.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/example.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/edit_cache.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/rebuild_cache.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/list_install_components.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/install.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/install/local.dir
-/home/robotec/ros2_ws/build/libuvc/CMakeFiles/install/strip.dir

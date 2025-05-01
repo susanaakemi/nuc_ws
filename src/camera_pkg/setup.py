@@ -15,7 +15,7 @@ setup(
         'setuptools',
         'opencv-python',
         'ultralytics',
-        'numpy'
+        'numpy<2'                # ← here!
     ],
     zip_safe=True,
     maintainer='robotec',
@@ -25,7 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'rock_detector = camera_pkg.rock_detector_node:main',
+            'framepublisher = camera_pkg.framepublisher:main',
         ],
     },
 )
