@@ -15,6 +15,7 @@ setup(
     tests_require=['pytest'],
     data_files=[
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/odometry.launch.py']),
         ('share/' + package_name + '/msg', [
             'msg/WheelInfo.msg',
             'msg/WheelRPMs.msg',

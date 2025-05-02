@@ -1,0 +1,8 @@
+{
+  "package_name": "odometry",
+  "non_idl_tuples": [
+    "/home/robotec/ros2_ws/src/odometry:msg/WheelInfo.msg",
+    "/home/robotec/ros2_ws/src/odometry:msg/WheelRPMs.msg",
+    "/home/robotec/ros2_ws/src/odometry:msg/DirectionAngles.msg"
+  ]
+}
