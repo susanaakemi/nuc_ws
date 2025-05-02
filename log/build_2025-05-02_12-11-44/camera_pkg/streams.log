@@ -1,0 +1,20 @@
+[3.273s] Invoking command in '/home/robotec/ros2_ws/build/camera_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build --no-deps symlink_data
+[3.809s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+[3.809s]   warnings.warn(
+[3.885s] running develop
+[4.276s] running egg_info
+[4.276s] writing camera_pkg.egg-info/PKG-INFO
+[4.276s] writing dependency_links to camera_pkg.egg-info/dependency_links.txt
+[4.276s] writing entry points to camera_pkg.egg-info/entry_points.txt
+[4.277s] writing requirements to camera_pkg.egg-info/requires.txt
+[4.277s] writing top-level names to camera_pkg.egg-info/top_level.txt
+[4.281s] reading manifest file 'camera_pkg.egg-info/SOURCES.txt'
+[4.283s] writing manifest file 'camera_pkg.egg-info/SOURCES.txt'
+[4.286s] running build_ext
+[4.286s] Creating /home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages/camera-pkg.egg-link (link to .)
+[4.288s] Installing framepublisher script to /home/robotec/ros2_ws/install/camera_pkg/lib/camera_pkg
+[4.289s] Installing pixel_to_point3d script to /home/robotec/ros2_ws/install/camera_pkg/lib/camera_pkg
+[4.289s] 
+[4.289s] Installed /home/robotec/ros2_ws/build/camera_pkg
+[4.292s] running symlink_data
+[4.389s] Invoked command in '/home/robotec/ros2_ws/build/camera_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build --no-deps symlink_data

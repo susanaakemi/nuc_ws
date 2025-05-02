@@ -1,0 +1,471 @@
+[0.209s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.209s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x70b27c1595a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70b27c2cebc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70b27c2cebc0>>)
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.496s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotec/ros2_ws'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ignore'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['colcon_pkg']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'colcon_pkg'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['colcon_meta']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'colcon_meta'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['ros']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ros'
+[0.518s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_pkg' with type 'ros.ament_python' and name 'camera_pkg'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ignore_ament_install'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['colcon_pkg']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'colcon_pkg'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['colcon_meta']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'colcon_meta'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['ros']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ros'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['cmake', 'python']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'cmake'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'python'
+[0.526s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libuvc' with type 'cmake' and name 'libuvc'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ros'
+[0.528s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odometry' with type 'ros.ament_python' and name 'odometry'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'ros'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['cmake', 'python']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera) by extension 'ros'
+[0.532s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_astra_camera/astra_camera' with type 'ros.ament_cmake' and name 'astra_camera'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extension 'ignore_ament_install'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_pkg']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extension 'colcon_meta'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extensions ['ros']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_astra_camera/astra_camera_msgs) by extension 'ros'
+[0.533s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_astra_camera/astra_camera_msgs' with type 'ros.ament_cmake' and name 'astra_camera_msgs'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.536s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.592s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/robotec/ros2_ws/install
+[0.595s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 335 installed packages in /opt/ros/humble
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'astra_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.690s] DEBUG:colcon.colcon_core.verb:Building package 'astra_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/astra_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/astra_camera_msgs', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_target' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.692s] DEBUG:colcon.colcon_core.verb:Building package 'camera_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/camera_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/camera_pkg', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/camera_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_target' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_clean_cache' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_clean_first' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'cmake_force_configure' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'ament_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'catkin_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'libuvc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.693s] DEBUG:colcon.colcon_core.verb:Building package 'libuvc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/libuvc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/libuvc', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/libuvc', 'symlink_install': True, 'test_result_base': None}
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.694s] DEBUG:colcon.colcon_core.verb:Building package 'odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/odometry', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/odometry', 'symlink_install': True, 'test_result_base': None}
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.695s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_target' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'astra_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.697s] DEBUG:colcon.colcon_core.verb:Building package 'astra_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotec/ros2_ws/build/astra_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotec/ros2_ws/install/astra_camera', 'merge_install': False, 'path': '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera', 'symlink_install': True, 'test_result_base': None}
+[0.697s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.699s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.699s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera_msgs' with build type 'ament_cmake'
+[0.699s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera_msgs'
+[0.703s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.704s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.715s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotec/ros2_ws/src/camera_pkg' with build type 'ament_python'
+[0.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pkg', 'ament_prefix_path')
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.ps1'
+[0.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.sh'
+[0.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.726s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.737s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotec/ros2_ws/src/libuvc'
+[0.738s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.738s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.750s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotec/ros2_ws/src/odometry' with build type 'ament_python'
+[0.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'ament_prefix_path')
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/ament_prefix_path.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/ament_prefix_path.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/ament_prefix_path.sh'
+[0.757s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.757s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/astra_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera_msgs -- -j4 -l4
+[1.736s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotec/ros2_ws/src/camera_pkg'
+[1.737s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.737s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[2.458s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotec/ros2_ws/src/odometry'
+[2.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[2.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
+[2.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/astra_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera_msgs -- -j4 -l4
+[2.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/astra_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera_msgs
+[2.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(libuvc)
+[2.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
+[2.618s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc' for CMake module files
+[2.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('libuvc', 'cmake_module_path')
+[2.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path.ps1'
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path.dsv'
+[2.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path.sh'
+[2.654s] Level 1:colcon.colcon_core.shell:create_environment_hook('libuvc', 'cmake_module_path1')
+[2.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path1.ps1'
+[2.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path1.dsv'
+[2.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_module_path1.sh'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc' for CMake config files
+[2.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('libuvc', 'cmake_prefix_path')
+[2.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_prefix_path.ps1'
+[2.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_prefix_path.dsv'
+[2.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/cmake_prefix_path.sh'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc/lib'
+[2.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('libuvc', 'ld_library_path_lib')
+[2.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/ld_library_path_lib.ps1'
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/ld_library_path_lib.dsv'
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/ld_library_path_lib.sh'
+[2.673s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc/bin'
+[2.673s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc/lib/pkgconfig/libuvc.pc'
+[2.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('libuvc', 'pkg_config')
+[2.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/pkg_config.ps1'
+[2.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/pkg_config.dsv'
+[2.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/libuvc/share/libuvc/hook/pkg_config.sh'
+[2.677s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc/lib/python3.10/site-packages'
+[2.677s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/libuvc/bin'
+[2.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/libuvc/share/libuvc/package.ps1'
+[2.680s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/libuvc/share/libuvc/package.dsv'
+[2.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/libuvc/share/libuvc/package.sh'
+[2.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/libuvc/share/libuvc/package.bash'
+[2.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/libuvc/share/libuvc/package.zsh'
+[2.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/libuvc/share/colcon-core/packages/libuvc)
+[2.686s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotec/ros2_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[2.686s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotec/ros2_ws/src/sllidar_ros2'
+[2.687s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.687s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/robotec/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[3.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera_msgs)
+[3.000s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs' for CMake module files
+[3.001s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs' for CMake config files
+[3.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/astra_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera_msgs
+[3.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'cmake_prefix_path')
+[3.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.sh'
+[3.012s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib'
+[3.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'ld_library_path_lib')
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.sh'
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/bin'
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib/pkgconfig/astra_camera_msgs.pc'
+[3.016s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib/python3.10/site-packages'
+[3.016s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/bin'
+[3.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.ps1'
+[3.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv'
+[3.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.sh'
+[3.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.bash'
+[3.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.zsh'
+[3.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/astra_camera_msgs/share/colcon-core/packages/astra_camera_msgs)
+[3.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera_msgs)
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs' for CMake module files
+[3.023s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs' for CMake config files
+[3.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'cmake_prefix_path')
+[3.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/cmake_prefix_path.sh'
+[3.027s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib'
+[3.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera_msgs', 'ld_library_path_lib')
+[3.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.028s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/hook/ld_library_path_lib.sh'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/bin'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib/pkgconfig/astra_camera_msgs.pc'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/lib/python3.10/site-packages'
+[3.032s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera_msgs/bin'
+[3.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.ps1'
+[3.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv'
+[3.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.sh'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.bash'
+[3.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera_msgs/share/astra_camera_msgs/package.zsh'
+[3.039s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/astra_camera_msgs/share/colcon-core/packages/astra_camera_msgs)
+[3.041s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera' with build type 'ament_cmake'
+[3.041s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotec/ros2_ws/src/ros2_astra_camera/astra_camera'
+[3.042s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/robotec/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[3.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/robotec/ros2_ws/build/sllidar_ros2
+[3.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/astra_camera': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/sllidar_ros2:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera -- -j4 -l4
+[3.216s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[3.216s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2' for CMake module files
+[3.222s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2' for CMake config files
+[3.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[3.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[3.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[3.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/robotec/ros2_ws/build/sllidar_ros2
+[3.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/bin'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[3.234s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/bin'
+[3.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[3.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[3.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[3.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[3.253s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[3.254s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2' for CMake module files
+[3.258s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2' for CMake config files
+[3.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[3.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[3.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[3.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[3.267s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib'
+[3.269s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/bin'
+[3.269s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/sllidar_ros2/bin'
+[3.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[3.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[3.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[3.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[3.677s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/sllidar_ros2:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/robotec/ros2_ws/build/astra_camera -- -j4 -l4
+[3.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/astra_camera': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/sllidar_ros2:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera
+[3.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/odometry': PYTHONPATH=/home/robotec/ros2_ws/build/odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/odometry/build --no-deps symlink_data
+[3.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera)
+[3.765s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera' for CMake module files
+[3.766s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera' for CMake config files
+[3.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera', 'cmake_prefix_path')
+[3.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.ps1'
+[3.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.dsv'
+[3.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/astra_camera' returned '0': CMAKE_PREFIX_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs:/home/robotec/ros2_ws/install/sllidar_ros2:/home/robotec/ros2_ws/install/libuvc:/home/robotec/ros2_ws/install/astra_camera:/home/robotec/ros2_ws/install/odometry:/home/robotec/ros2_ws/install/camera_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/robotec/ros2_ws/install/astra_camera_msgs/lib:/home/robotec/ros2_ws/install/libuvc/lib:/home/robotec/ros2_ws/install/astra_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/robotec/ros2_ws/build/astra_camera
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.sh'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib'
+[3.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera', 'ld_library_path_lib')
+[3.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.ps1'
+[3.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.dsv'
+[3.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.sh'
+[3.775s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/bin'
+[3.775s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib/pkgconfig/astra_camera.pc'
+[3.775s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib/python3.10/site-packages'
+[3.776s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/bin'
+[3.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.ps1'
+[3.778s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.dsv'
+[3.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.sh'
+[3.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.bash'
+[3.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.zsh'
+[3.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/astra_camera/share/colcon-core/packages/astra_camera)
+[3.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(astra_camera)
+[3.796s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera' for CMake module files
+[3.798s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera' for CMake config files
+[3.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera', 'cmake_prefix_path')
+[3.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.ps1'
+[3.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.dsv'
+[3.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/cmake_prefix_path.sh'
+[3.801s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib'
+[3.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('astra_camera', 'ld_library_path_lib')
+[3.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.ps1'
+[3.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.dsv'
+[3.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/hook/ld_library_path_lib.sh'
+[3.805s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/bin'
+[3.805s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib/pkgconfig/astra_camera.pc'
+[3.806s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/lib/python3.10/site-packages'
+[3.807s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/astra_camera/bin'
+[3.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.ps1'
+[3.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.dsv'
+[3.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.sh'
+[3.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.bash'
+[3.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/astra_camera/share/astra_camera/package.zsh'
+[3.815s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/astra_camera/share/colcon-core/packages/astra_camera)
+[3.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotec/ros2_ws/build/camera_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build --no-deps symlink_data
+[4.952s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'pythonpath_develop')
+[4.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/build/odometry/share/odometry/hook/pythonpath_develop.ps1'
+[4.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/build/odometry/share/odometry/hook/pythonpath_develop.dsv'
+[4.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/odometry' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/odometry/build --no-deps symlink_data
+[4.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/build/odometry/share/odometry/hook/pythonpath_develop.sh'
+[4.956s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry' for CMake module files
+[4.956s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry' for CMake config files
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry/lib'
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry/bin'
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry/lib/pkgconfig/odometry.pc'
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages'
+[4.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'pythonpath')
+[4.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/pythonpath.ps1'
+[4.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/pythonpath.dsv'
+[4.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/odometry/share/odometry/hook/pythonpath.sh'
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/odometry/bin'
+[4.961s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry)
+[4.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/odometry/share/odometry/package.ps1'
+[4.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/odometry/share/odometry/package.dsv'
+[4.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/odometry/share/odometry/package.sh'
+[4.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/odometry/share/odometry/package.bash'
+[4.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/odometry/share/odometry/package.zsh'
+[4.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/odometry/share/colcon-core/packages/odometry)
+[5.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pkg', 'pythonpath_develop')
+[5.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/build/camera_pkg/share/camera_pkg/hook/pythonpath_develop.ps1'
+[5.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/build/camera_pkg/share/camera_pkg/hook/pythonpath_develop.dsv'
+[5.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotec/ros2_ws/build/camera_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/camera_pkg/build --no-deps symlink_data
+[5.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/build/camera_pkg/share/camera_pkg/hook/pythonpath_develop.sh'
+[5.114s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg' for CMake module files
+[5.115s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg' for CMake config files
+[5.116s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg/lib'
+[5.117s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg/bin'
+[5.117s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg/lib/pkgconfig/camera_pkg.pc'
+[5.118s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg/lib/python3.10/site-packages'
+[5.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pkg', 'pythonpath')
+[5.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.ps1'
+[5.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.dsv'
+[5.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.sh'
+[5.124s] Level 1:colcon.colcon_core.environment:checking '/home/robotec/ros2_ws/install/camera_pkg/bin'
+[5.124s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pkg)
+[5.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.ps1'
+[5.126s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.dsv'
+[5.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.sh'
+[5.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.bash'
+[5.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotec/ros2_ws/install/camera_pkg/share/camera_pkg/package.zsh'
+[5.130s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotec/ros2_ws/install/camera_pkg/share/colcon-core/packages/camera_pkg)
+[5.132s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.135s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.135s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.135s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.148s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.175s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.177s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotec/ros2_ws/install/local_setup.ps1'
+[5.182s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotec/ros2_ws/install/_local_setup_util_ps1.py'
+[5.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotec/ros2_ws/install/setup.ps1'
+[5.188s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotec/ros2_ws/install/local_setup.sh'
+[5.191s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotec/ros2_ws/install/_local_setup_util_sh.py'
+[5.193s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotec/ros2_ws/install/setup.sh'
+[5.197s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotec/ros2_ws/install/local_setup.bash'
+[5.199s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotec/ros2_ws/install/setup.bash'
+[5.202s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotec/ros2_ws/install/local_setup.zsh'
+[5.204s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotec/ros2_ws/install/setup.zsh'

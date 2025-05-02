@@ -11,6 +11,7 @@ setup.py
 camera_pkg/__init__.py
 camera_pkg/framepublisher.py
 camera_pkg/pixel_to_point3d.py
+camera_pkg/rock_color.py
 camera_pkg.egg-info/PKG-INFO
 camera_pkg.egg-info/SOURCES.txt
 camera_pkg.egg-info/dependency_links.txt

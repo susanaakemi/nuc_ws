@@ -2,10 +2,10 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point
+from geometry_msgs.msg import PointStamped
 from cv_bridge import CvBridge
-from message_filters import Subscriber, ApproximateTimeSynchronizer  # [A]
-from rclpy.qos import QoSProfile, SensorDataQoS                    # [A]
+from message_filters import Subscriber, ApproximateTimeSynchronizer
+from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 from ultralytics import YOLO
 import cv2
 
@@ -27,7 +27,11 @@ class RockDetectorNode(Node):
         self.model = YOLO(model_path)
 
         # [C] QoS: imágenes de cámara suelen ser sensor data
-        img_qos = SensorDataQoS()
+        img_qos = QoSProfile(
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            history=QoSHistoryPolicy.KEEP_LAST,
+            depth=5
+        )
         # Publicaciones propias pueden ser reliable
         pub_qos = QoSProfile(depth=10)
 
@@ -41,7 +45,7 @@ class RockDetectorNode(Node):
 
         # Publicador de centro(s) detectado(s)
         self.center_pub = self.create_publisher(
-            Point,
+            PointStamped,
             'rock_center_px',
             qos_profile=pub_qos
         )
@@ -79,10 +83,12 @@ class RockDetectorNode(Node):
             cx = float((x_min + x_max) * 0.5)
             cy = float((y_min + y_max) * 0.5)
 
-            pt_msg = Point()
-            pt_msg.x = cx
-            pt_msg.y = cy
-            pt_msg.z = 0.0
+            pt_msg = PointStamped()
+            pt_msg.header.stamp = self.get_clock().now().to_msg()
+            pt_msg.header.frame_id = 'camera_color_optical_frame'  # o el frame adecuado de tu sistema
+            pt_msg.point.x = cx
+            pt_msg.point.y = cy
+            pt_msg.point.z = 0.0
             self.center_pub.publish(pt_msg)
             self.get_logger().info(f'Publicado centro roca: ({cx:.1f}, {cy:.1f})')
 

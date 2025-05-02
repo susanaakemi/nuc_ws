@@ -1,0 +1,23 @@
+[0.766s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[0.919s] [ 45%] Built target uvc
+[0.981s] [ 90%] Built target uvc_static
+[1.052s] [100%] Built target example
+[1.558s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[1.580s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
+[1.614s] -- Install configuration: "Release"
+[1.615s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0.0.7
+[1.616s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0
+[1.616s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so
+[1.616s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[1.617s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[1.618s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.a
+[1.618s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[1.619s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[1.619s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets.cmake
+[1.619s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets-release.cmake
+[1.620s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindLibUSB.cmake
+[1.620s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindJpegPkg.cmake
+[1.621s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfigVersion.cmake
+[1.621s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/pkgconfig/libuvc.pc
+[1.621s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfig.cmake
+[1.621s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
