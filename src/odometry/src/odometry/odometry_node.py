@@ -5,7 +5,7 @@ from nav_msgs.msg import Odometry
 from odometry.msg import WheelInfo
 from controller import angulo_ackermann, find_look_ahead_point, generar_ruta_prioritaria, find_stopping_point, robot_stop
 from efk import compute_F, predict_state
-from utils import compute_quaternion, IMU_VESCListener, CoordinatesListener, initialize_serial, send_rpm_command
+from utils import compute_quaternion, IMU_VESCListener, CoordinatesListener, initialize_serial, RPM_sender, Angle_sender
 import time
 
 # Parámetros de conexión serial (ajusta según tu sistema: 'COM6' para Windows o '/dev/ttyUSB0' para Linux/Mac)
@@ -22,8 +22,10 @@ class OdometryNode(Node):
 
         self.start_time = time.time()  # Guardar el tiempo de inicio
 
+        #Inicializar clases para leer sensores y mandar comandos de dirección y velocidad
         self.sensor_data = IMU_VESCListener() #Inicializar la clase que se suscribe a los topicos de los senores
-        rclpy.spin_once(self.sensor_data, timeout_sec=0.01) #Se encarga de actualizar los datos
+        self.RPMS = RPM_sender() #Llama la clase que mandará las RPM 
+        self.DirAngles = Angle_sender() #Llama la clase que mandará los angulos de dirección
 
         self.dt = 0.05
         self.lookAheadDist = 1.5
@@ -57,7 +59,7 @@ class OdometryNode(Node):
         piedra_dist = piedras[1]
         stopping_point = find_stopping_point(piedra_x, piedra_dist, self.xhat[0], self.xhat[1], self.xhat[2])
         if robot_stop(stopping_point, self.odom_x, self.odom_y):
-            send_rpm_command(self.ser, 0, 0, 0, 0)  # Detiene las 4 ruedas
+            self.RPMS.send_rpm(self.ser, 0, 0, 0, 0)  # Detiene las 4 ruedas
             self.get_logger().info("Robot detenido en el punto de parada.")
             return  # Opcional: aquí puede ir la lógica de recolección
 
@@ -104,7 +106,7 @@ class OdometryNode(Node):
         rpm_interior = (v_interior / self.wheelCircumference) * 60
 
         real_velocity = self.sensor_data.linear_velocity
-        RPM = (self.desiredSpeed / self.wheelCircumference) * 60
+        #RPM = (self.desiredSpeed / self.wheelCircumference) * 60
 
         # Si lo que se desea es enviar el comando de RPM calculado, se puede elegir entre:
         #  - En línea recta, las 4 llantas con rpm_exterior
@@ -113,6 +115,7 @@ class OdometryNode(Node):
             # Giro a la izquierda: llantas izquierdas interiores
             rpm_left = rpm_interior
             rpm_right = rpm_exterior
+
         elif delta < 0:
             # Giro a la derecha: llantas derechas interiores
             rpm_left = rpm_exterior
@@ -123,7 +126,8 @@ class OdometryNode(Node):
         # Enviar comando de RPM a las llantas (se asume:
         #   M1 y M3: llantas izquierdas,
         #   M2 y M4: llantas derechas)
-        send_rpm_command(self.ser, rpm_left, rpm_right, rpm_left, rpm_right)
+        self.RPMS.send_rpm(self,rpm_left, rpm_right, rpm_left, rpm_right)
+        self.DirAngles.send_angles(self,delta, -delta, b, -b)
 
         # Simulated measurement with noise
         noise = np.random.normal(0, np.sqrt(np.diag(self.R)))

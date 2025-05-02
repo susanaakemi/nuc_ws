@@ -8,6 +8,8 @@ from threading import Lock, Thread
 import time
 import serial
 import tf_transformations as tft
+from odometry.msg import WheelRPMs
+from odometry.msg import DirectionAngles
 
 class ListQueueSimple:
     """
@@ -187,17 +189,31 @@ def initialize_serial(port, baud_rate, timeout):
         print(f"Error al conectar al puerto {port}: {e}")
         return None
 
-def send_rpm_command(ser, rpm1, rpm2, rpm3, rpm4):
-    """Envía una cadena con los RPM de las 4 llantas en el formato M1:rpm1;M2:rpm2;M3:rpm3;M4:rpm4\n."""
-    if ser is None or not ser.is_open:
-        print("Error: No hay conexión serial activa.")
-        return
-
-    # Formatear la cadena
-    command = f"M1:{rpm1};M2:{rpm2};M3:{rpm3};M4:{rpm4}\n"
-    try:
-        # Enviar la cadena codificada
-        ser.write(command.encode('utf-8'))
-        print(f"Enviado: {command.strip()}")
-    except serial.SerialException as e:
-        print(f"Error al enviar el comando: {e}")
+class RPM_sender(Node):
+    def __init__(self):
+        super().__init__('rpm_publisher')
+        self.publisher_ = self.create_publisher(WheelRPMs, 'wheel_rpm_cmd', 10)
+        
+    def send_rpm(self, rpm1, rpm2, rpm3, rpm4):
+        msg = WheelRPMs()
+        msg.rpm1 = rpm1
+        msg.rpm2 = rpm2
+        msg.rpm3 = rpm3
+        msg.rpm4 = rpm4
+        self.publisher_.publish(msg)
+        self.get_logger().info(f"Published RPMs: {rpm1}, {rpm2}, {rpm3}, {rpm4}")
+        
+class Angle_sender(Node):
+    def __init__(self):
+        super().__init__("angle_publisher")
+        self.publisher_=self.create_publisher(DirectionAngles, "angle_rpm_cmd",10)
+        
+    def send_angles(self,a_1,a_2,a_3,a_4):
+        msg = DirectionAngles()
+        msg.angle_1 = a_1
+        msg.angle_2 = a_2
+        msg.angle_3 = a_3
+        msg.angle_4 = a_4
+        self.publisher_.publish(msg)
+        self.get_logger().info(f"Published Angles: {a_1}, {a_2}, {a_3}, {a_4}")
+        

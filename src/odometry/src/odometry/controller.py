@@ -124,3 +124,4 @@ def robot_stop(stopping_point, current_x, current_y, threshold=0.3):
     stop_x, stop_y = stopping_point
     distance = np.hypot(stop_x - current_x, stop_y - current_y)
     return distance <= threshold
+
