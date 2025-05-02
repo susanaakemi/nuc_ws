@@ -1,0 +1,37 @@
+[0.909s] Invoking command in '/home/robotec/ros2_ws/src/odometry': PYTHONPATH=/home/robotec/ros2_ws/build/odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/robotec/ros2_ws/build/odometry/build install --record /home/robotec/ros2_ws/build/odometry/install.log --single-version-externally-managed install_data
+[1.206s] running egg_info
+[1.207s] creating ../../build/odometry/odometry.egg-info
+[1.207s] writing ../../build/odometry/odometry.egg-info/PKG-INFO
+[1.207s] writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+[1.207s] writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+[1.208s] writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+[1.208s] writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+[1.208s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[1.209s] package init file 'odometry/__init__.py' not found (or not a regular file)
+[1.210s] reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[1.211s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[1.211s] running build
+[1.211s] running build_py
+[1.211s] creating /home/robotec/ros2_ws/build/odometry/build
+[1.211s] creating /home/robotec/ros2_ws/build/odometry/build/lib
+[1.212s] creating /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+[1.212s] copying odometry/controller.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+[1.212s] copying odometry/efk.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+[1.212s] copying odometry/odometry_node.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+[1.212s] copying odometry/utils.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+[1.212s] running install
+[1.213s] running install_lib
+[1.214s] creating /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+[1.214s] copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/controller.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+[1.214s] copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/efk.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+[1.214s] copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/odometry_node.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+[1.214s] copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/utils.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+[1.215s] byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/controller.py to controller.cpython-310.pyc
+[1.216s] byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/efk.py to efk.cpython-310.pyc
+[1.217s] byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/odometry_node.py to odometry_node.cpython-310.pyc
+[1.218s] byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/utils.py to utils.cpython-310.pyc
+[1.219s] running install_data
+[1.220s] copying package.xml -> /home/robotec/ros2_ws/install/odometry/share/odometry
+[1.220s] creating /home/robotec/ros2_ws/install/odometry/share/odometry/msg
+[1.220s] error: can't copy 'msg/WheelInfo.msg': doesn't exist or not a regular file
+[1.247s] Invoked command in '/home/robotec/ros2_ws/src/odometry' returned '1': PYTHONPATH=/home/robotec/ros2_ws/build/odometry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/robotec/ros2_ws/build/odometry/build install --record /home/robotec/ros2_ws/build/odometry/install.log --single-version-externally-managed install_data

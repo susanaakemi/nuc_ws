@@ -1,0 +1,2 @@
+package init file 'odometry/__init__.py' not found (or not a regular file)
+error: can't copy 'msg/WheelInfo.msg': doesn't exist or not a regular file

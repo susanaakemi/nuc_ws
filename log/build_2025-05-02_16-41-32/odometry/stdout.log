@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/odometry/odometry.egg-info
+writing ../../build/odometry/odometry.egg-info/PKG-INFO
+writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotec/ros2_ws/build/odometry/build
+creating /home/robotec/ros2_ws/build/odometry/build/lib
+creating /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+copying odometry/controller.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+copying odometry/efk.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+copying odometry/odometry_node.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+copying odometry/utils.py -> /home/robotec/ros2_ws/build/odometry/build/lib/odometry
+running install
+running install_lib
+creating /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/controller.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/efk.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/odometry_node.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+copying /home/robotec/ros2_ws/build/odometry/build/lib/odometry/utils.py -> /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry
+byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/controller.py to controller.cpython-310.pyc
+byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/efk.py to efk.cpython-310.pyc
+byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/odometry_node.py to odometry_node.cpython-310.pyc
+byte-compiling /home/robotec/ros2_ws/install/odometry/lib/python3.10/site-packages/odometry/utils.py to utils.cpython-310.pyc
+running install_data
+copying package.xml -> /home/robotec/ros2_ws/install/odometry/share/odometry
+creating /home/robotec/ros2_ws/install/odometry/share/odometry/msg

@@ -1,23 +1,27 @@
 cmake_minimum_required(VERSION 3.5)
+project(odometry)
 
-project(odometry)  # Reemplaza con el nombre de tu paquete
-
-# Encuentra el paquete de ament_cmake, que es necesario para ROS 2
 find_package(ament_cmake REQUIRED)
-
-# Encontrar rclpy, que es necesario para los scripts de Python
 find_package(rclpy REQUIRED)
-find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-# Si tienes más dependencias de Python, agrégalas aquí
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(tf_transformations REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
-# Instalar los scripts de Python
-install(PROGRAMS
-  scripts/controller.py
-  scripts/efk.py
-  scripts/odometry_node.py
-  scripts/utils.py  # Asegúrate de agregar todos los scripts que quieras instalar
-  DESTINATION lib/${PROJECT_NAME}  # Los instalará en la carpeta lib/mi_paquete
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/WheelInfo.msg"
+  "msg/WheelRPMs.msg"
+  "msg/DirectionAngles.msg"
+  DEPENDENCIES std_msgs
 )
 
-ament_package()  # Esto es necesario para finalizar la configuración del paquete
+install(
+  DIRECTORY odometry
+  DESTINATION lib/python3.10/site-packages
+)
+
+ament_python_install_package(${PROJECT_NAME})
+
+ament_package()

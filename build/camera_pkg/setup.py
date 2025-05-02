@@ -1,1 +1,0 @@
-/home/robotec/ros2_ws/src/camera_pkg/setup.py

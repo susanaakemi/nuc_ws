@@ -1,3 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
-  warnings.warn(
-Sorry: TabError: inconsistent use of tabs and spaces in indentation (pixel_to_point3d.py, line 44)
