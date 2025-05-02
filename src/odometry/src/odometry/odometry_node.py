@@ -5,7 +5,7 @@ from nav_msgs.msg import Odometry
 from odometry.msg import WheelInfo
 from controller import angulo_ackermann, find_look_ahead_point, generar_ruta_prioritaria, find_stopping_point, robot_stop
 from efk import compute_F, predict_state
-from utils import compute_quaternion, RPMReader, IMUListener, CoordinatesListener, SynchronizedData, initialize_serial, send_rpm_command
+from utils import compute_quaternion, IMU_VESCListener, CoordinatesListener, initialize_serial, send_rpm_command
 import time
 
 # Parámetros de conexión serial (ajusta según tu sistema: 'COM6' para Windows o '/dev/ttyUSB0' para Linux/Mac)
@@ -21,11 +21,10 @@ class OdometryNode(Node):
         self.timer = self.create_timer(0.05, self.timer_callback)  # 20 Hz
 
         self.start_time = time.time()  # Guardar el tiempo de inicio
-        
-        # Agregar clases para lectura de sensores
-        self.sync_data = SynchronizedData()
-        self.imu_listener = IMUListener(self.sync_data)
-        self.rpm_listener = RPMReader(self.sync_data, port=SERIAL_PORT)
+
+        self.sensor_data = IMU_VESCListener() #Inicializar la clase que se suscribe a los topicos de los senores
+        rclpy.spin_once(self.sensor_data, timeout_sec=0.01) #Se encarga de actualizar los datos
+
         self.dt = 0.05
         self.lookAheadDist = 1.5
         self.desiredSpeed = 0.4
@@ -40,7 +39,7 @@ class OdometryNode(Node):
         self.xhat = np.array([self.odom_x, self.odom_y, self.odom_theta, 0.0, 0.0, 0.0])
         self.P = np.identity(6) * 0.01
         self.Q = np.diag([0.001, 0.001, 0.0005, 0.001, 0.001, 0.0001])
-        self.R = np.diag([0.02, 0.02, 0.01, self.rpm_listener["linear_velocity_std"] + self.imu_listener["std_dev"]["accel_x"], self.imu_listener["std_dev"]["gyro_z"]])
+        self.R = np.diag([0.02, 0.02, 0.01, self.sensor_data.prev_ema_std_v + self.sensor_data.stddev["data"]["0"], self.sensor_data.imu_data["orientation"]["z"]])
 
         self.idxWaypoint = 0
         self.waypoints = []  # Dynamic waypoint list
@@ -104,11 +103,7 @@ class OdometryNode(Node):
         rpm_exterior = (self.desiredSpeed / self.wheelCircumference) * 60
         rpm_interior = (v_interior / self.wheelCircumference) * 60
 
-        # Get synchronized sensor data
-        sensor_data = self.sync_data.get_latest_data()
-        real_RPM = sensor_data['rpm']
-        imu_data = sensor_data['imu']
-        real_velocity = self.rpm_listener["linear_velocity"]
+        real_velocity = self.sensor_data.linear_velocity
         RPM = (self.desiredSpeed / self.wheelCircumference) * 60
 
         # Si lo que se desea es enviar el comando de RPM calculado, se puede elegir entre:
@@ -136,8 +131,8 @@ class OdometryNode(Node):
             self.odom_x,
             self.odom_y,
             self.odom_theta,
-            real_velocity + imu_data['accel_filtered']['x'],
-            imu_data['gyro_filtered']['z']
+            real_velocity + self.sensor_data.imu_data['linear_acceleration']['x'],
+            self.sensor_data.imu_data['angular_velocity']['z']
         ]) + noise
 
         # Update odometry
@@ -148,8 +143,8 @@ class OdometryNode(Node):
 
         # EKF update
         u = np.array([real_velocity, delta])
-        xhat_pred = predict_state(self.xhat, u, imu_data, self.L, self.dt)
-        F = compute_F(self.xhat, u, imu_data, self.dt)
+        xhat_pred = predict_state(self.xhat, u, self.sensor_data.imu_data, self.L, self.dt)
+        F = compute_F(self.xhat, u, self.sensor_data.imu_data, self.dt)
         P_pred = F @ self.P @ F.T + self.Q
         H = np.array([
             [1, 0, 0, 0, 0, 0],

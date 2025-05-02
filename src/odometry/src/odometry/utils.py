@@ -70,6 +70,32 @@ class IMU_VESCListener(Node):
         self.stddev_sub = self.create_subscription(
             Float32MultiArray, '/imu_rpm_stddev', self.stddev_callback, 10)
 
+        # Parameters for velocity calculations
+        self.wheel_radius = 0.05  # meters, adjust as needed
+        self.ema_alpha = 0.1  # EMA smoothing factor
+        self.prev_ema_std_v = 0.0  # Initialize previous EMA stddev
+
+    def calculate_velocity_metrics(self, rpms, rpm_stddevs):
+        """Calculate linear velocity and EMA-filtered stddev from RPMs and their stddevs."""
+        # Linear velocity: RPM to angular velocity (rad/s) to linear velocity (m/s)
+        linear_velocities = [
+            (rpm * 2 * math.pi / 60) * self.wheel_radius for rpm in rpms
+        ]
+        self.linear_velocity = sum(linear_velocities) / len(linear_velocities)
+
+        # Linear velocity stddev: Convert RPM stddev to linear velocity stddev
+        linear_vel_stddevs = [
+            (std * 2 * math.pi / 60) * self.wheel_radius for std in rpm_stddevs
+        ]
+        # Combine stddevs (assuming independence)
+        variance_sum = sum(std ** 2 for std in linear_vel_stddevs) / len(linear_vel_stddevs)
+        system_std_v = math.sqrt(variance_sum)
+        # Apply EMA filtering
+        ema_std_v = self.ema_alpha * system_std_v + (1 - self.ema_alpha) * self.prev_ema_std_v
+        self.prev_ema_std_v = ema_std_v  # Update previous EMA
+
+        return self.linear_velocity, ema_std_v
+
     def imu_callback(self, msg):
         self.imu_data['stamp'] = msg.header.stamp
         self.imu_data['orientation']['x'] = msg.orientation.x
@@ -110,6 +136,26 @@ class IMU_VESCListener(Node):
             f'Stddev Data: Time={stamp_time:.3f}, '
             f'Std Yaw={self.stddev["data"][6]:.2f} deg, '
             f'Std RPMs={self.stddev["data"][9:13]}'
+        )
+
+        # Check if data is available
+        if self.rpms['stamp'] is None or self.imu_data['stamp'] is None:
+            self.get_logger().warn("RPM or IMU data not available yet")
+            return
+
+        # Call specific data fields
+        rpms = self.rpms['data']  # Four motor RPMs
+        rpm_stddevs = self.stddev['data'][9:13]  # Stddevs of RPMs
+        timestamp = self.imu_data['stamp'].sec + self.imu_data['stamp'].nanosec / 1e9
+
+        # Calculate linear velocity and stddev
+        linear_velocity, linear_velocity_stddev = self.calculate_velocity_metrics(rpms, rpm_stddevs)
+
+        # Log the results
+        self.get_logger().info(
+            f"Velocity Data: Time={timestamp:.3f}, "
+            f"Linear Vel={linear_velocity:.2f} m/s, "
+            f"Linear Vel Stddev={linear_velocity_stddev:.2f} m/s"
         )
 
 class CoordinatesListener(Node):

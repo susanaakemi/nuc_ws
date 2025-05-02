@@ -10,8 +10,8 @@ def compute_F(x, u, imu_data, dt):
     """
     v = u[0]
     theta = x[2]
-    a_x = imu_data['accel_filtered']['x']
-    a_y = imu_data['accel_filtered']['y']
+    a_x = imu_data['linear_acceleration']['x']
+    a_y = imu_data['angular_velocity']['y']
 
     F = np.array([
         [1, 0, -v * np.sin(theta) * dt, dt, 0, 0],
@@ -29,9 +29,9 @@ def predict_state(x, u, imu_data, L, dt):
     """
     v = u[0]
     theta = x[2]
-    a_x = imu_data['accel_filtered']['x']
-    a_y = imu_data['accel_filtered']['y']
-    omega = imu_data['gyro_filtered']['z']
+    a_x = imu_data['linear_acceleration']['x']
+    a_y = imu_data['linear_acceleration']['y']
+    omega = imu_data['angular_velocity']['z']
 
     x_next = np.array([
         x[0] + x[3] * dt,
