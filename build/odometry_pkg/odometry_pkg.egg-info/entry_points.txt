@@ -1,0 +1,4 @@
+[console_scripts]
+imu_vesc_listener = odometry_pkg.utils:main
+odometry_node = odometry_pkg.odometry_node:main
+

@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'camera_pkg'
 
@@ -10,13 +12,14 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', glob('launch/*.py')),
     ],
     install_requires=[
         'setuptools',
-        'numpy<2',                # NumPy for numerical operations
-        'ros2_numpy',             # ros2_numpy for PointCloud2 processing
-        'opencv-python',          # OpenCV for image processing
-        'ultralytics'             # YOLOv8 detection
+        'numpy<2',
+        'ros2_numpy',
+        'opencv-python',
+        'ultralytics'
     ],
     zip_safe=True,
     maintainer='robotec',

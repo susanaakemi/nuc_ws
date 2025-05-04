@@ -1,0 +1,3 @@
+[console_scripts]
+clicked_point_subscriber = arm_pkg.clicked_point_subscriber:main
+

@@ -1,0 +1,18 @@
+[1.171s] Invoking command in '/home/robotec/ros2_ws/build/arm_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/arm_pkg/build --no-deps symlink_data
+[1.631s] running develop
+[1.963s] running egg_info
+[1.963s] writing arm_pkg.egg-info/PKG-INFO
+[1.964s] writing dependency_links to arm_pkg.egg-info/dependency_links.txt
+[1.964s] writing entry points to arm_pkg.egg-info/entry_points.txt
+[1.964s] writing requirements to arm_pkg.egg-info/requires.txt
+[1.964s] writing top-level names to arm_pkg.egg-info/top_level.txt
+[1.966s] reading manifest file 'arm_pkg.egg-info/SOURCES.txt'
+[1.967s] writing manifest file 'arm_pkg.egg-info/SOURCES.txt'
+[1.968s] running build_ext
+[1.968s] Creating /home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages/arm-pkg.egg-link (link to .)
+[1.969s] Installing clicked_point_subscriber script to /home/robotec/ros2_ws/install/arm_pkg/lib/arm_pkg
+[1.970s] 
+[1.970s] Installed /home/robotec/ros2_ws/build/arm_pkg
+[1.970s] running symlink_data
+[1.970s] symbolically linking /home/robotec/ros2_ws/build/arm_pkg/launch/arm.launch.py -> /home/robotec/ros2_ws/install/arm_pkg/share/arm_pkg/launch
+[2.021s] Invoked command in '/home/robotec/ros2_ws/build/arm_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotec/ros2_ws/build/arm_pkg/build --no-deps symlink_data

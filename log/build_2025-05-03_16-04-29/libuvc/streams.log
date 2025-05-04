@@ -1,0 +1,81 @@
+[0.686s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake /home/robotec/ros2_ws/src/libuvc -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/libuvc
+[0.782s] -- The C compiler identification is GNU 11.4.0
+[0.796s] -- Detecting C compiler ABI info
+[0.908s] -- Detecting C compiler ABI info - done
+[0.920s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.921s] -- Detecting C compile features
+[0.921s] -- Detecting C compile features - done
+[0.921s] -- No build type selected, default to Release
+[0.921s] -- No target type selected, default to both shared and static library
+[0.928s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.930s] -- Checking for module 'libusb-1.0'
+[0.950s] --   Found libusb-1.0, version 1.0.25
+[0.996s] -- libusb-1.0 found using pkgconfig
+[1.104s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.104s] -- Found JPEG library using standard module
+[1.105s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so  
+[1.105s] -- Building libuvc with JPEG support.
+[1.106s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.106s]   The package name passed to `find_package_handle_standard_args` (JPEG) does
+[1.106s]   not match the name of the calling package (JpegPkg).  This can lead to
+[1.106s]   problems in calling code that expects `find_package` result variables
+[1.106s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.106s] Call Stack (most recent call first):
+[1.106s]   cmake/FindJpegPkg.cmake:58 (find_package_handle_standard_args)
+[1.107s]   CMakeLists.txt:45 (find_package)
+[1.107s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.107s] [0m
+[1.112s] -- Looking for pthread.h
+[1.241s] -- Looking for pthread.h - found
+[1.244s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.370s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.371s] -- Found Threads: TRUE  
+[1.381s] -- Configuring done
+[1.392s] -- Generating done
+[1.396s] -- Build files have been written to: /home/robotec/ros2_ws/build/libuvc
+[1.409s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake /home/robotec/ros2_ws/src/libuvc -DCMAKE_INSTALL_PREFIX=/home/robotec/ros2_ws/install/libuvc
+[1.409s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[1.515s] [  4%] [32mBuilding C object CMakeFiles/uvc.dir/src/ctrl.c.o[0m
+[1.523s] [  9%] [32mBuilding C object CMakeFiles/uvc.dir/src/device.c.o[0m
+[1.523s] [ 13%] [32mBuilding C object CMakeFiles/uvc.dir/src/ctrl-gen.c.o[0m
+[1.526s] [ 18%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/ctrl.c.o[0m
+[1.791s] [ 22%] [32mBuilding C object CMakeFiles/uvc.dir/src/diag.c.o[0m
+[1.795s] [ 27%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/ctrl-gen.c.o[0m
+[2.192s] [ 31%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/device.c.o[0m
+[2.764s] [ 36%] [32mBuilding C object CMakeFiles/uvc.dir/src/frame.c.o[0m
+[2.777s] [ 40%] [32mBuilding C object CMakeFiles/uvc.dir/src/init.c.o[0m
+[2.850s] [ 45%] [32mBuilding C object CMakeFiles/uvc.dir/src/stream.c.o[0m
+[2.991s] [ 50%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/diag.c.o[0m
+[3.219s] [ 54%] [32mBuilding C object CMakeFiles/uvc.dir/src/misc.c.o[0m
+[3.307s] [ 59%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/frame.c.o[0m
+[3.572s] [ 63%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/init.c.o[0m
+[3.597s] [ 68%] [32mBuilding C object CMakeFiles/uvc.dir/src/frame-mjpeg.c.o[0m
+[3.646s] [ 72%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/stream.c.o[0m
+[3.785s] [ 77%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/misc.c.o[0m
+[3.875s] [ 81%] [32mBuilding C object CMakeFiles/uvc_static.dir/src/frame-mjpeg.c.o[0m
+[4.005s] [ 86%] [32m[1mLinking C shared library libuvc.so[0m
+[4.271s] [ 86%] Built target uvc
+[4.364s] [ 90%] [32mBuilding C object CMakeFiles/example.dir/src/example.c.o[0m
+[4.611s] [ 95%] [32m[1mLinking C executable example[0m
+[4.744s] [ 95%] Built target example
+[4.898s] [100%] [32m[1mLinking C static library libuvc.a[0m
+[5.399s] [100%] Built target uvc_static
+[5.431s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --build /home/robotec/ros2_ws/build/libuvc -- -j4 -l4
+[5.459s] Invoking command in '/home/robotec/ros2_ws/build/libuvc': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
+[5.471s] -- Install configuration: "Release"
+[5.471s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0.0.7
+[5.471s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so.0
+[5.476s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.so
+[5.477s] -- Installing: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[5.477s] -- Installing: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[5.479s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/libuvc.a
+[5.479s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc.h
+[5.479s] -- Up-to-date: /home/robotec/ros2_ws/install/libuvc/include/libuvc/libuvc_config.h
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets.cmake
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcTargets-release.cmake
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindLibUSB.cmake
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/FindJpegPkg.cmake
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfigVersion.cmake
+[5.480s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/pkgconfig/libuvc.pc
+[5.481s] -- Installing: /home/robotec/ros2_ws/install/libuvc/lib/cmake/libuvc/libuvcConfig.cmake
+[5.484s] Invoked command in '/home/robotec/ros2_ws/build/libuvc' returned '0': /usr/bin/cmake --install /home/robotec/ros2_ws/build/libuvc
