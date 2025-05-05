@@ -10,14 +10,15 @@ from odometry_pkg.controller import angulo_ackermann, find_look_ahead_point, gen
 from odometry_pkg.efk import compute_F, predict_state
 from odometry_pkg.utils import compute_quaternion
 import time
+import serial
+
 
 class OdometryNode(Node):
     def __init__(self):
         super().__init__('odometry_node')
         self.odom_pub = self.create_publisher(Odometry, '/odom', 10)
         self.wheel_pub = self.create_publisher(Twist, '/wheel_setter', 10)
-        self.rpm_publisher = self.create_publisher(Float32MultiArray, 'wheel_rpm_cmd', 10)
-        self.angle_publisher = self.create_publisher(Float32MultiArray, 'wheel_angle_cmd', 10)
+        self.rpm_publisher = self.create_publisher(Float32MultiArray, 'target_rpms', 10)
         self.timer = self.create_timer(0.05, self.timer_callback)
 
         self.start_time = time.time()
@@ -58,6 +59,10 @@ class OdometryNode(Node):
         self.angular_velocity_y = 0.0
         self.last_clicked_point = Point()
 
+        # Iniciar comunicación serial
+        self.serial_port = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+        self.get_logger().info("Serial port initialized")
+
     def linear_velocity_callback(self, msg): self.real_velocity = msg.data
     def linear_velocity_stddev_callback(self, msg): self.prev_ema_std_v = msg.data
     def orientation_z_callback(self, msg): self.orientation_z = msg.data
@@ -73,9 +78,12 @@ class OdometryNode(Node):
         self.rpm_publisher.publish(msg)
 
     def send_angles(self, angles):
-        msg = Float32MultiArray()
-        msg.data = angles
-        self.angle_publisher.publish(msg)
+        try:
+            angle_str = str(angles[0]) + '\n'  # Solo el primer ángulo (delta)
+            self.serial_port.write(angles_str.encode('utf-8'))
+            self.get_logger().info(f"Sent over serial: {angles_str.strip()}")
+        except serial.SerialException as e:
+            self.get_logger().error(f"Serial write failed: {e}")
 
     def timer_callback(self):
         self.R = np.diag([
@@ -185,11 +193,24 @@ class OdometryNode(Node):
         self.odom_pub.publish(odom_msg)
         self.wheel_pub.publish(wheel_msg)
 
+    def destroy_node(self):
+        if self.serial_port.is_open:
+            self.serial_port.close()
+            self.get_logger().info("Serial port closed")
+        super().destroy_node()
+
+
 def main(args=None):
     rclpy.init(args=args)
     node = OdometryNode()
-    rclpy.spin(node)
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info('Keyboard interrupt received, shutting down.')
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

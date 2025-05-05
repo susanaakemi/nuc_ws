@@ -14,7 +14,8 @@ setup(
     install_requires=[
         'setuptools',
         'numpy',
-        'tf-transformations'],
+        'tf-transformations',
+        'pyserial'],
     zip_safe=True,
     maintainer='robotec',
     maintainer_email='a01640939@tec.mx',
