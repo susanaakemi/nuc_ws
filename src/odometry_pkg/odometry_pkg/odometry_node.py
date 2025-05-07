@@ -77,19 +77,17 @@ class OdometryNode(Node):
 
     def send_angles(self, angles):
         try:
-            # Enviar los primeros tres ángulos a través de la comunicación serial compartida (con los 3 primeros Arduinos Nano)
-            angles_to_send = angles[:3]  # Primeros tres ángulos
-            angle_str = '\n'.join(map(str, angles_to_send)) + '\n'
-            self.serial_port.write(angle_str.encode('utf-8'))  # Enviar por el puerto serial compartido
-            self.get_logger().info(f"Sent over shared serial (3 angles): {angle_str.strip()}")
+            # Enviar los primeros tres ángulos por el serial compartido
+            angles3 = f"D1:{angles[0]};D2:{angles[1]};D3:{angles[2]}\n"
+            self.serial_port.write(angles3.encode('utf-8'))
+            self.get_logger().info(f"Sent over shared serial (3 angles): {angles3.strip()}")
 
-            time.sleep(0.05)  # Retraso pequeño entre los envíos para asegurar que el arduino reciba los datos
+            time.sleep(0.05)  # Pequeño delay entre envíos
 
-            # Enviar el último ángulo por separado
-            last_angle = angles[3]
-            last_angle_str = str(last_angle) + '\n'
-            self.serial_port_last.write(last_angle_str.encode('utf-8'))  # Enviar por el puerto serial separado
-            self.get_logger().info(f"Sent over dedicated serial (last angle): {last_angle_str.strip()}")
+            # Enviar el último ángulo por el puerto serial separado
+            angle4 = f"D:{angles[3]}\n"
+            self.serial_port_last.write(angle4.encode('utf-8'))
+            self.get_logger().info(f"Sent over dedicated serial (last angle): {angle4.strip()}")
 
         except serial.SerialException as e:
             self.get_logger().error(f"Serial write failed: {e}")
