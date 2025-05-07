@@ -9,6 +9,7 @@ from std_msgs.msg import Float32, Float32MultiArray
 from odometry_pkg.controller import angulo_ackermann, find_look_ahead_point, generar_ruta_prioritaria, find_stopping_point, robot_stop
 from odometry_pkg.efk import compute_F, predict_state
 from odometry_pkg.utils import compute_quaternion
+from odometry_pkg.utils import ListQueueSimple
 import time
 import serial
 
@@ -39,8 +40,9 @@ class OdometryNode(Node):
         self.R = np.diag([0.02, 0.02, 0.01, 0.01, 0.01])
 
         self.idxWaypoint = 0
-        self.waypoints = []
+        self.waypoints = ListQueueSimple()  # Cambiado a ListQueueSimple
 
+        # Suscripciones
         self.create_subscription(Float32, '/linear_velocity', self.linear_velocity_callback, 10)
         self.create_subscription(Float32, '/linear_velocity_stddev', self.linear_velocity_stddev_callback, 10)
         self.create_subscription(Float32, '/orientation_z', self.orientation_z_callback, 10)
@@ -50,6 +52,7 @@ class OdometryNode(Node):
         self.create_subscription(PointStamped, '/clicked_point_processed', self.clicked_point_callback, 10)
         self.create_subscription(Float32, '/linear_acceleration_x_stddev', self.linear_accel_x_stddev_callback, 10)
 
+        # Inicialización de variables
         self.real_velocity = 0.0
         self.prev_ema_std_v = 0.0
         self.orientation_z = 0.0
@@ -59,18 +62,13 @@ class OdometryNode(Node):
         self.angular_velocity_y = 0.0
         self.last_clicked_point = Point()
 
-        # Iniciar comunicación serial
+        # Iniciar comunicación serial (primeros 3 ángulos)
         self.serial_port = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
         self.get_logger().info("Serial port initialized")
 
-    def linear_velocity_callback(self, msg): self.real_velocity = msg.data
-    def linear_velocity_stddev_callback(self, msg): self.prev_ema_std_v = msg.data
-    def orientation_z_callback(self, msg): self.orientation_z = msg.data
-    def linear_accel_x_callback(self, msg): self.linear_acceleration_x = msg.data
-    def angular_velocity_z_callback(self, msg): self.angular_velocity_z = msg.data
-    def angular_velocity_y_callback(self, msg): self.angular_velocity_y = msg.data
-    def linear_accel_x_stddev_callback(self, msg): self.linear_acceleration_x_stddev = msg.data
-    def clicked_point_callback(self, msg): self.last_clicked_point = msg.point
+        # Configurar el puerto serial dedicado (para el cuarto Arduino Nano)
+        self.serial_port_last = serial.Serial('/dev/ttyUSB1', 115200, timeout=1)  # Ajusta el puerto si es necesario
+        self.get_logger().info("Dedicated serial port for last angle initialized")
 
     def send_rpm(self, rpms):
         msg = Float32MultiArray()
@@ -79,45 +77,65 @@ class OdometryNode(Node):
 
     def send_angles(self, angles):
         try:
-            angle_str = str(angles[0]) + '\n'  # Solo el primer ángulo (delta)
-            self.serial_port.write(angles_str.encode('utf-8'))
-            self.get_logger().info(f"Sent over serial: {angles_str.strip()}")
+            # Enviar los primeros tres ángulos a través de la comunicación serial compartida (con los 3 primeros Arduinos Nano)
+            angles_to_send = angles[:3]  # Primeros tres ángulos
+            angle_str = '\n'.join(map(str, angles_to_send)) + '\n'
+            self.serial_port.write(angle_str.encode('utf-8'))  # Enviar por el puerto serial compartido
+            self.get_logger().info(f"Sent over shared serial (3 angles): {angle_str.strip()}")
+
+            time.sleep(0.05)  # Retraso pequeño entre los envíos para asegurar que el arduino reciba los datos
+
+            # Enviar el último ángulo por separado
+            last_angle = angles[3]
+            last_angle_str = str(last_angle) + '\n'
+            self.serial_port_last.write(last_angle_str.encode('utf-8'))  # Enviar por el puerto serial separado
+            self.get_logger().info(f"Sent over dedicated serial (last angle): {last_angle_str.strip()}")
+
         except serial.SerialException as e:
             self.get_logger().error(f"Serial write failed: {e}")
 
     def timer_callback(self):
+        # Asegurarse de que la cola no esté vacía antes de procesar
+        if self.waypoints.size() == 0:
+            self.get_logger().warn("La cola de waypoints está vacía. No se procesarán más puntos.")
+            return
+
+        # Ajuste de la matriz de covarianza R
         self.R = np.diag([
             0.02, 0.02, 0.01,
             self.prev_ema_std_v + self.linear_acceleration_x_stddev,
             self.orientation_z
         ])
 
+        # Obtención de la última posición del punto clickeado
         piedra_x = self.last_clicked_point.x
         piedra_dist = self.last_clicked_point.y
 
+        # Calcular punto de parada
         stopping_point = find_stopping_point(piedra_x, piedra_dist, self.xhat[0], self.xhat[1], self.xhat[2])
         if robot_stop(stopping_point, self.odom_x, self.odom_y):
             self.send_rpm([0, 0, 0, 0])
             self.get_logger().info("Robot detenido en el punto de parada.")
             return
 
+        # Generar la ruta prioritaria
         next_point = generar_ruta_prioritaria(stopping_point, use_push_front=False)
         if next_point:
-            self.waypoints.append(next_point)
-            if len(self.waypoints) > 100:
-                self.waypoints = self.waypoints[-50:]
+            self.waypoints.enqueue(next_point)  # Usar enqueue para agregar puntos a la cola
+            if self.waypoints.size() > 100:  # Verificar el tamaño de la cola usando size()
+                for _ in range(self.waypoints.size() - 50):
+                    self.waypoints.dequeue()  # Mantener solo los 50 puntos más recientes
 
-        if not self.waypoints:
-            return
-
-        waypoints_array = np.array(self.waypoints)
+        # Procesar los waypoints
+        waypoints_array = np.array(self.waypoints.items)  # Convertir los items de la cola a un array
         lookX, lookY, self.idxWaypoint = find_look_ahead_point(
             self.odom_x, self.odom_y, waypoints_array, self.idxWaypoint, self.lookAheadDist)
 
         if self.idxWaypoint > 0:
-            self.waypoints = self.waypoints[self.idxWaypoint:]
+            self.waypoints.items = self.waypoints.items[self.idxWaypoint:]  # Ajustar la cola eliminando los puntos ya procesados
             self.idxWaypoint = 0
 
+        # Calcular el control Ackermann para los ángulos y las velocidades de las ruedas
         dx = lookX - self.odom_x
         dy = lookY - self.odom_y
         L_d = np.hypot(dx, dy)
@@ -142,6 +160,7 @@ class OdometryNode(Node):
         self.send_rpm([rpm_left, rpm_right, rpm_left, rpm_right])
         self.send_angles([delta, b, -delta, -b])
 
+        # Actualización de la odometría
         z = np.array([
             self.odom_x,
             self.odom_y,
@@ -161,6 +180,7 @@ class OdometryNode(Node):
             'angular_velocity': {'z': self.angular_velocity_z}
         }
 
+        # Predicción del estado usando el filtro de Kalman
         xhat_pred = predict_state(self.xhat, u, sensor_data, self.L, self.dt)
         F = compute_F(self.xhat, u, sensor_data, self.dt)
 
@@ -171,6 +191,7 @@ class OdometryNode(Node):
         self.xhat = xhat_pred + K @ (z - H @ xhat_pred)
         self.P = (np.eye(6) - K @ H) @ P_pred
 
+        # Publicar la odometría
         odom_msg = Odometry()
         odom_msg.header.stamp = self.get_clock().now().to_msg()
         odom_msg.header.frame_id = "odom"

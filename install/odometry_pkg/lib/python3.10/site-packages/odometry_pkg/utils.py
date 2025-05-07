@@ -32,9 +32,9 @@ class ListQueueSimple:
                 return self.items.pop(0)
             return None
 
-    def isempty(self):
+    """def isempty(self):
         with self.lock:
-            return len(self.items) == 0
+            return len(self.items) == 0"""
 
     def size(self):
         with self.lock:

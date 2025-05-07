@@ -53,6 +53,7 @@ def find_look_ahead_point(x, y, waypoints, idx_current, Ld, piedras=None):
 
     return lx, ly, idx_next
 
+
 def generar_ruta_prioritaria(piedras_lista, use_push_front=False):
     """
     Get the next waypoint, prioritizing stones over predefined waypoints.
@@ -75,10 +76,11 @@ def generar_ruta_prioritaria(piedras_lista, use_push_front=False):
             generar_ruta_prioritaria.puntos_establecidos.enqueue(punto.tolist())
 
     try:
-        if not piedras_lista.isempty():
+        # Usamos size() == 0 en lugar de isempty()
+        if piedras_lista.size() > 0:
             punto = piedras_lista.dequeue()
             logger.info(f"Prioritizing detected stone at {punto}")
-        elif not generar_ruta_prioritaria.puntos_establecidos.isempty():
+        elif generar_ruta_prioritaria.puntos_establecidos.size() > 0:
             punto = generar_ruta_prioritaria.puntos_establecidos.dequeue()
             logger.info(f"Following predefined waypoint at {punto}")
         else:
@@ -93,6 +95,8 @@ def generar_ruta_prioritaria(piedras_lista, use_push_front=False):
     except Exception as e:
         logger.error(f"Error processing point: {e}")
         return None
+
+
 
 def find_stopping_point(rock_pixel_x, rock_distance, current_x, current_y, current_theta):
     FOV_deg     = 60      # Campo de visión horizontal de la cámara (º)
