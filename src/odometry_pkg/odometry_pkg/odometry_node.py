@@ -212,6 +212,30 @@ class OdometryNode(Node):
         self.odom_pub.publish(odom_msg)
         self.wheel_pub.publish(wheel_msg)
 
+    def linear_velocity_callback(self, msg):
+        self.real_velocity = msg.data
+
+    def linear_velocity_stddev_callback(self, msg):
+        self.prev_ema_std_v = msg.data
+
+    def orientation_z_callback(self, msg):
+        self.orientation_z = msg.data
+
+    def linear_accel_x_callback(self, msg):
+        self.linear_acceleration_x = msg.data
+
+    def angular_velocity_z_callback(self, msg):
+        self.angular_velocity_z = msg.data
+
+    def angular_velocity_y_callback(self, msg):
+        self.angular_velocity_y = msg.data
+
+    def clicked_point_callback(self, msg):
+        self.last_clicked_point = msg.point
+
+    def linear_accel_x_stddev_callback(self, msg):
+        self.linear_acceleration_x_stddev = msg.data
+
     def destroy_node(self):
         if self.serial_port.is_open:
             self.serial_port.close()

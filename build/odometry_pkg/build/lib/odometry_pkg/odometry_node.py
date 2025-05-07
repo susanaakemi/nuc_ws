@@ -23,7 +23,7 @@ class OdometryNode(Node):
         self.timer = self.create_timer(0.05, self.timer_callback)
 
         self.start_time = time.time()
-        
+
         self.dt = 0.05
         self.lookAheadDist = 1.5
         self.desiredSpeed = 0.4
@@ -62,9 +62,35 @@ class OdometryNode(Node):
         self.angular_velocity_y = 0.0
         self.last_clicked_point = Point()
 
-        # Iniciar comunicación serial
+        # Iniciar comunicación serial (primeros 3 ángulos)
         self.serial_port = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
         self.get_logger().info("Serial port initialized")
+
+        # Configurar el puerto serial dedicado (para el cuarto Arduino Nano)
+        self.serial_port_last = serial.Serial('/dev/ttyUSB1', 115200, timeout=1)  # Ajusta el puerto si es necesario
+        self.get_logger().info("Dedicated serial port for last angle initialized")
+
+    def send_rpm(self, rpms):
+        msg = Float32MultiArray()
+        msg.data = rpms
+        self.rpm_publisher.publish(msg)
+
+    def send_angles(self, angles):
+        try:
+            # Enviar los primeros tres ángulos por el serial compartido
+            angles3 = f"D1:{angles[0]};D2:{angles[1]};D3:{angles[2]}\n"
+            self.serial_port.write(angles3.encode('utf-8'))
+            self.get_logger().info(f"Sent over shared serial (3 angles): {angles3.strip()}")
+
+            time.sleep(0.05)  # Pequeño delay entre envíos
+
+            # Enviar el último ángulo por el puerto serial separado
+            angle4 = f"D:{angles[3]}\n"
+            self.serial_port_last.write(angle4.encode('utf-8'))
+            self.get_logger().info(f"Sent over dedicated serial (last angle): {angle4.strip()}")
+
+        except serial.SerialException as e:
+            self.get_logger().error(f"Serial write failed: {e}")
 
     def timer_callback(self):
         # Asegurarse de que la cola no esté vacía antes de procesar
@@ -185,6 +211,30 @@ class OdometryNode(Node):
 
         self.odom_pub.publish(odom_msg)
         self.wheel_pub.publish(wheel_msg)
+
+    def linear_velocity_callback(self, msg):
+        self.real_velocity = msg.data
+
+    def linear_velocity_stddev_callback(self, msg):
+        self.prev_ema_std_v = msg.data
+
+    def orientation_z_callback(self, msg):
+        self.orientation_z = msg.data
+
+    def linear_accel_x_callback(self, msg):
+        self.linear_acceleration_x = msg.data
+
+    def angular_velocity_z_callback(self, msg):
+        self.angular_velocity_z = msg.data
+
+    def angular_velocity_y_callback(self, msg):
+        self.angular_velocity_y = msg.data
+
+    def clicked_point_callback(self, msg):
+        self.last_clicked_point = msg.point
+
+    def linear_accel_x_stddev_callback(self, msg):
+        self.linear_acceleration_x_stddev = msg.data
 
     def destroy_node(self):
         if self.serial_port.is_open:
