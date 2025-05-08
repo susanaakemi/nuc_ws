@@ -13,6 +13,7 @@ odometry_pkg/controller.py
 odometry_pkg/efk.py
 odometry_pkg/odometry_node.py
 odometry_pkg/rpm_test_publisher.py
+odometry_pkg/rpmtrue_publisher.py
 odometry_pkg/utils.py
 resource/odometry_pkg
 test/test_copyright.py

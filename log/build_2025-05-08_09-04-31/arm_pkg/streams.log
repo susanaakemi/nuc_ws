@@ -1,0 +1,21 @@
+[2.370s] Invoking command in '/home/robotec/ros2_ws/src/arm_pkg': PYTHONPATH=/home/robotec/ros2_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/robotec/ros2_ws/build/arm_pkg/build install --record /home/robotec/ros2_ws/build/arm_pkg/install.log --single-version-externally-managed install_data
+[3.092s] running egg_info
+[3.094s] writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO
+[3.095s] writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt
+[3.095s] writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt
+[3.095s] writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt
+[3.095s] writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt
+[3.101s] reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[3.102s] writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[3.102s] running build
+[3.102s] running build_py
+[3.105s] running install
+[3.107s] running install_lib
+[3.109s] running install_data
+[3.111s] running install_egg_info
+[3.115s] removing '/home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[3.115s] Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info
+[3.117s] running install_scripts
+[3.159s] Installing clicked_point_subscriber script to /home/robotec/ros2_ws/install/arm_pkg/lib/arm_pkg
+[3.166s] writing list of installed files to '/home/robotec/ros2_ws/build/arm_pkg/install.log'
+[3.313s] Invoked command in '/home/robotec/ros2_ws/src/arm_pkg' returned '0': PYTHONPATH=/home/robotec/ros2_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotec/ros2_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/robotec/ros2_ws/build/arm_pkg/build install --record /home/robotec/ros2_ws/build/arm_pkg/install.log --single-version-externally-managed install_data

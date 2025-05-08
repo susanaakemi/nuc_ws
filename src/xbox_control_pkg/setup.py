@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'xbox_control_node = xbox_control_pkg.xbox_control_node:main',
+            'double_ackermann_control_node = double_ackermann_control.double_ackermann_control_node:main',
         ],
     },
 )

@@ -155,7 +155,7 @@ class OdometryNode(Node):
         else:
             rpm_left = rpm_right = rpm_exterior
 
-        self.send_rpm([rpm_left, rpm_right, rpm_left, rpm_right])
+        self.send_rpm([rpm_left, -rpm_right, rpm_left, -rpm_right])
         self.send_angles([delta, b, -delta, -b])
 
         # Actualización de la odometría
