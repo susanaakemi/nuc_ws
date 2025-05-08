@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'odometry_node = odometry_pkg.odometry_node:main',
             'imu_vesc_listener = odometry_pkg.utils:main',
+            'rpm_test_publisher = odometry_pkg.rpm_test_publisher:main',
         ],
     },
 )

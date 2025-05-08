@@ -1,0 +1,3 @@
+[console_scripts]
+xbox_control_node = xbox_control_pkg.xbox_control_node:main
+
