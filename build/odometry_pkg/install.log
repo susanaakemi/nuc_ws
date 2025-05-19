@@ -1,13 +1,11 @@
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/controller.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__init__.py
-/home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/rpm_test_publisher.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/efk.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/rpmtrue_publisher.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/odometry_node.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/utils.py
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/controller.cpython-310.pyc
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/__init__.cpython-310.pyc
-/home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/rpm_test_publisher.cpython-310.pyc
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/efk.cpython-310.pyc
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/rpmtrue_publisher.cpython-310.pyc
 /home/robotec/ros2_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__pycache__/odometry_node.cpython-310.pyc

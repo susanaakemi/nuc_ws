@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rover_launch_pkg</name>
+  <version>0.0.1</version>
+  <description>Launch package for LIDAR, cameras, and odometry in ros2_ws</description>
+  <maintainer email="a01640939@tec.mx">robotec</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+</package>
+
