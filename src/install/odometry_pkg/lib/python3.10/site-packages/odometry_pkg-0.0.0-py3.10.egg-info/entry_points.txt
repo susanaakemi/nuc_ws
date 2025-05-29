@@ -1,0 +1,6 @@
+[console_scripts]
+imu_vesc_listener = odometry_pkg.utils:main
+odometry_node = odometry_pkg.odometry_node:main
+rpm_test_publisher = odometry_pkg.rpm_test_publisher:main
+rpmtrue_publisher = odometry_pkg.rpmtrue_publisher:main
+

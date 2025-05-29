@@ -1,0 +1,2 @@
+Invoking command in '/home/ras4/nuc_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ras4/nuc_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ras4/nuc_ws/install/sllidar_ros2
+Invoked command in '/home/ras4/nuc_ws/build/sllidar_ros2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ras4/nuc_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ras4/nuc_ws/install/sllidar_ros2

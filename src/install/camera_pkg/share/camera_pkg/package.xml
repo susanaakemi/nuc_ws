@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+             schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>camera_pkg</name>
+  <version>0.1.0</version>
+  <description>
+    Detección de rocas con YOLOv8 en ROS 2 Humble y mapeo de píxeles a 3D.
+  </description>
+
+  <maintainer email="a01640939@tec.mx">robotec</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Runtime dependencies -->
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>ros2_numpy</depend>
+  <depend>numpy</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv_python</depend>
+  <depend>ultralytics</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+
+  <!-- Optional test dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
