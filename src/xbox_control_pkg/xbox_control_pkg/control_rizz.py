@@ -33,7 +33,8 @@ def main(args=None):
         self.get_logger().info(
             f'Left Stick: x={left_stick:.2f} | '
             f'LT: {lt:.2f} | RT: {rt:.2f}'
-        )
+        ),
+        10
     )
 
     rclpy.spin(node)
