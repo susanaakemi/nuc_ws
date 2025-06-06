@@ -1,0 +1,45 @@
+[2.710s] Invoking command in '/home/ras4/nuc_ws/src/camera_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/ras4/nuc_ws/build/camera_pkg/build install --record /home/ras4/nuc_ws/build/camera_pkg/install.log --single-version-externally-managed install_data
+[3.756s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+[3.756s]   warnings.warn(
+[3.807s] running egg_info
+[3.809s] creating ../../build/camera_pkg/camera_pkg.egg-info
+[3.810s] writing ../../build/camera_pkg/camera_pkg.egg-info/PKG-INFO
+[3.811s] writing dependency_links to ../../build/camera_pkg/camera_pkg.egg-info/dependency_links.txt
+[3.812s] writing entry points to ../../build/camera_pkg/camera_pkg.egg-info/entry_points.txt
+[3.812s] writing requirements to ../../build/camera_pkg/camera_pkg.egg-info/requires.txt
+[3.813s] writing top-level names to ../../build/camera_pkg/camera_pkg.egg-info/top_level.txt
+[3.814s] writing manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.820s] reading manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.823s] writing manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.824s] running build
+[3.825s] running build_py
+[3.825s] creating /home/ras4/nuc_ws/build/camera_pkg/build
+[3.826s] creating /home/ras4/nuc_ws/build/camera_pkg/build/lib
+[3.826s] creating /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg
+[3.826s] copying camera_pkg/framepublisher.py -> /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg
+[3.827s] copying camera_pkg/pixel_to_point3d.py -> /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg
+[3.828s] copying camera_pkg/__init__.py -> /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg
+[3.830s] running install
+[3.831s] running install_lib
+[3.835s] creating /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.835s] copying /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg/framepublisher.py -> /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.836s] copying /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg/pixel_to_point3d.py -> /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.837s] copying /home/ras4/nuc_ws/build/camera_pkg/build/lib/camera_pkg/__init__.py -> /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg
+[3.840s] byte-compiling /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/framepublisher.py to framepublisher.cpython-310.pyc
+[3.843s] byte-compiling /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/pixel_to_point3d.py to pixel_to_point3d.cpython-310.pyc
+[3.847s] byte-compiling /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg/__init__.py to __init__.cpython-310.pyc
+[3.848s] running install_data
+[3.848s] creating /home/ras4/nuc_ws/install/camera_pkg/share/ament_index
+[3.849s] creating /home/ras4/nuc_ws/install/camera_pkg/share/ament_index/resource_index
+[3.849s] creating /home/ras4/nuc_ws/install/camera_pkg/share/ament_index/resource_index/packages
+[3.850s] copying resource/camera_pkg -> /home/ras4/nuc_ws/install/camera_pkg/share/ament_index/resource_index/packages
+[3.850s] copying package.xml -> /home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg
+[3.850s] creating /home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/launch
+[3.851s] copying launch/camera.launch.py -> /home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/launch
+[3.852s] running install_egg_info
+[3.859s] Copying ../../build/camera_pkg/camera_pkg.egg-info to /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info
+[3.864s] running install_scripts
+[3.947s] Installing framepublisher script to /home/ras4/nuc_ws/install/camera_pkg/lib/camera_pkg
+[3.947s] Installing pixel_to_point3d script to /home/ras4/nuc_ws/install/camera_pkg/lib/camera_pkg
+[3.949s] writing list of installed files to '/home/ras4/nuc_ws/build/camera_pkg/install.log'
+[4.075s] Invoked command in '/home/ras4/nuc_ws/src/camera_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/ras4/nuc_ws/build/camera_pkg/build install --record /home/ras4/nuc_ws/build/camera_pkg/install.log --single-version-externally-managed install_data

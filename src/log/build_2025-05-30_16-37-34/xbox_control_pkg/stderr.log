@@ -1,0 +1,5 @@
+  File "/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/control_rizz.py", line 37
+    )
+    ^
+SyntaxError: positional argument follows keyword argument
+

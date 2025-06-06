@@ -1,0 +1,20 @@
+[3.526s] Invoking command in '/home/ras4/nuc_ws/src/build/arm_pkg': PYTHONPATH=/home/ras4/nuc_ws/src/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ras4/nuc_ws/src/build/arm_pkg/build --no-deps symlink_data --force
+[4.772s] running develop
+[5.521s] running egg_info
+[5.522s] writing arm_pkg.egg-info/PKG-INFO
+[5.523s] writing dependency_links to arm_pkg.egg-info/dependency_links.txt
+[5.524s] writing entry points to arm_pkg.egg-info/entry_points.txt
+[5.525s] writing requirements to arm_pkg.egg-info/requires.txt
+[5.526s] writing top-level names to arm_pkg.egg-info/top_level.txt
+[5.533s] reading manifest file 'arm_pkg.egg-info/SOURCES.txt'
+[5.537s] writing manifest file 'arm_pkg.egg-info/SOURCES.txt'
+[5.544s] running build_ext
+[5.545s] Creating /home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages/arm-pkg.egg-link (link to .)
+[5.548s] Installing clicked_point_subscriber script to /home/ras4/nuc_ws/src/install/arm_pkg/lib/arm_pkg
+[5.550s] 
+[5.550s] Installed /home/ras4/nuc_ws/src/build/arm_pkg
+[5.550s] running symlink_data
+[5.551s] symbolically linking /home/ras4/nuc_ws/src/build/arm_pkg/resource/arm_pkg -> /home/ras4/nuc_ws/src/install/arm_pkg/share/ament_index/resource_index/packages
+[5.551s] symbolically linking /home/ras4/nuc_ws/src/build/arm_pkg/package.xml -> /home/ras4/nuc_ws/src/install/arm_pkg/share/arm_pkg
+[5.552s] symbolically linking /home/ras4/nuc_ws/src/build/arm_pkg/launch/arm.launch.py -> /home/ras4/nuc_ws/src/install/arm_pkg/share/arm_pkg/launch
+[5.690s] Invoked command in '/home/ras4/nuc_ws/src/build/arm_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/src/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ras4/nuc_ws/src/build/arm_pkg/build --no-deps symlink_data --force

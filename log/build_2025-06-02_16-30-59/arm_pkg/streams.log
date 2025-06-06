@@ -1,0 +1,39 @@
+[2.984s] Invoking command in '/home/ras4/nuc_ws/src/arm_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data
+[4.068s] running egg_info
+[4.070s] creating ../../build/arm_pkg/arm_pkg.egg-info
+[4.071s] writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO
+[4.072s] writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt
+[4.073s] writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt
+[4.073s] writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt
+[4.074s] writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt
+[4.075s] writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[4.082s] reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[4.086s] writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[4.086s] running build
+[4.087s] running build_py
+[4.088s] creating /home/ras4/nuc_ws/build/arm_pkg/build
+[4.088s] creating /home/ras4/nuc_ws/build/arm_pkg/build/lib
+[4.089s] creating /home/ras4/nuc_ws/build/arm_pkg/build/lib/arm_pkg
+[4.090s] copying arm_pkg/clicked_point_subscriber.py -> /home/ras4/nuc_ws/build/arm_pkg/build/lib/arm_pkg
+[4.091s] copying arm_pkg/__init__.py -> /home/ras4/nuc_ws/build/arm_pkg/build/lib/arm_pkg
+[4.092s] running install
+[4.093s] running install_lib
+[4.096s] creating /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg
+[4.097s] copying /home/ras4/nuc_ws/build/arm_pkg/build/lib/arm_pkg/clicked_point_subscriber.py -> /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg
+[4.097s] copying /home/ras4/nuc_ws/build/arm_pkg/build/lib/arm_pkg/__init__.py -> /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg
+[4.100s] byte-compiling /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg/clicked_point_subscriber.py to clicked_point_subscriber.cpython-310.pyc
+[4.104s] byte-compiling /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg/__init__.py to __init__.cpython-310.pyc
+[4.105s] running install_data
+[4.105s] creating /home/ras4/nuc_ws/install/arm_pkg/share/ament_index
+[4.106s] creating /home/ras4/nuc_ws/install/arm_pkg/share/ament_index/resource_index
+[4.106s] creating /home/ras4/nuc_ws/install/arm_pkg/share/ament_index/resource_index/packages
+[4.107s] copying resource/arm_pkg -> /home/ras4/nuc_ws/install/arm_pkg/share/ament_index/resource_index/packages
+[4.107s] copying package.xml -> /home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg
+[4.108s] creating /home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/launch
+[4.108s] copying launch/arm.launch.py -> /home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/launch
+[4.109s] running install_egg_info
+[4.116s] Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info
+[4.121s] running install_scripts
+[4.204s] Installing clicked_point_subscriber script to /home/ras4/nuc_ws/install/arm_pkg/lib/arm_pkg
+[4.205s] writing list of installed files to '/home/ras4/nuc_ws/build/arm_pkg/install.log'
+[4.331s] Invoked command in '/home/ras4/nuc_ws/src/arm_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.001387] (-) JobUnselected: {'identifier': 'arm_pkg'}
+[0.001648] (-) JobUnselected: {'identifier': 'camera_pkg'}
+[0.001776] (-) JobUnselected: {'identifier': 'odometry_pkg'}
+[0.001961] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002232] (-) JobUnselected: {'identifier': 'xbox_control_pkg'}
+[0.002818] (-) EventReactorShutdown: {}

@@ -1,0 +1,1507 @@
+[0.000000] (-) TimerEvent: {}
+[0.001180] (arm_pkg) JobQueued: {'identifier': 'arm_pkg', 'dependencies': OrderedDict()}
+[0.001304] (astra_camera_msgs) JobQueued: {'identifier': 'astra_camera_msgs', 'dependencies': OrderedDict()}
+[0.001386] (camera_pkg) JobQueued: {'identifier': 'camera_pkg', 'dependencies': OrderedDict()}
+[0.001463] (odometry_pkg) JobQueued: {'identifier': 'odometry_pkg', 'dependencies': OrderedDict()}
+[0.001540] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.001617] (xbox_control_pkg) JobQueued: {'identifier': 'xbox_control_pkg', 'dependencies': OrderedDict()}
+[0.001692] (astra_camera) JobQueued: {'identifier': 'astra_camera', 'dependencies': OrderedDict([('astra_camera_msgs', '/home/ras4/nuc_ws/src/install/astra_camera_msgs')])}
+[0.001777] (arm_pkg) JobStarted: {'identifier': 'arm_pkg'}
+[0.098963] (-) TimerEvent: {}
+[0.199575] (-) TimerEvent: {}
+[0.300224] (-) TimerEvent: {}
+[0.400873] (-) TimerEvent: {}
+[0.501502] (-) TimerEvent: {}
+[0.602134] (-) TimerEvent: {}
+[0.702766] (-) TimerEvent: {}
+[0.803429] (-) TimerEvent: {}
+[0.904029] (-) TimerEvent: {}
+[1.004646] (-) TimerEvent: {}
+[1.105278] (-) TimerEvent: {}
+[1.206159] (-) TimerEvent: {}
+[1.307195] (-) TimerEvent: {}
+[1.408144] (-) TimerEvent: {}
+[1.509309] (-) TimerEvent: {}
+[1.610042] (-) TimerEvent: {}
+[1.710686] (-) TimerEvent: {}
+[1.811307] (-) TimerEvent: {}
+[1.911979] (-) TimerEvent: {}
+[2.012603] (-) TimerEvent: {}
+[2.113229] (-) TimerEvent: {}
+[2.213862] (-) TimerEvent: {}
+[2.314521] (-) TimerEvent: {}
+[2.415147] (-) TimerEvent: {}
+[2.515771] (-) TimerEvent: {}
+[2.616412] (-) TimerEvent: {}
+[2.717159] (-) TimerEvent: {}
+[2.817787] (-) TimerEvent: {}
+[2.918585] (-) TimerEvent: {}
+[2.962204] (arm_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/arm_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/src/build/arm_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/src/build/arm_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/arm_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4/nuc_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '2179', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W3G262', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/src/build/arm_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/src/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs'}, 'shell': False}
+[3.018766] (-) TimerEvent: {}
+[3.119444] (-) TimerEvent: {}
+[3.220115] (-) TimerEvent: {}
+[3.320780] (-) TimerEvent: {}
+[3.421757] (-) TimerEvent: {}
+[3.522445] (-) TimerEvent: {}
+[3.623082] (-) TimerEvent: {}
+[3.723718] (-) TimerEvent: {}
+[3.824352] (-) TimerEvent: {}
+[3.924997] (-) TimerEvent: {}
+[4.025604] (-) TimerEvent: {}
+[4.093483] (arm_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.097022] (arm_pkg) StdoutLine: {'line': b'writing ../build/arm_pkg/arm_pkg.egg-info/PKG-INFO\n'}
+[4.098887] (arm_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt\n'}
+[4.099881] (arm_pkg) StdoutLine: {'line': b'writing entry points to ../build/arm_pkg/arm_pkg.egg-info/entry_points.txt\n'}
+[4.100750] (arm_pkg) StdoutLine: {'line': b'writing requirements to ../build/arm_pkg/arm_pkg.egg-info/requires.txt\n'}
+[4.101348] (arm_pkg) StdoutLine: {'line': b'writing top-level names to ../build/arm_pkg/arm_pkg.egg-info/top_level.txt\n'}
+[4.109166] (arm_pkg) StdoutLine: {'line': b"reading manifest file '../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[4.113515] (arm_pkg) StdoutLine: {'line': b"writing manifest file '../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[4.114279] (arm_pkg) StdoutLine: {'line': b'running build\n'}
+[4.114804] (arm_pkg) StdoutLine: {'line': b'running build_py\n'}
+[4.117268] (arm_pkg) StdoutLine: {'line': b'running install\n'}
+[4.118589] (arm_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[4.125472] (arm_pkg) StdoutLine: {'line': b'running install_data\n'}
+[4.125998] (-) TimerEvent: {}
+[4.127348] (arm_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.135145] (arm_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.136910] (arm_pkg) StdoutLine: {'line': b'Copying ../build/arm_pkg/arm_pkg.egg-info to /home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info\n'}
+[4.142718] (arm_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[4.226181] (-) TimerEvent: {}
+[4.230360] (arm_pkg) StdoutLine: {'line': b'Installing clicked_point_subscriber script to /home/ras4/nuc_ws/src/install/arm_pkg/lib/arm_pkg\n'}
+[4.232630] (arm_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/src/build/arm_pkg/install.log'\n"}
+[4.326443] (-) TimerEvent: {}
+[4.349302] (arm_pkg) CommandEnded: {'returncode': 0}
+[4.417809] (arm_pkg) JobEnded: {'identifier': 'arm_pkg', 'rc': 0}
+[4.422642] (astra_camera_msgs) JobStarted: {'identifier': 'astra_camera_msgs'}
+[4.427134] (-) TimerEvent: {}
+[4.461841] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'cmake'}
+[4.467024] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'build'}
+[4.470191] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras4/nuc_ws/src/build/astra_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ras4/nuc_ws/src/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4/nuc_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W3G262'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/src/build/astra_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[4.527403] (-) TimerEvent: {}
+[4.628309] (-) TimerEvent: {}
+[4.729338] (-) TimerEvent: {}
+[4.830196] (-) TimerEvent: {}
+[4.931222] (-) TimerEvent: {}
+[5.002358] (astra_camera_msgs) StdoutLine: {'line': b'[  1%] Built target astra_camera_msgs__cpp\n'}
+[5.031355] (-) TimerEvent: {}
+[5.095761] (astra_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target astra_camera_msgs__rosidl_generator_c\n'}
+[5.126828] (astra_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_astra_camera_msgs\n'}
+[5.131583] (-) TimerEvent: {}
+[5.196014] (astra_camera_msgs) StdoutLine: {'line': b'[ 24%] Built target astra_camera_msgs__rosidl_typesupport_cpp\n'}
+[5.211006] (astra_camera_msgs) StdoutLine: {'line': b'[ 35%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.231793] (-) TimerEvent: {}
+[5.278342] (astra_camera_msgs) StdoutLine: {'line': b'[ 47%] Built target astra_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.304847] (astra_camera_msgs) StdoutLine: {'line': b'[ 58%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.332009] (-) TimerEvent: {}
+[5.345003] (astra_camera_msgs) StdoutLine: {'line': b'[ 70%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[5.357687] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs__rosidl_typesupport_c\n'}
+[5.432232] (-) TimerEvent: {}
+[5.458302] (astra_camera_msgs) StdoutLine: {'line': b'[ 82%] Built target astra_camera_msgs\n'}
+[5.532427] (-) TimerEvent: {}
+[5.566237] (astra_camera_msgs) StdoutLine: {'line': b'[ 83%] Built target astra_camera_msgs__py\n'}
+[5.632849] (-) TimerEvent: {}
+[5.709806] (astra_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target astra_camera_msgs__rosidl_generator_py\n'}
+[5.733056] (-) TimerEvent: {}
+[5.834431] (-) TimerEvent: {}
+[5.839991] (astra_camera_msgs) StdoutLine: {'line': b'[ 95%] Built target astra_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[5.843971] (astra_camera_msgs) StdoutLine: {'line': b'[ 97%] Built target astra_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.846326] (astra_camera_msgs) StdoutLine: {'line': b'[100%] Built target astra_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.934556] (-) TimerEvent: {}
+[6.035398] (-) TimerEvent: {}
+[6.136030] (-) TimerEvent: {}
+[6.236666] (-) TimerEvent: {}
+[6.337310] (-) TimerEvent: {}
+[6.438017] (-) TimerEvent: {}
+[6.527939] (astra_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.531572] (astra_camera_msgs) StdoutLine: {'line': b'writing astra_camera_msgs.egg-info/PKG-INFO\n'}
+[6.532647] (astra_camera_msgs) StdoutLine: {'line': b'writing dependency_links to astra_camera_msgs.egg-info/dependency_links.txt\n'}
+[6.533777] (astra_camera_msgs) StdoutLine: {'line': b'writing top-level names to astra_camera_msgs.egg-info/top_level.txt\n'}
+[6.538145] (-) TimerEvent: {}
+[6.544490] (astra_camera_msgs) StdoutLine: {'line': b"reading manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[6.548346] (astra_camera_msgs) StdoutLine: {'line': b"writing manifest file 'astra_camera_msgs.egg-info/SOURCES.txt'\n"}
+[6.638366] (-) TimerEvent: {}
+[6.683228] (astra_camera_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_astra_camera_msgs_egg\n'}
+[6.733310] (astra_camera_msgs) CommandEnded: {'returncode': 0}
+[6.737422] (astra_camera_msgs) JobProgress: {'identifier': 'astra_camera_msgs', 'progress': 'install'}
+[6.740170] (-) TimerEvent: {}
+[6.776567] (astra_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ras4/nuc_ws/src/build/astra_camera_msgs'], 'cwd': '/home/ras4/nuc_ws/src/build/astra_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4/nuc_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W3G262'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/src/build/astra_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[6.816652] (astra_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.819548] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/astra_camera_msgs\n'}
+[6.820733] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.821634] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.822657] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.823946] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.h\n'}
+[6.824509] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.h\n'}
+[6.825075] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.h\n'}
+[6.825622] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.c\n'}
+[6.826426] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.h\n'}
+[6.826911] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.h\n'}
+[6.827363] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.h\n'}
+[6.827799] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.c\n'}
+[6.828308] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__functions.c\n'}
+[6.828676] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.h\n'}
+[6.829199] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__functions.h\n'}
+[6.829571] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.h\n'}
+[6.830171] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.h\n'}
+[6.830606] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.h\n'}
+[6.830986] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__functions.c\n'}
+[6.831495] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.h\n'}
+[6.832039] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.h\n'}
+[6.832420] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.h\n'}
+[6.832793] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.h\n'}
+[6.833156] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.h\n'}
+[6.833535] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__functions.h\n'}
+[6.834025] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__functions.c\n'}
+[6.834503] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__functions.c\n'}
+[6.834831] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.h\n'}
+[6.835148] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.h\n'}
+[6.836370] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.h\n'}
+[6.836984] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.h\n'}
+[6.837459] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.h\n'}
+[6.838022] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.h\n'}
+[6.838542] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.h\n'}
+[6.838872] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.839239] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.839656] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.h\n'}
+[6.840045] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.h\n'}
+[6.840459] (-) TimerEvent: {}
+[6.840818] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.h\n'}
+[6.841228] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.841698] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.h\n'}
+[6.842207] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.h\n'}
+[6.842711] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[6.843147] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.h\n'}
+[6.843504] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.c\n'}
+[6.843856] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.c\n'}
+[6.844221] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__functions.c\n'}
+[6.844575] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__functions.h\n'}
+[6.845028] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__functions.h\n'}
+[6.845366] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[6.845763] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[6.846250] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[6.846676] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/library_path.sh\n'}
+[6.846968] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/library_path.dsv\n'}
+[6.849217] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_generator_c.so\n'}
+[6.850524] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.850980] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.851461] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.851988] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.852383] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_c.h\n'}
+[6.852777] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_c.h\n'}
+[6.853180] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_c.h\n'}
+[6.853586] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.853992] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_c.h\n'}
+[6.854453] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.854800] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.855187] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[6.855594] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.855945] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[6.856346] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.859386] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.860825] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.861292] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.861770] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.862299] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_c.h\n'}
+[6.862754] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.c\n'}
+[6.863134] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.c\n'}
+[6.863502] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.c\n'}
+[6.863875] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h\n'}
+[6.864358] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_c.h\n'}
+[6.864754] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.c\n'}
+[6.865137] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_c.h\n'}
+[6.865520] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_c.h\n'}
+[6.866008] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.c\n'}
+[6.866527] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_c.h\n'}
+[6.870729] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.c\n'}
+[6.871917] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.872732] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.873673] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[6.874657] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.c\n'}
+[6.875055] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.c\n'}
+[6.875340] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.c\n'}
+[6.875639] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[6.876054] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[6.876346] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.876754] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.878768] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_c.so\n'}
+[6.879991] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.880604] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.881150] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_string.hpp\n'}
+[6.881625] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_int32.hpp\n'}
+[6.882201] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/set_int32.hpp\n'}
+[6.882686] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_device_info.hpp\n'}
+[6.883027] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_info.hpp\n'}
+[6.883345] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.883846] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.hpp\n'}
+[6.884332] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.hpp\n'}
+[6.884684] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__struct.hpp\n'}
+[6.885177] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__builder.hpp\n'}
+[6.885615] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__traits.hpp\n'}
+[6.886135] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__builder.hpp\n'}
+[6.886510] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__traits.hpp\n'}
+[6.887008] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__struct.hpp\n'}
+[6.887371] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__builder.hpp\n'}
+[6.887793] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__traits.hpp\n'}
+[6.888278] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__builder.hpp\n'}
+[6.888768] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__traits.hpp\n'}
+[6.889200] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__struct.hpp\n'}
+[6.889615] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.hpp\n'}
+[6.889997] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__struct.hpp\n'}
+[6.890474] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__builder.hpp\n'}
+[6.890844] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.hpp\n'}
+[6.891145] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.hpp\n'}
+[6.891585] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__traits.hpp\n'}
+[6.891935] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__builder.hpp\n'}
+[6.892325] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__traits.hpp\n'}
+[6.892595] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.hpp\n'}
+[6.892884] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__struct.hpp\n'}
+[6.893305] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__struct.hpp\n'}
+[6.893598] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/get_camera_params.hpp\n'}
+[6.893984] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.894378] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.894721] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/metadata.hpp\n'}
+[6.895119] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.895412] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[6.895812] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[6.896162] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[6.896596] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__builder.hpp\n'}
+[6.896890] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[6.897335] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__traits.hpp\n'}
+[6.897816] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[6.898257] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[6.898765] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__struct.hpp\n'}
+[6.899072] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[6.899470] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[6.899777] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.hpp\n'}
+[6.900205] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/device_info.hpp\n'}
+[6.900505] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/extrinsics.hpp\n'}
+[6.900897] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.901233] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.901513] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.901935] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.902336] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.902676] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.903030] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/dds_fastrtps\n'}
+[6.903448] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.903788] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.904060] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.904355] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.904658] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.905132] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.905416] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.905669] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/dds_fastrtps\n'}
+[6.906093] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.906448] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.907862] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.909254] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs\n'}
+[6.909686] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv\n'}
+[6.910091] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail\n'}
+[6.910530] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.910969] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.911405] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__type_support.cpp\n'}
+[6.911871] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.912262] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.912636] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_string__type_support.cpp\n'}
+[6.913151] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_params__type_support.cpp\n'}
+[6.913548] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.913960] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__type_support.cpp\n'}
+[6.914378] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_camera_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.914804] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/set_int32__type_support.cpp\n'}
+[6.915251] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/srv/detail/get_int32__type_support.cpp\n'}
+[6.915628] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg\n'}
+[6.915926] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail\n'}
+[6.916349] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__type_support.cpp\n'}
+[6.916747] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.917185] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__type_support.cpp\n'}
+[6.917528] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.918023] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.918478] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/include/astra_camera_msgs/astra_camera_msgs/msg/detail/device_info__type_support.cpp\n'}
+[6.921397] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.925216] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[6.926512] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/pythonpath.sh\n'}
+[6.927074] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/pythonpath.dsv\n'}
+[6.927517] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info\n'}
+[6.928039] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/PKG-INFO\n'}
+[6.929431] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/top_level.txt\n'}
+[6.930722] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[6.932079] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs-1.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[6.933598] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs\n'}
+[6.934764] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.935284] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv\n'}
+[6.936073] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string.py\n'}
+[6.936500] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params.py\n'}
+[6.936905] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32_s.c\n'}
+[6.937281] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32_s.c\n'}
+[6.937781] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info.py\n'}
+[6.938293] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_int32.py\n'}
+[6.938707] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/__init__.py\n'}
+[6.939040] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_string_s.c\n'}
+[6.939491] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info.py\n'}
+[6.939829] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_set_int32.py\n'}
+[6.940149] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_device_info_s.c\n'}
+[6.940631] (-) TimerEvent: {}
+[6.940998] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_info_s.c\n'}
+[6.941430] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv/_get_camera_params_s.c\n'}
+[6.941965] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg\n'}
+[6.942506] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics_s.c\n'}
+[6.942961] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata.py\n'}
+[6.943392] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/__init__.py\n'}
+[6.943742] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info.py\n'}
+[6.944084] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_metadata_s.c\n'}
+[6.944378] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_device_info_s.c\n'}
+[6.944681] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg/_extrinsics.py\n'}
+[6.944981] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.945529] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.945998] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.946455] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.946802] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/__init__.py\n'}
+[6.947129] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/libastra_camera_msgs__rosidl_generator_py.so\n'}
+[6.947518] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/_astra_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[7.040818] (-) TimerEvent: {}
+[7.136275] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs'...\n"}
+[7.137439] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/msg'...\n"}
+[7.138486] (astra_camera_msgs) StdoutLine: {'line': b"Listing '/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/srv'...\n"}
+[7.141138] (-) TimerEvent: {}
+[7.164362] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.168370] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.173898] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages/astra_camera_msgs/astra_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.179131] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/lib/libastra_camera_msgs__rosidl_generator_py.so\n'}
+[7.181627] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/DeviceInfo.idl\n'}
+[7.182506] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/Extrinsics.idl\n'}
+[7.183168] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/Metadata.idl\n'}
+[7.184056] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo.idl\n'}
+[7.184625] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo.idl\n'}
+[7.185367] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams.idl\n'}
+[7.186272] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32.idl\n'}
+[7.186932] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString.idl\n'}
+[7.187466] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32.idl\n'}
+[7.187982] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/DeviceInfo.msg\n'}
+[7.189039] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/Extrinsics.msg\n'}
+[7.189846] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/msg/Metadata.msg\n'}
+[7.190472] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo.srv\n'}
+[7.191181] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo_Request.msg\n'}
+[7.191650] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetDeviceInfo_Response.msg\n'}
+[7.192122] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo.srv\n'}
+[7.192553] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo_Request.msg\n'}
+[7.192915] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraInfo_Response.msg\n'}
+[7.193355] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams.srv\n'}
+[7.193835] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams_Request.msg\n'}
+[7.194378] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetCameraParams_Response.msg\n'}
+[7.194844] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32.srv\n'}
+[7.195293] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32_Request.msg\n'}
+[7.195877] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetInt32_Response.msg\n'}
+[7.196360] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString.srv\n'}
+[7.196842] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString_Request.msg\n'}
+[7.197284] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/GetString_Response.msg\n'}
+[7.197753] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32.srv\n'}
+[7.198828] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32_Request.msg\n'}
+[7.199640] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/srv/SetInt32_Response.msg\n'}
+[7.200213] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/ament_index/resource_index/package_run_dependencies/astra_camera_msgs\n'}
+[7.202534] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/ament_index/resource_index/parent_prefix_path/astra_camera_msgs\n'}
+[7.203491] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/ament_prefix_path.sh\n'}
+[7.204064] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[7.204445] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/path.sh\n'}
+[7.204896] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/environment/path.dsv\n'}
+[7.205335] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.bash\n'}
+[7.205741] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.sh\n'}
+[7.206198] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.zsh\n'}
+[7.206531] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/local_setup.dsv\n'}
+[7.206956] (astra_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/package.dsv\n'}
+[7.208505] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/ament_index/resource_index/packages/astra_camera_msgs\n'}
+[7.211805] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[7.212436] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.214564] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.215288] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.217483] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.218166] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.220242] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[7.220960] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.223186] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[7.225462] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.226234] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.228602] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.229336] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.231736] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[7.232405] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.234709] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[7.235350] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/export_astra_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.236017] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.236604] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.237280] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.237956] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.238613] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.239239] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.239845] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.240448] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgsConfig.cmake\n'}
+[7.240973] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/cmake/astra_camera_msgsConfig-version.cmake\n'}
+[7.241452] (-) TimerEvent: {}
+[7.241902] (astra_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/astra_camera_msgs/share/astra_camera_msgs/package.xml\n'}
+[7.249984] (astra_camera_msgs) CommandEnded: {'returncode': 0}
+[7.341629] (-) TimerEvent: {}
+[7.345815] (astra_camera_msgs) JobEnded: {'identifier': 'astra_camera_msgs', 'rc': 0}
+[7.350420] (camera_pkg) JobStarted: {'identifier': 'camera_pkg'}
+[7.441819] (-) TimerEvent: {}
+[7.542481] (-) TimerEvent: {}
+[7.643109] (-) TimerEvent: {}
+[7.743756] (-) TimerEvent: {}
+[7.844450] (-) TimerEvent: {}
+[7.945071] (-) TimerEvent: {}
+[8.045753] (-) TimerEvent: {}
+[8.146420] (-) TimerEvent: {}
+[8.247038] (-) TimerEvent: {}
+[8.347698] (-) TimerEvent: {}
+[8.448610] (-) TimerEvent: {}
+[8.549527] (-) TimerEvent: {}
+[8.650295] (-) TimerEvent: {}
+[8.751130] (-) TimerEvent: {}
+[8.851776] (-) TimerEvent: {}
+[8.952440] (-) TimerEvent: {}
+[9.053087] (-) TimerEvent: {}
+[9.153762] (-) TimerEvent: {}
+[9.254473] (-) TimerEvent: {}
+[9.355087] (-) TimerEvent: {}
+[9.455707] (-) TimerEvent: {}
+[9.556333] (-) TimerEvent: {}
+[9.657006] (-) TimerEvent: {}
+[9.757731] (-) TimerEvent: {}
+[9.858417] (-) TimerEvent: {}
+[9.959121] (-) TimerEvent: {}
+[10.059760] (-) TimerEvent: {}
+[10.160605] (-) TimerEvent: {}
+[10.198130] (camera_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/camera_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/src/build/camera_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/src/build/camera_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/camera_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4/nuc_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '2179', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W3G262', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/src/build/camera_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/src/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs'}, 'shell': False}
+[10.260782] (-) TimerEvent: {}
+[10.361490] (-) TimerEvent: {}
+[10.462189] (-) TimerEvent: {}
+[10.562824] (-) TimerEvent: {}
+[10.663482] (-) TimerEvent: {}
+[10.764130] (-) TimerEvent: {}
+[10.864736] (-) TimerEvent: {}
+[10.965421] (-) TimerEvent: {}
+[11.066052] (-) TimerEvent: {}
+[11.166683] (-) TimerEvent: {}
+[11.267307] (-) TimerEvent: {}
+[11.280970] (camera_pkg) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead\n"}
+[11.281665] (camera_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[11.330421] (camera_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[11.332958] (camera_pkg) StdoutLine: {'line': b'writing ../build/camera_pkg/camera_pkg.egg-info/PKG-INFO\n'}
+[11.334652] (camera_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/camera_pkg/camera_pkg.egg-info/dependency_links.txt\n'}
+[11.335645] (camera_pkg) StdoutLine: {'line': b'writing entry points to ../build/camera_pkg/camera_pkg.egg-info/entry_points.txt\n'}
+[11.336538] (camera_pkg) StdoutLine: {'line': b'writing requirements to ../build/camera_pkg/camera_pkg.egg-info/requires.txt\n'}
+[11.337186] (camera_pkg) StdoutLine: {'line': b'writing top-level names to ../build/camera_pkg/camera_pkg.egg-info/top_level.txt\n'}
+[11.344793] (camera_pkg) StdoutLine: {'line': b"reading manifest file '../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'\n"}
+[11.349155] (camera_pkg) StdoutLine: {'line': b"writing manifest file '../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'\n"}
+[11.349765] (camera_pkg) StdoutLine: {'line': b'running build\n'}
+[11.350249] (camera_pkg) StdoutLine: {'line': b'running build_py\n'}
+[11.353199] (camera_pkg) StdoutLine: {'line': b'running install\n'}
+[11.354462] (camera_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[11.362607] (camera_pkg) StdoutLine: {'line': b'running install_data\n'}
+[11.364435] (camera_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.367438] (-) TimerEvent: {}
+[11.372329] (camera_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[11.374047] (camera_pkg) StdoutLine: {'line': b'Copying ../build/camera_pkg/camera_pkg.egg-info to /home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info\n'}
+[11.380180] (camera_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[11.467625] (-) TimerEvent: {}
+[11.468276] (camera_pkg) StdoutLine: {'line': b'Installing framepublisher script to /home/ras4/nuc_ws/src/install/camera_pkg/lib/camera_pkg\n'}
+[11.469801] (camera_pkg) StdoutLine: {'line': b'Installing pixel_to_point3d script to /home/ras4/nuc_ws/src/install/camera_pkg/lib/camera_pkg\n'}
+[11.471554] (camera_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/src/build/camera_pkg/install.log'\n"}
+[11.567892] (-) TimerEvent: {}
+[11.588325] (camera_pkg) CommandEnded: {'returncode': 0}
+[11.623658] (camera_pkg) JobEnded: {'identifier': 'camera_pkg', 'rc': 0}
+[11.629069] (odometry_pkg) JobStarted: {'identifier': 'odometry_pkg'}
+[11.668352] (-) TimerEvent: {}
+[11.769349] (-) TimerEvent: {}
+[11.870178] (-) TimerEvent: {}
+[11.971169] (-) TimerEvent: {}
+[12.071828] (-) TimerEvent: {}
+[12.172462] (-) TimerEvent: {}
+[12.273099] (-) TimerEvent: {}
+[12.373730] (-) TimerEvent: {}
+[12.474435] (-) TimerEvent: {}
+[12.575088] (-) TimerEvent: {}
+[12.675755] (-) TimerEvent: {}
+[12.776387] (-) TimerEvent: {}
+[12.877144] (-) TimerEvent: {}
+[12.977978] (-) TimerEvent: {}
+[13.078646] (-) TimerEvent: {}
+[13.179332] (-) TimerEvent: {}
+[13.279992] (-) TimerEvent: {}
+[13.380630] (-) TimerEvent: {}
+[13.481278] (-) TimerEvent: {}
+[13.582055] (-) TimerEvent: {}
+[13.682712] (-) TimerEvent: {}
+[13.783325] (-) TimerEvent: {}
+[13.883961] (-) TimerEvent: {}
+[13.984585] (-) TimerEvent: {}
+[14.085228] (-) TimerEvent: {}
+[14.185953] (-) TimerEvent: {}
+[14.286612] (-) TimerEvent: {}
+[14.387344] (-) TimerEvent: {}
+[14.447307] (odometry_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/odometry_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/src/build/odometry_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/src/build/odometry_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/odometry_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4/nuc_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '2179', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W3G262', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/src/build/odometry_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/src/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs'}, 'shell': False}
+[14.487538] (-) TimerEvent: {}
+[14.588208] (-) TimerEvent: {}
+[14.688898] (-) TimerEvent: {}
+[14.789577] (-) TimerEvent: {}
+[14.890267] (-) TimerEvent: {}
+[14.990916] (-) TimerEvent: {}
+[15.091551] (-) TimerEvent: {}
+[15.192178] (-) TimerEvent: {}
+[15.292789] (-) TimerEvent: {}
+[15.393442] (-) TimerEvent: {}
+[15.494051] (-) TimerEvent: {}
+[15.582819] (odometry_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[15.585613] (odometry_pkg) StdoutLine: {'line': b'writing ../build/odometry_pkg/odometry_pkg.egg-info/PKG-INFO\n'}
+[15.587327] (odometry_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/odometry_pkg/odometry_pkg.egg-info/dependency_links.txt\n'}
+[15.588362] (odometry_pkg) StdoutLine: {'line': b'writing entry points to ../build/odometry_pkg/odometry_pkg.egg-info/entry_points.txt\n'}
+[15.589283] (odometry_pkg) StdoutLine: {'line': b'writing requirements to ../build/odometry_pkg/odometry_pkg.egg-info/requires.txt\n'}
+[15.589885] (odometry_pkg) StdoutLine: {'line': b'writing top-level names to ../build/odometry_pkg/odometry_pkg.egg-info/top_level.txt\n'}
+[15.594193] (-) TimerEvent: {}
+[15.598324] (odometry_pkg) StdoutLine: {'line': b"reading manifest file '../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'\n"}
+[15.602953] (odometry_pkg) StdoutLine: {'line': b"writing manifest file '../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'\n"}
+[15.603540] (odometry_pkg) StdoutLine: {'line': b'running build\n'}
+[15.603936] (odometry_pkg) StdoutLine: {'line': b'running build_py\n'}
+[15.608135] (odometry_pkg) StdoutLine: {'line': b'running install\n'}
+[15.609460] (odometry_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[15.618665] (odometry_pkg) StdoutLine: {'line': b'running install_data\n'}
+[15.619862] (odometry_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.628625] (odometry_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[15.630368] (odometry_pkg) StdoutLine: {'line': b'Copying ../build/odometry_pkg/odometry_pkg.egg-info to /home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info\n'}
+[15.637479] (odometry_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[15.694384] (-) TimerEvent: {}
+[15.724095] (odometry_pkg) StdoutLine: {'line': b'Installing imu_vesc_listener script to /home/ras4/nuc_ws/src/install/odometry_pkg/lib/odometry_pkg\n'}
+[15.725810] (odometry_pkg) StdoutLine: {'line': b'Installing odometry_node script to /home/ras4/nuc_ws/src/install/odometry_pkg/lib/odometry_pkg\n'}
+[15.727654] (odometry_pkg) StdoutLine: {'line': b'Installing rpm_test_publisher script to /home/ras4/nuc_ws/src/install/odometry_pkg/lib/odometry_pkg\n'}
+[15.728531] (odometry_pkg) StdoutLine: {'line': b'Installing rpmtrue_publisher script to /home/ras4/nuc_ws/src/install/odometry_pkg/lib/odometry_pkg\n'}
+[15.730504] (odometry_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/src/build/odometry_pkg/install.log'\n"}
+[15.794663] (-) TimerEvent: {}
+[15.847769] (odometry_pkg) CommandEnded: {'returncode': 0}
+[15.878293] (odometry_pkg) JobEnded: {'identifier': 'odometry_pkg', 'rc': 0}
+[15.882515] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[15.894894] (-) TimerEvent: {}
+[15.924083] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[15.929003] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[15.932272] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras4/nuc_ws/src/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/ras4/nuc_ws/src/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4/nuc_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W3G262'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/src/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[15.995147] (-) TimerEvent: {}
+[16.096110] (-) TimerEvent: {}
+[16.196850] (-) TimerEvent: {}
+[16.276380] (sllidar_ros2) StdoutLine: {'line': b'[ 10%] Built target sllidar_client\n'}
+[16.287920] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_node\n'}
+[16.297045] (-) TimerEvent: {}
+[16.332164] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[16.337452] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[16.338784] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ras4/nuc_ws/src/build/sllidar_ros2'], 'cwd': '/home/ras4/nuc_ws/src/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4/nuc_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W3G262'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/src/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[16.378138] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.378856] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch\n'}
+[16.379889] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py\n'}
+[16.380348] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py\n'}
+[16.380784] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py\n'}
+[16.381213] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[16.381618] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[16.382121] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py\n'}
+[16.382507] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[16.382973] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[16.383371] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py\n'}
+[16.383767] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[16.384128] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[16.384538] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py\n'}
+[16.384872] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[16.385291] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[16.385723] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py\n'}
+[16.386302] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[16.386697] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py\n'}
+[16.387091] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[16.387627] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py\n'}
+[16.388014] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py\n'}
+[16.388443] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[16.388755] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[16.389205] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[16.389620] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py\n'}
+[16.389982] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/rviz\n'}
+[16.390389] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[16.391300] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[16.395235] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[16.396711] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[16.397147] (-) TimerEvent: {}
+[16.397774] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[16.398431] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[16.398967] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[16.399644] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[16.400176] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[16.400700] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[16.401200] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[16.401745] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[16.402385] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[16.402941] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[16.405101] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[16.406095] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.406877] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.407481] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[16.408061] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[16.408772] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/src/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[16.414188] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[16.479078] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[16.483475] (xbox_control_pkg) JobStarted: {'identifier': 'xbox_control_pkg'}
+[16.497677] (-) TimerEvent: {}
+[16.598466] (-) TimerEvent: {}
+[16.699137] (-) TimerEvent: {}
+[16.799766] (-) TimerEvent: {}
+[16.900427] (-) TimerEvent: {}
+[17.001158] (-) TimerEvent: {}
+[17.101767] (-) TimerEvent: {}
+[17.202428] (-) TimerEvent: {}
+[17.303012] (-) TimerEvent: {}
+[17.403634] (-) TimerEvent: {}
+[17.504282] (-) TimerEvent: {}
+[17.604973] (-) TimerEvent: {}
+[17.705740] (-) TimerEvent: {}
+[17.806983] (-) TimerEvent: {}
+[17.907687] (-) TimerEvent: {}
+[18.008379] (-) TimerEvent: {}
+[18.109112] (-) TimerEvent: {}
+[18.209821] (-) TimerEvent: {}
+[18.310494] (-) TimerEvent: {}
+[18.411099] (-) TimerEvent: {}
+[18.511734] (-) TimerEvent: {}
+[18.612359] (-) TimerEvent: {}
+[18.713252] (-) TimerEvent: {}
+[18.814073] (-) TimerEvent: {}
+[18.914740] (-) TimerEvent: {}
+[19.027349] (-) TimerEvent: {}
+[19.128005] (-) TimerEvent: {}
+[19.228833] (-) TimerEvent: {}
+[19.304137] (xbox_control_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/xbox_control_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/src/build/xbox_control_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/src/build/xbox_control_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/xbox_control_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4/nuc_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '2179', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W3G262', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/src/build/xbox_control_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/src/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/astra_camera_msgs'}, 'shell': False}
+[19.328958] (-) TimerEvent: {}
+[19.429619] (-) TimerEvent: {}
+[19.530285] (-) TimerEvent: {}
+[19.630923] (-) TimerEvent: {}
+[19.731622] (-) TimerEvent: {}
+[19.832263] (-) TimerEvent: {}
+[19.932909] (-) TimerEvent: {}
+[20.033544] (-) TimerEvent: {}
+[20.134186] (-) TimerEvent: {}
+[20.234803] (-) TimerEvent: {}
+[20.335428] (-) TimerEvent: {}
+[20.418605] (xbox_control_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[20.421487] (xbox_control_pkg) StdoutLine: {'line': b'writing ../build/xbox_control_pkg/xbox_control_pkg.egg-info/PKG-INFO\n'}
+[20.423335] (xbox_control_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/xbox_control_pkg/xbox_control_pkg.egg-info/dependency_links.txt\n'}
+[20.424354] (xbox_control_pkg) StdoutLine: {'line': b'writing entry points to ../build/xbox_control_pkg/xbox_control_pkg.egg-info/entry_points.txt\n'}
+[20.425277] (xbox_control_pkg) StdoutLine: {'line': b'writing requirements to ../build/xbox_control_pkg/xbox_control_pkg.egg-info/requires.txt\n'}
+[20.426004] (xbox_control_pkg) StdoutLine: {'line': b'writing top-level names to ../build/xbox_control_pkg/xbox_control_pkg.egg-info/top_level.txt\n'}
+[20.435574] (-) TimerEvent: {}
+[20.436489] (xbox_control_pkg) StdoutLine: {'line': b"reading manifest file '../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[20.441044] (xbox_control_pkg) StdoutLine: {'line': b"writing manifest file '../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[20.441688] (xbox_control_pkg) StdoutLine: {'line': b'running build\n'}
+[20.442225] (xbox_control_pkg) StdoutLine: {'line': b'running build_py\n'}
+[20.445280] (xbox_control_pkg) StdoutLine: {'line': b'running install\n'}
+[20.446614] (xbox_control_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[20.454124] (xbox_control_pkg) StdoutLine: {'line': b'byte-compiling /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/control_rizz.py to control_rizz.cpython-310.pyc\n'}
+[20.457050] (xbox_control_pkg) StderrLine: {'line': b'  File "/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/control_rizz.py", line 37\n'}
+[20.457736] (xbox_control_pkg) StderrLine: {'line': b'    )\n'}
+[20.458201] (xbox_control_pkg) StderrLine: {'line': b'    ^\n'}
+[20.458558] (xbox_control_pkg) StderrLine: {'line': b'SyntaxError: positional argument follows keyword argument\n'}
+[20.459046] (xbox_control_pkg) StderrLine: {'line': b'\n'}
+[20.459517] (xbox_control_pkg) StdoutLine: {'line': b'running install_data\n'}
+[20.459873] (xbox_control_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.468127] (xbox_control_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[20.470040] (xbox_control_pkg) StdoutLine: {'line': b'Copying ../build/xbox_control_pkg/xbox_control_pkg.egg-info to /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info\n'}
+[20.475790] (xbox_control_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[20.535732] (-) TimerEvent: {}
+[20.560698] (xbox_control_pkg) StdoutLine: {'line': b'Installing control_rizz_node script to /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[20.562319] (xbox_control_pkg) StdoutLine: {'line': b'Installing xbox_control_node script to /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[20.564428] (xbox_control_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/src/build/xbox_control_pkg/install.log'\n"}
+[20.636148] (-) TimerEvent: {}
+[20.682803] (xbox_control_pkg) CommandEnded: {'returncode': 0}
+[20.713475] (xbox_control_pkg) JobEnded: {'identifier': 'xbox_control_pkg', 'rc': 0}
+[20.717981] (astra_camera) JobStarted: {'identifier': 'astra_camera'}
+[20.736275] (-) TimerEvent: {}
+[20.772490] (astra_camera) JobProgress: {'identifier': 'astra_camera', 'progress': 'cmake'}
+[20.777961] (astra_camera) JobProgress: {'identifier': 'astra_camera', 'progress': 'build'}
+[20.781704] (astra_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras4/nuc_ws/src/build/astra_camera', '--', '-j4', '-l4'], 'cwd': '/home/ras4/nuc_ws/src/build/astra_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ras4/nuc_ws/src/install/astra_camera_msgs/lib:/home/ras4/nuc_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4/nuc_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/src/install:/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/2155,unix/ras4-desktop:/tmp/.ICE-unix/2155'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea1c6780_0cf9_4d6b_8eef_a2b29b83f2fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W3G262'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/src/build/astra_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/src/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/ras4/nuc_ws/src/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/src/install/astra_camera_msgs:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/astra_camera_msgs:/home/ras4/nuc_ws/src/install/sllidar_ros2:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/home/ras4/nuc_ws/src/install/xbox_control_pkg:/home/ras4/nuc_ws/src/install/odometry_pkg:/home/ras4/nuc_ws/src/install/camera_pkg:/home/ras4/nuc_ws/src/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[20.836587] (-) TimerEvent: {}
+[20.937404] (-) TimerEvent: {}
+[21.038223] (-) TimerEvent: {}
+[21.115921] (astra_camera) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o\x1b[0m\n'}
+[21.117827] (astra_camera) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o\x1b[0m\n'}
+[21.138428] (-) TimerEvent: {}
+[21.140940] (astra_camera) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o\x1b[0m\n'}
+[21.141706] (astra_camera) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o\x1b[0m\n'}
+[21.238699] (-) TimerEvent: {}
+[21.339764] (-) TimerEvent: {}
+[21.440685] (-) TimerEvent: {}
+[21.542354] (-) TimerEvent: {}
+[21.643469] (-) TimerEvent: {}
+[21.744442] (-) TimerEvent: {}
+[21.845547] (-) TimerEvent: {}
+[21.947557] (-) TimerEvent: {}
+[22.048671] (-) TimerEvent: {}
+[22.149942] (-) TimerEvent: {}
+[22.252141] (-) TimerEvent: {}
+[22.353485] (-) TimerEvent: {}
+[22.455537] (-) TimerEvent: {}
+[22.556669] (-) TimerEvent: {}
+[22.657796] (-) TimerEvent: {}
+[22.759035] (-) TimerEvent: {}
+[22.860194] (-) TimerEvent: {}
+[22.961875] (-) TimerEvent: {}
+[23.063026] (-) TimerEvent: {}
+[23.164179] (-) TimerEvent: {}
+[23.265299] (-) TimerEvent: {}
+[23.366478] (-) TimerEvent: {}
+[23.467682] (-) TimerEvent: {}
+[23.568935] (-) TimerEvent: {}
+[23.670370] (-) TimerEvent: {}
+[23.772016] (-) TimerEvent: {}
+[23.872765] (-) TimerEvent: {}
+[23.973714] (-) TimerEvent: {}
+[24.075116] (-) TimerEvent: {}
+[24.176349] (-) TimerEvent: {}
+[24.277447] (-) TimerEvent: {}
+[24.378458] (-) TimerEvent: {}
+[24.479265] (-) TimerEvent: {}
+[24.580267] (-) TimerEvent: {}
+[24.681650] (-) TimerEvent: {}
+[24.783360] (-) TimerEvent: {}
+[24.884976] (-) TimerEvent: {}
+[24.986759] (-) TimerEvent: {}
+[25.088090] (-) TimerEvent: {}
+[25.189758] (-) TimerEvent: {}
+[25.291208] (-) TimerEvent: {}
+[25.392518] (-) TimerEvent: {}
+[25.493445] (-) TimerEvent: {}
+[25.594766] (-) TimerEvent: {}
+[25.695506] (-) TimerEvent: {}
+[25.796435] (-) TimerEvent: {}
+[25.897323] (-) TimerEvent: {}
+[25.998499] (-) TimerEvent: {}
+[26.099473] (-) TimerEvent: {}
+[26.200565] (-) TimerEvent: {}
+[26.301728] (-) TimerEvent: {}
+[26.403016] (-) TimerEvent: {}
+[26.503934] (-) TimerEvent: {}
+[26.604991] (-) TimerEvent: {}
+[26.706125] (-) TimerEvent: {}
+[26.807249] (-) TimerEvent: {}
+[26.908431] (-) TimerEvent: {}
+[27.009564] (-) TimerEvent: {}
+[27.111105] (-) TimerEvent: {}
+[27.212141] (-) TimerEvent: {}
+[27.313444] (-) TimerEvent: {}
+[27.414856] (-) TimerEvent: {}
+[27.516149] (-) TimerEvent: {}
+[27.617602] (-) TimerEvent: {}
+[27.718708] (-) TimerEvent: {}
+[27.819888] (-) TimerEvent: {}
+[27.921157] (-) TimerEvent: {}
+[28.022350] (-) TimerEvent: {}
+[28.123558] (-) TimerEvent: {}
+[28.225043] (-) TimerEvent: {}
+[28.326500] (-) TimerEvent: {}
+[28.428037] (-) TimerEvent: {}
+[28.529419] (-) TimerEvent: {}
+[28.630804] (-) TimerEvent: {}
+[28.732377] (-) TimerEvent: {}
+[28.833804] (-) TimerEvent: {}
+[28.935055] (-) TimerEvent: {}
+[29.036465] (-) TimerEvent: {}
+[29.138382] (-) TimerEvent: {}
+[29.239648] (-) TimerEvent: {}
+[29.340855] (-) TimerEvent: {}
+[29.441867] (-) TimerEvent: {}
+[29.543386] (-) TimerEvent: {}
+[29.644822] (-) TimerEvent: {}
+[29.746319] (-) TimerEvent: {}
+[29.847733] (-) TimerEvent: {}
+[29.949014] (-) TimerEvent: {}
+[30.050304] (-) TimerEvent: {}
+[30.151396] (-) TimerEvent: {}
+[30.252586] (-) TimerEvent: {}
+[30.353637] (-) TimerEvent: {}
+[30.454941] (-) TimerEvent: {}
+[30.556203] (-) TimerEvent: {}
+[30.657773] (-) TimerEvent: {}
+[30.758955] (-) TimerEvent: {}
+[30.860215] (-) TimerEvent: {}
+[30.961450] (-) TimerEvent: {}
+[31.062761] (-) TimerEvent: {}
+[31.164073] (-) TimerEvent: {}
+[31.266224] (-) TimerEvent: {}
+[31.367808] (-) TimerEvent: {}
+[31.469112] (-) TimerEvent: {}
+[31.570637] (-) TimerEvent: {}
+[31.672035] (-) TimerEvent: {}
+[31.773428] (-) TimerEvent: {}
+[31.874879] (-) TimerEvent: {}
+[31.976198] (-) TimerEvent: {}
+[32.077714] (-) TimerEvent: {}
+[32.178878] (-) TimerEvent: {}
+[32.280293] (-) TimerEvent: {}
+[32.381692] (-) TimerEvent: {}
+[32.483102] (-) TimerEvent: {}
+[32.584506] (-) TimerEvent: {}
+[32.685966] (-) TimerEvent: {}
+[32.787245] (-) TimerEvent: {}
+[32.888432] (-) TimerEvent: {}
+[32.989579] (-) TimerEvent: {}
+[33.090855] (-) TimerEvent: {}
+[33.192375] (-) TimerEvent: {}
+[33.293656] (-) TimerEvent: {}
+[33.394824] (-) TimerEvent: {}
+[33.497616] (-) TimerEvent: {}
+[33.602592] (-) TimerEvent: {}
+[33.704312] (-) TimerEvent: {}
+[33.805999] (-) TimerEvent: {}
+[33.907469] (-) TimerEvent: {}
+[34.008959] (-) TimerEvent: {}
+[34.110716] (-) TimerEvent: {}
+[34.212845] (-) TimerEvent: {}
+[34.314525] (-) TimerEvent: {}
+[34.416111] (-) TimerEvent: {}
+[34.517481] (-) TimerEvent: {}
+[34.619064] (-) TimerEvent: {}
+[34.720381] (-) TimerEvent: {}
+[34.822034] (-) TimerEvent: {}
+[34.923490] (-) TimerEvent: {}
+[35.024868] (-) TimerEvent: {}
+[35.126160] (-) TimerEvent: {}
+[35.227487] (-) TimerEvent: {}
+[35.328733] (-) TimerEvent: {}
+[35.429892] (-) TimerEvent: {}
+[35.531170] (-) TimerEvent: {}
+[35.632412] (-) TimerEvent: {}
+[35.733744] (-) TimerEvent: {}
+[35.834897] (-) TimerEvent: {}
+[35.935972] (-) TimerEvent: {}
+[36.036882] (-) TimerEvent: {}
+[36.137891] (-) TimerEvent: {}
+[36.239581] (-) TimerEvent: {}
+[36.340771] (-) TimerEvent: {}
+[36.442085] (-) TimerEvent: {}
+[36.543265] (-) TimerEvent: {}
+[36.644473] (-) TimerEvent: {}
+[36.745622] (-) TimerEvent: {}
+[36.846751] (-) TimerEvent: {}
+[36.947869] (-) TimerEvent: {}
+[37.049056] (-) TimerEvent: {}
+[37.150150] (-) TimerEvent: {}
+[37.251159] (-) TimerEvent: {}
+[37.352289] (-) TimerEvent: {}
+[37.453401] (-) TimerEvent: {}
+[37.554535] (-) TimerEvent: {}
+[37.655710] (-) TimerEvent: {}
+[37.756766] (-) TimerEvent: {}
+[37.857900] (-) TimerEvent: {}
+[37.959075] (-) TimerEvent: {}
+[38.060257] (-) TimerEvent: {}
+[38.161499] (-) TimerEvent: {}
+[38.262617] (-) TimerEvent: {}
+[38.363670] (-) TimerEvent: {}
+[38.464907] (-) TimerEvent: {}
+[38.566014] (-) TimerEvent: {}
+[38.667174] (-) TimerEvent: {}
+[38.768225] (-) TimerEvent: {}
+[38.869259] (-) TimerEvent: {}
+[38.970253] (-) TimerEvent: {}
+[39.071371] (-) TimerEvent: {}
+[39.172705] (-) TimerEvent: {}
+[39.273991] (-) TimerEvent: {}
+[39.375173] (-) TimerEvent: {}
+[39.476291] (-) TimerEvent: {}
+[39.577319] (-) TimerEvent: {}
+[39.678403] (-) TimerEvent: {}
+[39.779769] (-) TimerEvent: {}
+[39.880953] (-) TimerEvent: {}
+[39.982113] (-) TimerEvent: {}
+[40.083332] (-) TimerEvent: {}
+[40.184471] (-) TimerEvent: {}
+[40.285655] (-) TimerEvent: {}
+[40.386992] (-) TimerEvent: {}
+[40.488198] (-) TimerEvent: {}
+[40.589344] (-) TimerEvent: {}
+[40.690526] (-) TimerEvent: {}
+[40.791547] (-) TimerEvent: {}
+[40.892708] (-) TimerEvent: {}
+[40.993898] (-) TimerEvent: {}
+[41.094939] (-) TimerEvent: {}
+[41.195984] (-) TimerEvent: {}
+[41.297504] (-) TimerEvent: {}
+[41.399345] (-) TimerEvent: {}
+[41.501153] (-) TimerEvent: {}
+[41.602141] (-) TimerEvent: {}
+[41.703201] (-) TimerEvent: {}
+[41.804359] (-) TimerEvent: {}
+[41.905508] (-) TimerEvent: {}
+[42.006750] (-) TimerEvent: {}
+[42.107811] (-) TimerEvent: {}
+[42.209060] (-) TimerEvent: {}
+[42.310368] (-) TimerEvent: {}
+[42.411809] (-) TimerEvent: {}
+[42.514280] (-) TimerEvent: {}
+[42.615634] (-) TimerEvent: {}
+[42.716714] (-) TimerEvent: {}
+[42.817756] (-) TimerEvent: {}
+[42.918930] (-) TimerEvent: {}
+[43.020106] (-) TimerEvent: {}
+[43.121220] (-) TimerEvent: {}
+[43.222355] (-) TimerEvent: {}
+[43.323494] (-) TimerEvent: {}
+[43.424850] (-) TimerEvent: {}
+[43.526965] (-) TimerEvent: {}
+[43.628113] (-) TimerEvent: {}
+[43.729375] (-) TimerEvent: {}
+[43.830909] (-) TimerEvent: {}
+[43.932042] (-) TimerEvent: {}
+[44.033154] (-) TimerEvent: {}
+[44.134291] (-) TimerEvent: {}
+[44.235407] (-) TimerEvent: {}
+[44.336522] (-) TimerEvent: {}
+[44.437502] (-) TimerEvent: {}
+[44.538586] (-) TimerEvent: {}
+[44.639564] (-) TimerEvent: {}
+[44.740501] (-) TimerEvent: {}
+[44.841538] (-) TimerEvent: {}
+[44.944669] (-) TimerEvent: {}
+[45.045657] (-) TimerEvent: {}
+[45.150290] (-) TimerEvent: {}
+[45.251319] (-) TimerEvent: {}
+[45.352349] (-) TimerEvent: {}
+[45.457167] (-) TimerEvent: {}
+[45.558171] (-) TimerEvent: {}
+[45.659442] (-) TimerEvent: {}
+[45.761146] (-) TimerEvent: {}
+[45.862394] (-) TimerEvent: {}
+[45.963500] (-) TimerEvent: {}
+[46.064595] (-) TimerEvent: {}
+[46.165613] (-) TimerEvent: {}
+[46.266614] (-) TimerEvent: {}
+[46.367714] (-) TimerEvent: {}
+[46.473622] (-) TimerEvent: {}
+[46.579413] (-) TimerEvent: {}
+[46.680499] (-) TimerEvent: {}
+[46.781607] (-) TimerEvent: {}
+[46.882757] (-) TimerEvent: {}
+[46.983792] (-) TimerEvent: {}
+[47.092609] (-) TimerEvent: {}
+[47.193851] (-) TimerEvent: {}
+[47.295121] (-) TimerEvent: {}
+[47.396335] (-) TimerEvent: {}
+[47.497437] (-) TimerEvent: {}
+[47.598784] (-) TimerEvent: {}
+[47.700082] (-) TimerEvent: {}
+[47.801219] (-) TimerEvent: {}
+[47.902540] (-) TimerEvent: {}
+[48.003778] (-) TimerEvent: {}
+[48.105057] (-) TimerEvent: {}
+[48.206397] (-) TimerEvent: {}
+[48.307654] (-) TimerEvent: {}
+[48.408632] (-) TimerEvent: {}
+[48.509729] (-) TimerEvent: {}
+[48.620545] (-) TimerEvent: {}
+[48.721719] (-) TimerEvent: {}
+[48.822936] (-) TimerEvent: {}
+[48.924057] (-) TimerEvent: {}
+[49.025170] (-) TimerEvent: {}
+[49.132513] (-) TimerEvent: {}
+[49.233684] (-) TimerEvent: {}
+[49.334894] (-) TimerEvent: {}
+[49.436133] (-) TimerEvent: {}
+[49.539881] (-) TimerEvent: {}
+[49.641063] (-) TimerEvent: {}
+[49.742117] (-) TimerEvent: {}
+[49.843403] (-) TimerEvent: {}
+[49.945741] (-) TimerEvent: {}
+[50.058936] (-) TimerEvent: {}
+[50.160541] (-) TimerEvent: {}
+[50.262021] (-) TimerEvent: {}
+[50.363130] (-) TimerEvent: {}
+[50.464335] (-) TimerEvent: {}
+[50.565421] (-) TimerEvent: {}
+[50.666445] (-) TimerEvent: {}
+[50.767695] (-) TimerEvent: {}
+[50.868856] (-) TimerEvent: {}
+[50.975818] (-) TimerEvent: {}
+[51.084377] (-) TimerEvent: {}
+[51.185665] (-) TimerEvent: {}
+[51.291952] (-) TimerEvent: {}
+[51.393216] (-) TimerEvent: {}
+[51.506642] (-) TimerEvent: {}
+[51.607686] (-) TimerEvent: {}
+[51.708765] (-) TimerEvent: {}
+[51.809777] (-) TimerEvent: {}
+[51.910821] (-) TimerEvent: {}
+[52.014183] (-) TimerEvent: {}
+[52.115108] (-) TimerEvent: {}
+[52.216098] (-) TimerEvent: {}
+[52.317143] (-) TimerEvent: {}
+[52.418109] (-) TimerEvent: {}
+[52.519082] (-) TimerEvent: {}
+[52.620101] (-) TimerEvent: {}
+[52.721265] (-) TimerEvent: {}
+[52.822480] (-) TimerEvent: {}
+[52.923672] (-) TimerEvent: {}
+[53.024828] (-) TimerEvent: {}
+[53.125978] (-) TimerEvent: {}
+[53.227293] (-) TimerEvent: {}
+[53.328478] (-) TimerEvent: {}
+[53.429602] (-) TimerEvent: {}
+[53.530767] (-) TimerEvent: {}
+[53.632464] (-) TimerEvent: {}
+[53.734031] (-) TimerEvent: {}
+[53.835619] (-) TimerEvent: {}
+[53.937411] (-) TimerEvent: {}
+[54.039247] (-) TimerEvent: {}
+[54.141045] (-) TimerEvent: {}
+[54.243037] (-) TimerEvent: {}
+[54.344601] (-) TimerEvent: {}
+[54.446394] (-) TimerEvent: {}
+[54.547815] (-) TimerEvent: {}
+[54.649311] (-) TimerEvent: {}
+[54.750944] (-) TimerEvent: {}
+[54.853017] (-) TimerEvent: {}
+[54.954738] (-) TimerEvent: {}
+[55.056560] (-) TimerEvent: {}
+[55.158344] (-) TimerEvent: {}
+[55.259866] (-) TimerEvent: {}
+[55.361457] (-) TimerEvent: {}
+[55.463134] (-) TimerEvent: {}
+[55.564497] (-) TimerEvent: {}
+[55.666152] (-) TimerEvent: {}
+[55.767826] (-) TimerEvent: {}
+[55.869626] (-) TimerEvent: {}
+[55.971170] (-) TimerEvent: {}
+[56.072728] (-) TimerEvent: {}
+[56.174453] (-) TimerEvent: {}
+[56.276067] (-) TimerEvent: {}
+[56.377882] (-) TimerEvent: {}
+[56.479524] (-) TimerEvent: {}
+[56.580985] (-) TimerEvent: {}
+[56.682760] (-) TimerEvent: {}
+[56.784353] (-) TimerEvent: {}
+[56.885338] (-) TimerEvent: {}
+[56.986453] (-) TimerEvent: {}
+[57.087627] (-) TimerEvent: {}
+[57.189069] (-) TimerEvent: {}
+[57.306577] (-) TimerEvent: {}
+[57.408437] (-) TimerEvent: {}
+[57.510196] (-) TimerEvent: {}
+[57.612055] (-) TimerEvent: {}
+[57.714180] (-) TimerEvent: {}
+[57.815662] (-) TimerEvent: {}
+[57.917357] (-) TimerEvent: {}
+[58.018741] (-) TimerEvent: {}
+[58.120918] (-) TimerEvent: {}
+[58.222983] (-) TimerEvent: {}
+[58.325251] (-) TimerEvent: {}
+[58.427103] (-) TimerEvent: {}
+[58.528575] (-) TimerEvent: {}
+[58.630118] (-) TimerEvent: {}
+[58.731622] (-) TimerEvent: {}
+[58.833123] (-) TimerEvent: {}
+[58.934572] (-) TimerEvent: {}
+[59.036052] (-) TimerEvent: {}
+[59.137577] (-) TimerEvent: {}
+[59.239149] (-) TimerEvent: {}
+[59.340725] (-) TimerEvent: {}
+[59.443031] (-) TimerEvent: {}
+[59.558231] (-) TimerEvent: {}
+[59.659196] (-) TimerEvent: {}
+[59.760334] (-) TimerEvent: {}
+[59.861441] (-) TimerEvent: {}
+[59.962784] (-) TimerEvent: {}
+[60.063743] (-) TimerEvent: {}
+[60.165195] (-) TimerEvent: {}
+[60.266748] (-) TimerEvent: {}
+[60.368369] (-) TimerEvent: {}
+[60.469970] (-) TimerEvent: {}
+[60.571815] (-) TimerEvent: {}
+[60.673592] (-) TimerEvent: {}
+[60.775061] (-) TimerEvent: {}
+[60.876552] (-) TimerEvent: {}
+[60.978106] (-) TimerEvent: {}
+[61.079570] (-) TimerEvent: {}
+[61.181191] (-) TimerEvent: {}
+[61.282160] (-) TimerEvent: {}
+[61.383683] (-) TimerEvent: {}
+[61.485284] (-) TimerEvent: {}
+[61.586896] (-) TimerEvent: {}
+[61.688120] (-) TimerEvent: {}
+[61.789555] (-) TimerEvent: {}
+[61.891055] (-) TimerEvent: {}
+[61.992072] (-) TimerEvent: {}
+[62.093310] (-) TimerEvent: {}
+[62.194843] (-) TimerEvent: {}
+[62.296368] (-) TimerEvent: {}
+[62.397902] (-) TimerEvent: {}
+[62.499516] (-) TimerEvent: {}
+[62.600646] (-) TimerEvent: {}
+[62.710130] (-) TimerEvent: {}
+[62.815704] (-) TimerEvent: {}
+[62.917571] (-) TimerEvent: {}
+[63.019353] (-) TimerEvent: {}
+[63.122180] (-) TimerEvent: {}
+[63.224716] (-) TimerEvent: {}
+[63.334228] (-) TimerEvent: {}
+[63.437781] (-) TimerEvent: {}
+[63.539221] (-) TimerEvent: {}
+[63.640183] (-) TimerEvent: {}
+[63.741599] (-) TimerEvent: {}
+[63.842827] (-) TimerEvent: {}
+[63.944003] (-) TimerEvent: {}
+[64.045321] (-) TimerEvent: {}
+[64.146844] (-) TimerEvent: {}
+[64.254779] (-) TimerEvent: {}
+[64.360037] (-) TimerEvent: {}
+[64.461605] (-) TimerEvent: {}
+[64.562994] (-) TimerEvent: {}
+[64.664190] (-) TimerEvent: {}
+[64.765209] (-) TimerEvent: {}
+[64.866130] (-) TimerEvent: {}
+[64.967147] (-) TimerEvent: {}
+[65.068051] (-) TimerEvent: {}
+[65.169067] (-) TimerEvent: {}
+[65.270120] (-) TimerEvent: {}
+[65.371666] (-) TimerEvent: {}
+[65.473127] (-) TimerEvent: {}
+[65.574577] (-) TimerEvent: {}
+[65.676452] (-) TimerEvent: {}
+[65.786142] (-) TimerEvent: {}
+[65.889908] (-) TimerEvent: {}
+[65.999883] (-) TimerEvent: {}
+[66.101556] (-) TimerEvent: {}
+[66.203014] (-) TimerEvent: {}
+[66.304537] (-) TimerEvent: {}
+[66.414154] (-) TimerEvent: {}
+[66.518174] (-) TimerEvent: {}
+[66.622295] (-) TimerEvent: {}
+[66.723821] (-) TimerEvent: {}
+[66.825275] (-) TimerEvent: {}
+[66.926964] (-) TimerEvent: {}
+[67.028677] (-) TimerEvent: {}
+[67.130206] (-) TimerEvent: {}
+[67.231659] (-) TimerEvent: {}
+[67.333156] (-) TimerEvent: {}
+[67.434552] (-) TimerEvent: {}
+[67.536016] (-) TimerEvent: {}
+[67.637372] (-) TimerEvent: {}
+[67.738375] (-) TimerEvent: {}
+[67.839359] (-) TimerEvent: {}
+[67.940301] (-) TimerEvent: {}
+[68.041212] (-) TimerEvent: {}
+[68.142432] (-) TimerEvent: {}
+[68.243716] (-) TimerEvent: {}
+[68.344764] (-) TimerEvent: {}
+[68.445746] (-) TimerEvent: {}
+[68.547242] (-) TimerEvent: {}
+[68.648982] (-) TimerEvent: {}
+[68.750318] (-) TimerEvent: {}
+[68.852127] (-) TimerEvent: {}
+[68.953779] (-) TimerEvent: {}
+[69.055821] (-) TimerEvent: {}
+[69.156800] (-) TimerEvent: {}
+[69.257963] (-) TimerEvent: {}
+[69.362065] (-) TimerEvent: {}
+[69.463407] (-) TimerEvent: {}
+[69.564619] (-) TimerEvent: {}
+[69.666395] (-) TimerEvent: {}
+[69.768159] (-) TimerEvent: {}
+[69.870409] (-) TimerEvent: {}
+[69.972167] (-) TimerEvent: {}
+[70.073961] (-) TimerEvent: {}
+[70.175609] (-) TimerEvent: {}
+[70.276727] (-) TimerEvent: {}
+[70.378098] (-) TimerEvent: {}
+[70.479034] (-) TimerEvent: {}
+[70.586115] (-) TimerEvent: {}
+[70.694248] (-) TimerEvent: {}
+[70.795439] (-) TimerEvent: {}
+[70.896868] (-) TimerEvent: {}
+[70.998047] (-) TimerEvent: {}
+[71.099689] (-) TimerEvent: {}
+[71.201226] (-) TimerEvent: {}
+[71.302871] (-) TimerEvent: {}
+[71.404621] (-) TimerEvent: {}
+[71.506086] (-) TimerEvent: {}
+[71.607477] (-) TimerEvent: {}
+[71.718243] (-) TimerEvent: {}
+[71.834142] (-) TimerEvent: {}
+[71.935713] (-) TimerEvent: {}
+[72.037010] (-) TimerEvent: {}
+[72.138259] (-) TimerEvent: {}
+[72.239761] (-) TimerEvent: {}
+[72.341316] (-) TimerEvent: {}
+[72.442614] (-) TimerEvent: {}
+[72.544185] (-) TimerEvent: {}
+[72.645224] (-) TimerEvent: {}
+[72.746197] (-) TimerEvent: {}
+[72.847505] (-) TimerEvent: {}
+[72.948787] (-) TimerEvent: {}
+[73.049619] (-) TimerEvent: {}
+[73.151175] (-) TimerEvent: {}
+[73.252111] (-) TimerEvent: {}
+[73.353603] (-) TimerEvent: {}
+[73.454620] (-) TimerEvent: {}
+[73.556057] (-) TimerEvent: {}
+[73.657564] (-) TimerEvent: {}
+[73.758642] (-) TimerEvent: {}
+[73.859702] (-) TimerEvent: {}
+[73.960667] (-) TimerEvent: {}
+[74.061592] (-) TimerEvent: {}
+[74.162783] (-) TimerEvent: {}
+[74.263701] (-) TimerEvent: {}
+[75.118839] (-) TimerEvent: {}
+[75.220123] (-) TimerEvent: {}
+[75.321164] (-) TimerEvent: {}
+[75.422535] (-) TimerEvent: {}
+[75.523565] (-) TimerEvent: {}
+[75.624714] (-) TimerEvent: {}
+[75.725948] (-) TimerEvent: {}
+[75.826771] (-) TimerEvent: {}
+[75.927860] (-) TimerEvent: {}
+[76.029070] (-) TimerEvent: {}
+[76.130415] (-) TimerEvent: {}
+[76.231397] (-) TimerEvent: {}
+[76.332606] (-) TimerEvent: {}
+[76.433680] (-) TimerEvent: {}
+[76.534880] (-) TimerEvent: {}
+[76.636374] (-) TimerEvent: {}
+[76.737820] (-) TimerEvent: {}
+[76.839249] (-) TimerEvent: {}
+[76.940536] (-) TimerEvent: {}
+[77.041552] (-) TimerEvent: {}
+[77.142444] (-) TimerEvent: {}
+[77.243804] (-) TimerEvent: {}
+[77.345745] (-) TimerEvent: {}
+[77.446756] (-) TimerEvent: {}
+[77.548131] (-) TimerEvent: {}
+[77.649458] (-) TimerEvent: {}
+[77.750732] (-) TimerEvent: {}
+[77.851999] (-) TimerEvent: {}
+[77.953318] (-) TimerEvent: {}
+[78.054486] (-) TimerEvent: {}
+[78.155597] (-) TimerEvent: {}
+[79.481231] (-) TimerEvent: {}
+[79.582624] (-) TimerEvent: {}
+[79.683912] (-) TimerEvent: {}
+[79.785204] (-) TimerEvent: {}
+[79.886554] (-) TimerEvent: {}
+[79.988095] (-) TimerEvent: {}
+[80.089323] (-) TimerEvent: {}
+[80.190569] (-) TimerEvent: {}
+[80.291771] (-) TimerEvent: {}
+[80.392970] (-) TimerEvent: {}
+[80.493959] (-) TimerEvent: {}
+[80.594832] (-) TimerEvent: {}
+[80.695853] (-) TimerEvent: {}
+[80.797480] (-) TimerEvent: {}
+[80.898800] (-) TimerEvent: {}
+[81.000071] (-) TimerEvent: {}
+[81.101470] (-) TimerEvent: {}
+[81.202989] (-) TimerEvent: {}
+[81.304531] (-) TimerEvent: {}
+[81.406247] (-) TimerEvent: {}
+[81.507464] (-) TimerEvent: {}
+[81.609070] (-) TimerEvent: {}
+[81.710769] (-) TimerEvent: {}
+[81.812134] (-) TimerEvent: {}
+[81.913122] (-) TimerEvent: {}
+[82.014113] (-) TimerEvent: {}
+[82.115113] (-) TimerEvent: {}
+[82.216156] (-) TimerEvent: {}
+[82.317858] (-) TimerEvent: {}
+[82.419045] (-) TimerEvent: {}
+[82.520293] (-) TimerEvent: {}
+[82.621556] (-) TimerEvent: {}
+[82.722716] (-) TimerEvent: {}
+[82.823494] (-) TimerEvent: {}
+[82.924294] (-) TimerEvent: {}
+[83.025565] (-) TimerEvent: {}
+[83.126810] (-) TimerEvent: {}
+[83.228106] (-) TimerEvent: {}
+[83.329251] (-) TimerEvent: {}
+[83.430476] (-) TimerEvent: {}
+[83.531798] (-) TimerEvent: {}
+[83.633084] (-) TimerEvent: {}
+[83.734196] (-) TimerEvent: {}
+[83.835362] (-) TimerEvent: {}
+[83.936479] (-) TimerEvent: {}
+[84.037585] (-) TimerEvent: {}
+[84.138820] (-) TimerEvent: {}
+[84.239875] (-) TimerEvent: {}
+[84.340782] (-) TimerEvent: {}
+[84.441656] (-) TimerEvent: {}
+[84.542878] (-) TimerEvent: {}
+[84.654095] (-) TimerEvent: {}
+[84.754926] (-) TimerEvent: {}
+[84.856327] (-) TimerEvent: {}
+[84.957735] (-) TimerEvent: {}
+[85.059341] (-) TimerEvent: {}
+[85.160485] (-) TimerEvent: {}
+[85.261335] (-) TimerEvent: {}
+[85.362204] (-) TimerEvent: {}
+[85.463509] (-) TimerEvent: {}
+[85.564876] (-) TimerEvent: {}
+[85.666098] (-) TimerEvent: {}
+[85.767136] (-) TimerEvent: {}
+[85.868398] (-) TimerEvent: {}
+[85.969314] (-) TimerEvent: {}
+[86.071044] (-) TimerEvent: {}
+[86.173406] (-) TimerEvent: {}
+[86.274632] (-) TimerEvent: {}
+[86.376036] (-) TimerEvent: {}
+[86.477117] (-) TimerEvent: {}
+[86.578353] (-) TimerEvent: {}
+[86.679465] (-) TimerEvent: {}
+[86.780357] (-) TimerEvent: {}
+[86.881433] (-) TimerEvent: {}
+[86.982178] (-) TimerEvent: {}
+[87.082961] (-) TimerEvent: {}
+[87.184111] (-) TimerEvent: {}
+[87.285338] (-) TimerEvent: {}
+[87.386642] (-) TimerEvent: {}
+[87.487944] (-) TimerEvent: {}
+[87.589084] (-) TimerEvent: {}
+[87.690211] (-) TimerEvent: {}
+[87.791358] (-) TimerEvent: {}
+[87.892251] (-) TimerEvent: {}
+[87.993097] (-) TimerEvent: {}
+[88.102143] (-) TimerEvent: {}
+[88.210733] (-) TimerEvent: {}
+[88.311788] (-) TimerEvent: {}
+[88.412762] (-) TimerEvent: {}
+[88.514193] (-) TimerEvent: {}
+[88.615280] (-) TimerEvent: {}
+[88.716140] (-) TimerEvent: {}
+[88.817241] (-) TimerEvent: {}
+[88.918438] (-) TimerEvent: {}
+[89.019528] (-) TimerEvent: {}
+[89.120525] (-) TimerEvent: {}
+[89.221666] (-) TimerEvent: {}
+[89.322957] (-) TimerEvent: {}
+[89.424127] (-) TimerEvent: {}
+[89.525299] (-) TimerEvent: {}
+[89.626738] (-) TimerEvent: {}
+[89.728034] (-) TimerEvent: {}
+[89.829218] (-) TimerEvent: {}
+[89.930103] (-) TimerEvent: {}
+[90.031264] (-) TimerEvent: {}
+[90.132376] (-) TimerEvent: {}
+[90.233383] (-) TimerEvent: {}
+[90.334560] (-) TimerEvent: {}
+[90.435821] (-) TimerEvent: {}
+[90.537134] (-) TimerEvent: {}
+[90.638319] (-) TimerEvent: {}
+[90.739627] (-) TimerEvent: {}
+[90.840656] (-) TimerEvent: {}
+[90.941723] (-) TimerEvent: {}
+[91.043171] (-) TimerEvent: {}
+[91.144453] (-) TimerEvent: {}
+[91.245511] (-) TimerEvent: {}
+[91.346786] (-) TimerEvent: {}
+[91.447887] (-) TimerEvent: {}
+[91.548971] (-) TimerEvent: {}
+[91.650094] (-) TimerEvent: {}
+[91.751288] (-) TimerEvent: {}
+[91.852355] (-) TimerEvent: {}
+[91.953559] (-) TimerEvent: {}
+[92.054734] (-) TimerEvent: {}
+[92.155886] (-) TimerEvent: {}
+[92.257076] (-) TimerEvent: {}
+[92.358135] (-) TimerEvent: {}
+[92.459045] (-) TimerEvent: {}
+[92.560033] (-) TimerEvent: {}
+[92.661244] (-) TimerEvent: {}
+[92.762571] (-) TimerEvent: {}
+[92.863954] (-) TimerEvent: {}
+[92.964948] (-) TimerEvent: {}
+[93.066206] (-) TimerEvent: {}
+[93.167178] (-) TimerEvent: {}
+[93.268630] (-) TimerEvent: {}
+[93.370620] (-) TimerEvent: {}
+[93.471886] (-) TimerEvent: {}
+[93.573182] (-) TimerEvent: {}
+[93.674089] (-) TimerEvent: {}
+[93.775805] (-) TimerEvent: {}
+[93.877044] (-) TimerEvent: {}
+[93.978269] (-) TimerEvent: {}
+[94.079222] (-) TimerEvent: {}
+[94.180894] (-) TimerEvent: {}
+[94.283058] (-) TimerEvent: {}
+[94.384486] (-) TimerEvent: {}
+[94.485440] (-) TimerEvent: {}
+[94.586319] (-) TimerEvent: {}
+[94.687661] (-) TimerEvent: {}
+[94.789437] (-) TimerEvent: {}
+[94.890740] (-) TimerEvent: {}
+[94.991740] (-) TimerEvent: {}
+[95.092655] (-) TimerEvent: {}
+[95.193670] (-) TimerEvent: {}
+[95.294585] (-) TimerEvent: {}
+[95.395615] (-) TimerEvent: {}
+[95.496788] (-) TimerEvent: {}
+[95.597610] (-) TimerEvent: {}
+[95.698544] (-) TimerEvent: {}
+[95.799792] (-) TimerEvent: {}
+[95.900522] (-) TimerEvent: {}
+[96.001415] (-) TimerEvent: {}
+[96.102604] (-) TimerEvent: {}
+[96.203484] (-) TimerEvent: {}
+[96.304348] (-) TimerEvent: {}
+[96.405297] (-) TimerEvent: {}
+[96.506316] (-) TimerEvent: {}
+[96.607147] (-) TimerEvent: {}
+[96.708654] (-) TimerEvent: {}
+[96.809640] (-) TimerEvent: {}
+[96.910790] (-) TimerEvent: {}
+[97.012091] (-) TimerEvent: {}
+[97.113282] (-) TimerEvent: {}
+[97.214148] (-) TimerEvent: {}
+[97.315330] (-) TimerEvent: {}
+[97.416455] (-) TimerEvent: {}
+[97.517504] (-) TimerEvent: {}
+[97.619216] (-) TimerEvent: {}
+[97.720389] (-) TimerEvent: {}
+[97.821706] (-) TimerEvent: {}
+[97.923075] (-) TimerEvent: {}
+[98.024686] (-) TimerEvent: {}
+[98.126512] (-) TimerEvent: {}
+[98.228045] (-) TimerEvent: {}
+[98.329127] (-) TimerEvent: {}
+[98.430383] (-) TimerEvent: {}
+[98.531591] (-) TimerEvent: {}
+[98.632655] (-) TimerEvent: {}
+[98.734670] (-) TimerEvent: {}
+[98.835642] (-) TimerEvent: {}
+[98.936659] (-) TimerEvent: {}
+[99.037832] (-) TimerEvent: {}
+[99.139244] (-) TimerEvent: {}
+[99.240532] (-) TimerEvent: {}
+[99.341571] (-) TimerEvent: {}
+[99.442867] (-) TimerEvent: {}
+[99.544053] (-) TimerEvent: {}
+[99.645027] (-) TimerEvent: {}
+[99.745901] (-) TimerEvent: {}
+[99.847262] (-) TimerEvent: {}
+[99.948337] (-) TimerEvent: {}
+[100.049431] (-) TimerEvent: {}
+[100.150543] (-) TimerEvent: {}
+[100.251535] (-) TimerEvent: {}
+[100.352529] (-) TimerEvent: {}
+[100.453475] (-) TimerEvent: {}
+[100.554557] (-) TimerEvent: {}
+[100.655664] (-) TimerEvent: {}
+[100.756686] (-) TimerEvent: {}
+[100.857667] (-) TimerEvent: {}
+[100.959256] (-) TimerEvent: {}
+[101.060806] (-) TimerEvent: {}
+[101.162562] (-) TimerEvent: {}
+[101.263675] (-) TimerEvent: {}
+[101.364918] (-) TimerEvent: {}
+[101.465886] (-) TimerEvent: {}
+[101.566892] (-) TimerEvent: {}
+[101.668050] (-) TimerEvent: {}
+[101.769187] (-) TimerEvent: {}
+[101.870296] (-) TimerEvent: {}
+[101.971317] (-) TimerEvent: {}
+[102.072473] (-) TimerEvent: {}
+[102.173583] (-) TimerEvent: {}
+[102.274849] (-) TimerEvent: {}
+[102.376026] (-) TimerEvent: {}
+[102.477132] (-) TimerEvent: {}

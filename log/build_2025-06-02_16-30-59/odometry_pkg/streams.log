@@ -1,0 +1,52 @@
+[2.715s] Invoking command in '/home/ras4/nuc_ws/src/odometry_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[3.813s] running egg_info
+[3.815s] creating ../../build/odometry_pkg/odometry_pkg.egg-info
+[3.816s] writing ../../build/odometry_pkg/odometry_pkg.egg-info/PKG-INFO
+[3.817s] writing dependency_links to ../../build/odometry_pkg/odometry_pkg.egg-info/dependency_links.txt
+[3.818s] writing entry points to ../../build/odometry_pkg/odometry_pkg.egg-info/entry_points.txt
+[3.818s] writing requirements to ../../build/odometry_pkg/odometry_pkg.egg-info/requires.txt
+[3.819s] writing top-level names to ../../build/odometry_pkg/odometry_pkg.egg-info/top_level.txt
+[3.820s] writing manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[3.827s] reading manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[3.830s] writing manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[3.831s] running build
+[3.832s] running build_py
+[3.832s] creating /home/ras4/nuc_ws/build/odometry_pkg/build
+[3.833s] creating /home/ras4/nuc_ws/build/odometry_pkg/build/lib
+[3.833s] creating /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.834s] copying odometry_pkg/controller.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.834s] copying odometry_pkg/rpmtrue_publisher.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.836s] copying odometry_pkg/__init__.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.836s] copying odometry_pkg/odometry_node.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.838s] copying odometry_pkg/efk.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.839s] copying odometry_pkg/utils.py -> /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg
+[3.841s] running install
+[3.842s] running install_lib
+[3.846s] creating /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.846s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/controller.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.847s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/rpmtrue_publisher.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.848s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/__init__.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.849s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/odometry_node.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.850s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/efk.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.850s] copying /home/ras4/nuc_ws/build/odometry_pkg/build/lib/odometry_pkg/utils.py -> /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg
+[3.853s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/controller.py to controller.cpython-310.pyc
+[3.856s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/rpmtrue_publisher.py to rpmtrue_publisher.cpython-310.pyc
+[3.859s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/__init__.py to __init__.cpython-310.pyc
+[3.860s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/odometry_node.py to odometry_node.cpython-310.pyc
+[3.866s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/efk.py to efk.cpython-310.pyc
+[3.868s] byte-compiling /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg/utils.py to utils.cpython-310.pyc
+[3.873s] running install_data
+[3.873s] creating /home/ras4/nuc_ws/install/odometry_pkg/share/ament_index
+[3.874s] creating /home/ras4/nuc_ws/install/odometry_pkg/share/ament_index/resource_index
+[3.874s] creating /home/ras4/nuc_ws/install/odometry_pkg/share/ament_index/resource_index/packages
+[3.874s] copying resource/odometry_pkg -> /home/ras4/nuc_ws/install/odometry_pkg/share/ament_index/resource_index/packages
+[3.875s] copying package.xml -> /home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg
+[3.875s] running install_egg_info
+[3.882s] Copying ../../build/odometry_pkg/odometry_pkg.egg-info to /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info
+[3.888s] running install_scripts
+[3.969s] Installing imu_vesc_listener script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[3.969s] Installing odometry_node script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[3.970s] Installing rpm_test_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[3.970s] Installing rpmtrue_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[3.973s] writing list of installed files to '/home/ras4/nuc_ws/build/odometry_pkg/install.log'
+[4.101s] Invoked command in '/home/ras4/nuc_ws/src/odometry_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data

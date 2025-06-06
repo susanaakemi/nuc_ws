@@ -1,0 +1,24 @@
+[2.856s] Invoking command in '/home/ras4/nuc_ws/src/camera_pkg': PYTHONPATH=/home/ras4/nuc_ws/src/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pkg build --build-base /home/ras4/nuc_ws/src/build/camera_pkg/build install --record /home/ras4/nuc_ws/src/build/camera_pkg/install.log --single-version-externally-managed install_data
+[3.931s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+[3.931s]   warnings.warn(
+[3.980s] running egg_info
+[3.982s] writing ../build/camera_pkg/camera_pkg.egg-info/PKG-INFO
+[3.984s] writing dependency_links to ../build/camera_pkg/camera_pkg.egg-info/dependency_links.txt
+[3.985s] writing entry points to ../build/camera_pkg/camera_pkg.egg-info/entry_points.txt
+[3.986s] writing requirements to ../build/camera_pkg/camera_pkg.egg-info/requires.txt
+[3.987s] writing top-level names to ../build/camera_pkg/camera_pkg.egg-info/top_level.txt
+[3.994s] reading manifest file '../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.999s] writing manifest file '../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'
+[3.999s] running build
+[4.000s] running build_py
+[4.003s] running install
+[4.004s] running install_lib
+[4.012s] running install_data
+[4.014s] running install_egg_info
+[4.022s] removing '/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info' (and everything under it)
+[4.024s] Copying ../build/camera_pkg/camera_pkg.egg-info to /home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info
+[4.030s] running install_scripts
+[4.118s] Installing framepublisher script to /home/ras4/nuc_ws/src/install/camera_pkg/lib/camera_pkg
+[4.119s] Installing pixel_to_point3d script to /home/ras4/nuc_ws/src/install/camera_pkg/lib/camera_pkg
+[4.121s] writing list of installed files to '/home/ras4/nuc_ws/src/build/camera_pkg/install.log'
+[4.239s] Invoked command in '/home/ras4/nuc_ws/src/camera_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/src/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/src/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pkg build --build-base /home/ras4/nuc_ws/src/build/camera_pkg/build install --record /home/ras4/nuc_ws/src/build/camera_pkg/install.log --single-version-externally-managed install_data

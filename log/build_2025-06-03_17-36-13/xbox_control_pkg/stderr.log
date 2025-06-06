@@ -1,0 +1,5 @@
+  File "/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/xbox_control_node.py", line 37
+    if abs(left_stick_x) < deadzone else left_stick_x
+                                    ^^^^
+SyntaxError: invalid syntax
+

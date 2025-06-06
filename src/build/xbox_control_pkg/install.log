@@ -1,6 +1,8 @@
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/xbox_control_node.py
+/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/control_rizz.py
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/__init__.py
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/__pycache__/xbox_control_node.cpython-310.pyc
+/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/__pycache__/control_rizz.cpython-310.pyc
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/__pycache__/__init__.cpython-310.pyc
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/share/ament_index/resource_index/packages/xbox_control_pkg
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/share/xbox_control_pkg/package.xml
@@ -11,5 +13,5 @@
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info/entry_points.txt
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
-/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/xbox_control_pkg/double_ackermann_control_node
+/home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/xbox_control_pkg/control_rizz_node
 /home/ras4/nuc_ws/src/install/xbox_control_pkg/lib/xbox_control_pkg/xbox_control_node

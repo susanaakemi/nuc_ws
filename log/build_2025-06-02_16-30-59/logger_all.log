@@ -1,0 +1,373 @@
+[0.660s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--executor', 'sequential']
+[0.661s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='sequential', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa4fe7250>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa5120700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa5120700>>)
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.787s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ras4/nuc_ws'
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extension 'ignore'
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extension 'ignore_ament_install'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extensions ['colcon_pkg']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extension 'colcon_pkg'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extensions ['colcon_meta']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extension 'colcon_meta'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extensions ['ros']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_pkg) by extension 'ros'
+[1.877s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_pkg' with type 'ros.ament_python' and name 'arm_pkg'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ignore'
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ignore_ament_install'
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['colcon_pkg']
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'colcon_pkg'
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['colcon_meta']
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'colcon_meta'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extensions ['ros']
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pkg) by extension 'ros'
+[1.887s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_pkg' with type 'ros.ament_python' and name 'camera_pkg'
+[1.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['ignore', 'ignore_ament_install']
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ignore'
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ignore_ament_install'
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['colcon_pkg']
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'colcon_pkg'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['colcon_meta']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'colcon_meta'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['ros']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'ros'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['cmake', 'python']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'cmake'
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'python'
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extensions ['python_setup_py']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/libuvc) by extension 'python_setup_py'
+[1.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[1.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ignore'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ignore_ament_install'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['colcon_pkg']
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'colcon_pkg'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['colcon_meta']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'colcon_meta'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extensions ['ros']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry_pkg) by extension 'ros'
+[1.899s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odometry_pkg' with type 'ros.ament_python' and name 'odometry_pkg'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[1.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[1.905s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extension 'ignore'
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extension 'ignore_ament_install'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extensions ['colcon_pkg']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extension 'colcon_pkg'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extensions ['colcon_meta']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extension 'colcon_meta'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extensions ['ros']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/xbox_control_pkg) by extension 'ros'
+[1.911s] DEBUG:colcon.colcon_core.package_identification:Package 'src/xbox_control_pkg' with type 'ros.ament_python' and name 'xbox_control_pkg'
+[1.911s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.911s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.912s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.016s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.037s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/humble
+[2.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.252s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_args' from command line to 'None'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_target' from command line to 'None'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.253s] Level 5:colcon.colcon_core.verb:set package 'arm_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.253s] DEBUG:colcon.colcon_core.verb:Building package 'arm_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras4/nuc_ws/build/arm_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras4/nuc_ws/install/arm_pkg', 'merge_install': False, 'path': '/home/ras4/nuc_ws/src/arm_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_args' from command line to 'None'
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_target' from command line to 'None'
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.255s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.256s] Level 5:colcon.colcon_core.verb:set package 'camera_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.256s] DEBUG:colcon.colcon_core.verb:Building package 'camera_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras4/nuc_ws/build/camera_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras4/nuc_ws/install/camera_pkg', 'merge_install': False, 'path': '/home/ras4/nuc_ws/src/camera_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_args' from command line to 'None'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_target' from command line to 'None'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.258s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.259s] Level 5:colcon.colcon_core.verb:set package 'odometry_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.259s] DEBUG:colcon.colcon_core.verb:Building package 'odometry_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras4/nuc_ws/build/odometry_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras4/nuc_ws/install/odometry_pkg', 'merge_install': False, 'path': '/home/ras4/nuc_ws/src/odometry_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.260s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.261s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras4/nuc_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras4/nuc_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/ras4/nuc_ws/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_args' from command line to 'None'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_target' from command line to 'None'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.263s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'xbox_control_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.264s] DEBUG:colcon.colcon_core.verb:Building package 'xbox_control_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras4/nuc_ws/build/xbox_control_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras4/nuc_ws/install/xbox_control_pkg', 'merge_install': False, 'path': '/home/ras4/nuc_ws/src/xbox_control_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.264s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[2.268s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'arm_pkg'
+[2.268s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras4/nuc_ws/src/arm_pkg' with build type 'ament_python'
+[2.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_pkg', 'ament_prefix_path')
+[2.289s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/ament_prefix_path.ps1'
+[2.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/ament_prefix_path.dsv'
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/ament_prefix_path.sh'
+[2.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.574s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras4/nuc_ws/src/arm_pkg'
+[3.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/src/arm_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data
+[6.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/src/arm_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data
+[6.622s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg' for CMake module files
+[6.625s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg' for CMake config files
+[6.629s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg/lib'
+[6.631s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg/bin'
+[6.632s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg/lib/pkgconfig/arm_pkg.pc'
+[6.633s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages'
+[6.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_pkg', 'pythonpath')
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/pythonpath.ps1'
+[6.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/pythonpath.dsv'
+[6.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/hook/pythonpath.sh'
+[6.640s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/arm_pkg/bin'
+[6.640s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_pkg)
+[6.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/package.ps1'
+[6.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/package.dsv'
+[6.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/package.sh'
+[6.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/package.bash'
+[6.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/arm_pkg/share/arm_pkg/package.zsh'
+[6.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/arm_pkg/share/colcon-core/packages/arm_pkg)
+[6.663s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'arm_pkg' finished with '0'
+[6.664s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'camera_pkg'
+[6.664s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras4/nuc_ws/src/camera_pkg' with build type 'ament_python'
+[6.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pkg', 'ament_prefix_path')
+[6.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.ps1'
+[6.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.dsv'
+[6.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/ament_prefix_path.sh'
+[6.673s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.673s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.885s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras4/nuc_ws/src/camera_pkg'
+[7.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.886s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/src/camera_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/ras4/nuc_ws/build/camera_pkg/build install --record /home/ras4/nuc_ws/build/camera_pkg/install.log --single-version-externally-managed install_data
+[10.742s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg' for CMake module files
+[10.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/src/camera_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_pkg build --build-base /home/ras4/nuc_ws/build/camera_pkg/build install --record /home/ras4/nuc_ws/build/camera_pkg/install.log --single-version-externally-managed install_data
+[10.745s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg' for CMake config files
+[10.749s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg/lib'
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg/bin'
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg/lib/pkgconfig/camera_pkg.pc'
+[10.752s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages'
+[10.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pkg', 'pythonpath')
+[10.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.ps1'
+[10.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.dsv'
+[10.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/hook/pythonpath.sh'
+[10.762s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/camera_pkg/bin'
+[10.762s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pkg)
+[10.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/package.ps1'
+[10.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/package.dsv'
+[10.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/package.sh'
+[10.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/package.bash'
+[10.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/camera_pkg/share/camera_pkg/package.zsh'
+[10.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/camera_pkg/share/colcon-core/packages/camera_pkg)
+[10.775s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'camera_pkg' finished with '0'
+[10.775s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'odometry_pkg'
+[10.776s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras4/nuc_ws/src/odometry_pkg' with build type 'ament_python'
+[10.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry_pkg', 'ament_prefix_path')
+[10.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.ps1'
+[10.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.dsv'
+[10.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/ament_prefix_path.sh'
+[10.785s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.786s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.013s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras4/nuc_ws/src/odometry_pkg'
+[12.014s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.015s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/src/odometry_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[14.878s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg' for CMake module files
+[14.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/src/odometry_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[14.883s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg' for CMake config files
+[14.888s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg/lib'
+[14.888s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg/bin'
+[14.889s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg/lib/pkgconfig/odometry_pkg.pc'
+[14.890s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages'
+[14.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry_pkg', 'pythonpath')
+[14.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.ps1'
+[14.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.dsv'
+[14.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/hook/pythonpath.sh'
+[14.898s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/odometry_pkg/bin'
+[14.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry_pkg)
+[14.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/package.ps1'
+[14.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/package.dsv'
+[14.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/package.sh'
+[14.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/package.bash'
+[14.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/odometry_pkg/share/odometry_pkg/package.zsh'
+[14.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/odometry_pkg/share/colcon-core/packages/odometry_pkg)
+[14.911s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'odometry_pkg' finished with '0'
+[14.911s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'sllidar_ros2'
+[14.912s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ras4/nuc_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[14.912s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ras4/nuc_ws/src/sllidar_ros2'
+[14.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.913s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ras4/nuc_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ras4/nuc_ws/install/sllidar_ros2
+[23.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ras4/nuc_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ras4/nuc_ws/install/sllidar_ros2
+[23.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ras4/nuc_ws/build/sllidar_ros2 -- -j4 -l4
+[76.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ras4/nuc_ws/build/sllidar_ros2 -- -j4 -l4
+[76.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ras4/nuc_ws/build/sllidar_ros2
+[76.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[76.768s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2' for CMake module files
+[76.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ras4/nuc_ws/build/sllidar_ros2
+[76.773s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2' for CMake config files
+[76.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[76.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[76.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[76.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[76.800s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib'
+[76.801s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/bin'
+[76.801s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[76.805s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[76.806s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/bin'
+[76.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[76.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[76.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[76.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[76.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[76.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[76.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[76.833s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2' for CMake module files
+[76.836s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2' for CMake config files
+[76.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[76.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[76.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[76.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[76.848s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib'
+[76.848s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/bin'
+[76.848s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[76.849s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[76.850s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/sllidar_ros2/bin'
+[76.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[76.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[76.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[76.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[76.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[76.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[76.866s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'sllidar_ros2' finished with '0'
+[76.867s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'xbox_control_pkg'
+[76.867s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras4/nuc_ws/src/xbox_control_pkg' with build type 'ament_python'
+[76.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbox_control_pkg', 'ament_prefix_path')
+[76.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/ament_prefix_path.ps1'
+[76.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/ament_prefix_path.dsv'
+[76.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/ament_prefix_path.sh'
+[76.883s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[76.884s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[78.850s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras4/nuc_ws/src/xbox_control_pkg'
+[78.851s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[78.851s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[80.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras4/nuc_ws/src/xbox_control_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_control_pkg build --build-base /home/ras4/nuc_ws/build/xbox_control_pkg/build install --record /home/ras4/nuc_ws/build/xbox_control_pkg/install.log --single-version-externally-managed install_data
+[81.810s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg' for CMake module files
+[81.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras4/nuc_ws/src/xbox_control_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_control_pkg build --build-base /home/ras4/nuc_ws/build/xbox_control_pkg/build install --record /home/ras4/nuc_ws/build/xbox_control_pkg/install.log --single-version-externally-managed install_data
+[81.813s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg' for CMake config files
+[81.816s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg/lib'
+[81.816s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg/bin'
+[81.817s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/pkgconfig/xbox_control_pkg.pc'
+[81.818s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages'
+[81.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('xbox_control_pkg', 'pythonpath')
+[81.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/pythonpath.ps1'
+[81.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/pythonpath.dsv'
+[81.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/hook/pythonpath.sh'
+[81.826s] Level 1:colcon.colcon_core.environment:checking '/home/ras4/nuc_ws/install/xbox_control_pkg/bin'
+[81.826s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xbox_control_pkg)
+[81.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/package.ps1'
+[81.830s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/package.dsv'
+[81.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/package.sh'
+[81.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/package.bash'
+[81.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras4/nuc_ws/install/xbox_control_pkg/share/xbox_control_pkg/package.zsh'
+[81.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras4/nuc_ws/install/xbox_control_pkg/share/colcon-core/packages/xbox_control_pkg)
+[81.838s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'xbox_control_pkg' finished with '0'
+[81.839s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[81.841s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[81.843s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[81.913s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[81.914s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[81.914s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[82.293s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[82.296s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras4/nuc_ws/install/local_setup.ps1'
+[82.302s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ras4/nuc_ws/install/_local_setup_util_ps1.py'
+[82.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras4/nuc_ws/install/setup.ps1'
+[82.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras4/nuc_ws/install/local_setup.sh'
+[82.323s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ras4/nuc_ws/install/_local_setup_util_sh.py'
+[82.326s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras4/nuc_ws/install/setup.sh'
+[82.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras4/nuc_ws/install/local_setup.bash'
+[82.335s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras4/nuc_ws/install/setup.bash'
+[82.341s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras4/nuc_ws/install/local_setup.zsh'
+[82.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras4/nuc_ws/install/setup.zsh'

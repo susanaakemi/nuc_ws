@@ -1,0 +1,24 @@
+[7.119s] Invoking command in '/home/ras4/nuc_ws/src/odometry_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data
+[8.854s] running egg_info
+[8.858s] writing ../../build/odometry_pkg/odometry_pkg.egg-info/PKG-INFO
+[8.878s] writing dependency_links to ../../build/odometry_pkg/odometry_pkg.egg-info/dependency_links.txt
+[8.878s] writing entry points to ../../build/odometry_pkg/odometry_pkg.egg-info/entry_points.txt
+[8.879s] writing requirements to ../../build/odometry_pkg/odometry_pkg.egg-info/requires.txt
+[8.879s] writing top-level names to ../../build/odometry_pkg/odometry_pkg.egg-info/top_level.txt
+[8.880s] reading manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[8.882s] writing manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'
+[8.883s] running build
+[8.884s] running build_py
+[8.894s] running install
+[8.899s] running install_lib
+[8.914s] running install_data
+[8.916s] running install_egg_info
+[8.937s] removing '/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[8.939s] Copying ../../build/odometry_pkg/odometry_pkg.egg-info to /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info
+[8.948s] running install_scripts
+[9.089s] Installing imu_vesc_listener script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[9.097s] Installing odometry_node script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[9.099s] Installing rpm_test_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[9.102s] Installing rpmtrue_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg
+[9.105s] writing list of installed files to '/home/ras4/nuc_ws/build/odometry_pkg/install.log'
+[9.372s] Invoked command in '/home/ras4/nuc_ws/src/odometry_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odometry_pkg build --build-base /home/ras4/nuc_ws/build/odometry_pkg/build install --record /home/ras4/nuc_ws/build/odometry_pkg/install.log --single-version-externally-managed install_data
