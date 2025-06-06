@@ -69,18 +69,14 @@ class XboxControllerReader(Node):
         # Parámetros geométricos
         width = 0.89     # distancia entre ruedas delanteras
         length = 0.2815  # distancia entre ejes
+       
+        R_int = length / np.tan(abs(delta))  # Radio de giro de la rueda interior
+       
+        R_ext = R_int + width # Radio de giro de la rueda exterior
 
-        # Radio de giro de la rueda interior
-        R_int = length / np.tan(abs(delta))
+        delta_ext = np.arctan(length / R_ext)# Ángulo exterior en radianes
 
-        # Radio de giro de la rueda exterior
-        R_ext = R_int + width
-
-        # Ángulo exterior en radianes
-        delta_ext = np.arctan(length / R_ext)
-
-        # Velocidad de la rueda interior
-        v1 = (R_int / R_ext) * v2
+        v1 = (R_int / R_ext) * v2# Velocidad de la rueda interior
 
         # Signos según giro
         if delta < 0:
