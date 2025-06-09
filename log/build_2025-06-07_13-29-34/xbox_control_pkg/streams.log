@@ -1,0 +1,25 @@
+[4.861s] Invoking command in '/home/ras4/nuc_ws/src/xbox_control_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_control_pkg build --build-base /home/ras4/nuc_ws/build/xbox_control_pkg/build install --record /home/ras4/nuc_ws/build/xbox_control_pkg/install.log --single-version-externally-managed install_data
+[6.075s] running egg_info
+[6.078s] writing ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/PKG-INFO
+[6.081s] writing dependency_links to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/dependency_links.txt
+[6.082s] writing entry points to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/entry_points.txt
+[6.084s] writing requirements to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/requires.txt
+[6.085s] writing top-level names to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/top_level.txt
+[6.098s] reading manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'
+[6.103s] writing manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'
+[6.104s] running build
+[6.105s] running build_py
+[6.108s] copying xbox_control_pkg/xbox_control_node.py -> /home/ras4/nuc_ws/build/xbox_control_pkg/build/lib/xbox_control_pkg
+[6.111s] running install
+[6.113s] running install_lib
+[6.118s] copying /home/ras4/nuc_ws/build/xbox_control_pkg/build/lib/xbox_control_pkg/xbox_control_node.py -> /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg
+[6.123s] byte-compiling /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/xbox_control_node.py to xbox_control_node.cpython-310.pyc
+[6.130s] running install_data
+[6.132s] running install_egg_info
+[6.141s] removing '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[6.144s] Copying ../../build/xbox_control_pkg/xbox_control_pkg.egg-info to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info
+[6.152s] running install_scripts
+[6.258s] Installing control_rizz_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg
+[6.260s] Installing xbox_control_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg
+[6.266s] writing list of installed files to '/home/ras4/nuc_ws/build/xbox_control_pkg/install.log'
+[6.394s] Invoked command in '/home/ras4/nuc_ws/src/xbox_control_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xbox_control_pkg build --build-base /home/ras4/nuc_ws/build/xbox_control_pkg/build install --record /home/ras4/nuc_ws/build/xbox_control_pkg/install.log --single-version-externally-managed install_data

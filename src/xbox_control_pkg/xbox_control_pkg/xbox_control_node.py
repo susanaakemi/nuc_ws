@@ -4,28 +4,31 @@ from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32MultiArray
 import time
-# import serial  
+import can
+# import serial
 
 class XboxControllerReader(Node):
     def __init__(self):
         super().__init__('Xbox_controller_reader')
         self.subscription = self.create_subscription(Joy, '/joy', self.joy_callback, 10)
         self.rpm_publisher = self.create_publisher(Float32MultiArray, '/target_rpms', 10)
-        # self.serial_port = serial.Serial('/dev/ttyACM1', 115200, timeout=1)
         self.get_logger().info("Serial communication disabled for testing")
+        self.can_bus = can.interface.Bus(interface='socketcan', channel='can0', bitrate=250000)
 
-    def define_rpms(self, delta, v2, v1):
-        rpm_exterior = (v2 / (np.pi * 0.24)) * 60
-        rpm_interior = (v1 / (np.pi * 0.24)) * 60
-        if delta > 0:
-            rpm_left = rpm_interior
-            rpm_right = rpm_exterior
-        elif delta < 0:
-            rpm_left = rpm_exterior
-            rpm_right = rpm_interior
+    def define_wheel_rpms(self, steering_angle_rad, outer_wheel_speed, inner_wheel_speed):
+        rpm_outer = (outer_wheel_speed / (np.pi * 0.24)) * 60
+        rpm_inner = (inner_wheel_speed / (np.pi * 0.24)) * 60
+
+        if steering_angle_rad > 0:
+            rpm_left = rpm_inner
+            rpm_right = rpm_outer
+        elif steering_angle_rad < 0:
+            rpm_left = rpm_outer
+            rpm_right = rpm_inner
         else:
-            rpm_left = rpm_right = rpm_exterior
-        self.send_rpm([rpm_left, -rpm_right, rpm_left, -rpm_right])
+            rpm_left = rpm_right = rpm_outer
+
+        self.send_rpm_commands([rpm_left, -rpm_right, rpm_left, -rpm_right])
 
     def map_range(self, value, in_min, in_max, out_min, out_max):
         return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
@@ -34,78 +37,85 @@ class XboxControllerReader(Node):
         left_stick_x = msg.axes[0]
         deadzone = 0.1
         left_stick_x = 0.0 if abs(left_stick_x) < deadzone else left_stick_x
-        steering_angle_deg = self.map_range(left_stick_x, -1, 1, -90, 90)
+        steering_deg = self.map_range(left_stick_x, -1, 1, -90, 90)
 
-        lt = msg.axes[5] if len(msg.axes) > 5 else 0.0
-        rt = msg.axes[4] if len(msg.axes) > 4 else 0.0
+        left_trigger = msg.axes[5] if len(msg.axes) > 5 else 0.0
+        right_trigger = msg.axes[4] if len(msg.axes) > 4 else 0.0
 
-        lt_mapped = self.map_range(lt, -1, 1, -50, 0)
-        rt_mapped = self.map_range(rt, -1, 1, 50, 0)
+        reverse_speed = self.map_range(left_trigger, -1, 1, -50, 0)
+        forward_speed = self.map_range(right_trigger, -1, 1, 50, 0)
 
-        if rt_mapped != 0:
-            lt_mapped = 0
-        elif lt_mapped != 0:
-            rt_mapped = 0
+        if forward_speed != 0:
+            reverse_speed = 0
+        elif reverse_speed != 0:
+            forward_speed = 0
 
-        outer_speed = rt_mapped + lt_mapped
-        v2 = (np.pi * 0.24 * outer_speed) / 60
+        total_speed = forward_speed + reverse_speed
+        outer_wheel_speed = (np.pi * 0.24 * total_speed) / 60
 
-        delta = np.radians(steering_angle_deg)
-        front_ackermann_angle, v1 = self.angulo_ackermann(delta, v2)
+        steering_rad = np.radians(steering_deg)
+        front_steering_angle_rad, inner_wheel_speed = self.calculate_ackermann_steering(steering_rad, outer_wheel_speed)
 
-        self.get_logger().info(f"LT: {lt}, RT: {rt}")  # temporal
+        self.get_logger().info(f"LT: {left_trigger}, RT: {right_trigger}")
         self.get_logger().info(
-            f'[FRONT] Input steering angle: {steering_angle_deg:.2f}° | '
-            f'Ackermann angle: {np.degrees(front_ackermann_angle):.2f}° | '
-            f'Outer speed: {outer_speed:.2f} | Inner speed: {v1:.2f}'
+            f'[FRONT] Joystick steering: {steering_deg:.2f}° | '
+            f'Ackermann angle: {np.degrees(front_steering_angle_rad):.2f}° | '
+            f'Outer speed: {total_speed:.2f} | Inner speed: { (inner_wheel_speed / (np.pi * 0.24)) * 60:.2f}'
         )
 
-    def angulo_ackermann(self, delta, v2):
-        if abs(delta) < 1e-3:
-            self.send_angles([0.0, 0.0, 0.0, 0.0])
-            self.define_rpms(0.0, v2, v2)
-            return 0.0, v2
+    def calculate_ackermann_steering(self, steering_rad, outer_wheel_speed):
+        if abs(steering_rad) < np.radians(2):
+            self.send_steering_angles([0.0, 0.0, 0.0, 0.0])
+            self.define_wheel_rpms(0.0, outer_wheel_speed, outer_wheel_speed)
+            return 0.0, outer_wheel_speed
 
-        # Parámetros geométricos
-        width = 0.89     # distancia entre ruedas delanteras
-        length = 0.2815  # distancia entre ejes
-       
-        R_int = length / np.tan(abs(delta))  # Radio de giro de la rueda interior
-       
-        R_ext = R_int + width # Radio de giro de la rueda exterior
+        track_width = 0.89
+        wheelbase = 0.2815
 
-        delta_ext = np.arctan(length / R_ext)# Ángulo exterior en radianes
+        inner_turn_radius = wheelbase / np.tan(abs(steering_rad))
+        outer_turn_radius = inner_turn_radius + track_width
+        outer_wheel_angle_rad = np.arctan(wheelbase / outer_turn_radius)
+        inner_wheel_speed = (inner_turn_radius / outer_turn_radius) * outer_wheel_speed
 
-        v1 = (R_int / R_ext) * v2# Velocidad de la rueda interior
-
-        # Signos según giro
-        if delta < 0:
-            # Giro hacia la izquierda: rueda interior es derecha
-            angles = [-delta_ext, -delta, delta_ext, delta]
+        if steering_rad < 0:
+            angles = [-outer_wheel_angle_rad, -steering_rad, outer_wheel_angle_rad, steering_rad]
         else:
-            # Giro hacia la derecha: rueda interior es izquierda
-            angles = [delta, delta_ext, -delta, -delta_ext]
+            angles = [steering_rad, outer_wheel_angle_rad, -steering_rad, -outer_wheel_angle_rad]
 
-        self.send_angles(angles)
-        self.define_rpms(delta, v2, v1)
-        return delta_ext, v1
+        self.send_steering_angles(angles)
+        self.define_wheel_rpms(steering_rad, outer_wheel_speed, inner_wheel_speed)
+        return outer_wheel_angle_rad, inner_wheel_speed
 
-    def send_angles(self, angles):
-        angles4 = f"D1:{angles[0]};D2:{angles[1]};D3:{angles[2]};D4:{angles[3]}"
-        self.get_logger().info(f"(DEBUG) Would send angles: {angles4}")
-        # Desactivado para pruebas sin serial
-        # try:
-        #     self.serial_port.write(angles4.encode('UTF-8'))
-        #     self.get_logger().info(f"Sent over shared serial (4 angles): {angles4.strip()}")
-        #     time.sleep(0.05)
-        # except serial.SerialException as e:
-        #     self.get_logger().error(f"Serial write failed: {e}")
+    def send_steering_angles(self, angles):
+        formatted = f"D1:{angles[0]};D2:{angles[1]};D3:{angles[2]};D4:{angles[3]}"
+        self.get_logger().info(f"(DEBUG) Would send angles: {formatted}")
 
-    def send_rpm(self, rpms):
-        msg = Float32MultiArray()
-        msg.data = rpms
-        self.rpm_publisher.publish(msg)
-        self.get_logger().info(f"Published RPMs: {rpms}")
+    def send_rpm_commands(self, rpm_values):
+        device_ids = [1, 2, 3, 4]
+        try:
+            for i, rpm in enumerate(rpm_values):
+                device_id = device_ids[i]
+                can_id = 0x300 | device_id
+
+                set_value = int(rpm * 30)
+                data = [
+                    (set_value >> 24) & 0xFF,
+                    (set_value >> 16) & 0xFF,
+                    (set_value >> 8) & 0xFF,
+                    set_value & 0xFF
+                ]
+
+                msg = can.Message(
+                    arbitration_id=can_id,
+                    data=data,
+                    is_extended_id=False
+                )
+
+                self.can_bus.send(msg)
+                print(f"Sent RPM {rpm} to device {device_id} (CAN ID {hex(can_id)})")
+
+        except can.CanError:
+            print("Failed to send RPMs")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -116,4 +126,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

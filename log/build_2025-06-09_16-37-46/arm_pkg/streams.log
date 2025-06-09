@@ -1,0 +1,21 @@
+[18.265s] Invoking command in '/home/ras4/nuc_ws/src/arm_pkg': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data
+[22.851s] running egg_info
+[22.888s] writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO
+[22.891s] writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt
+[22.894s] writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt
+[22.896s] writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt
+[22.900s] writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt
+[22.926s] reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[22.941s] writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'
+[22.942s] running build
+[22.943s] running build_py
+[22.946s] running install
+[22.957s] running install_lib
+[22.987s] running install_data
+[22.988s] running install_egg_info
+[22.992s] removing '/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[23.002s] Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info
+[23.044s] running install_scripts
+[23.451s] Installing clicked_point_subscriber script to /home/ras4/nuc_ws/install/arm_pkg/lib/arm_pkg
+[23.457s] writing list of installed files to '/home/ras4/nuc_ws/build/arm_pkg/install.log'
+[23.919s] Invoked command in '/home/ras4/nuc_ws/src/arm_pkg' returned '0': PYTHONPATH=/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arm_pkg build --build-base /home/ras4/nuc_ws/build/arm_pkg/build install --record /home/ras4/nuc_ws/build/arm_pkg/install.log --single-version-externally-managed install_data

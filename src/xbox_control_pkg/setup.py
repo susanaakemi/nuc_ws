@@ -11,7 +11,7 @@ setup(
          ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools','python-can'],
     zip_safe=True,
     maintainer='TU_NOMBRE',
     maintainer_email='TU_CORREO@EXAMPLE.COM',

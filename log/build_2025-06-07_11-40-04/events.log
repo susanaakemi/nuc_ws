@@ -1,0 +1,314 @@
+[0.000000] (-) TimerEvent: {}
+[0.000783] (arm_pkg) JobQueued: {'identifier': 'arm_pkg', 'dependencies': OrderedDict()}
+[0.001804] (camera_pkg) JobQueued: {'identifier': 'camera_pkg', 'dependencies': OrderedDict()}
+[0.001899] (odometry_pkg) JobQueued: {'identifier': 'odometry_pkg', 'dependencies': OrderedDict()}
+[0.001976] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.002049] (xbox_control_pkg) JobQueued: {'identifier': 'xbox_control_pkg', 'dependencies': OrderedDict()}
+[0.002125] (arm_pkg) JobStarted: {'identifier': 'arm_pkg'}
+[0.046716] (camera_pkg) JobStarted: {'identifier': 'camera_pkg'}
+[0.080361] (odometry_pkg) JobStarted: {'identifier': 'odometry_pkg'}
+[0.099284] (-) TimerEvent: {}
+[0.117455] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.199466] (-) TimerEvent: {}
+[0.300240] (-) TimerEvent: {}
+[0.400990] (-) TimerEvent: {}
+[0.501733] (-) TimerEvent: {}
+[0.602399] (-) TimerEvent: {}
+[0.703103] (-) TimerEvent: {}
+[0.803782] (-) TimerEvent: {}
+[0.904498] (-) TimerEvent: {}
+[1.005160] (-) TimerEvent: {}
+[1.105857] (-) TimerEvent: {}
+[1.206559] (-) TimerEvent: {}
+[1.307315] (-) TimerEvent: {}
+[1.408432] (-) TimerEvent: {}
+[1.509285] (-) TimerEvent: {}
+[1.609979] (-) TimerEvent: {}
+[1.710654] (-) TimerEvent: {}
+[1.811377] (-) TimerEvent: {}
+[1.912063] (-) TimerEvent: {}
+[2.012784] (-) TimerEvent: {}
+[2.113459] (-) TimerEvent: {}
+[2.214138] (-) TimerEvent: {}
+[2.314832] (-) TimerEvent: {}
+[2.415495] (-) TimerEvent: {}
+[2.516163] (-) TimerEvent: {}
+[2.617082] (-) TimerEvent: {}
+[2.718019] (-) TimerEvent: {}
+[2.818817] (-) TimerEvent: {}
+[2.919674] (-) TimerEvent: {}
+[3.020792] (-) TimerEvent: {}
+[3.121464] (-) TimerEvent: {}
+[3.222166] (-) TimerEvent: {}
+[3.323063] (-) TimerEvent: {}
+[3.423729] (-) TimerEvent: {}
+[3.524407] (-) TimerEvent: {}
+[3.625130] (-) TimerEvent: {}
+[3.725837] (-) TimerEvent: {}
+[3.826694] (-) TimerEvent: {}
+[3.897625] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[3.902866] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[3.905559] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras4/nuc_ws/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/ras4/nuc_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '1827'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PBK772'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[3.926852] (-) TimerEvent: {}
+[4.027769] (-) TimerEvent: {}
+[4.083816] (sllidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.128009] (-) TimerEvent: {}
+[4.229166] (-) TimerEvent: {}
+[4.330458] (-) TimerEvent: {}
+[4.432301] (-) TimerEvent: {}
+[4.533191] (-) TimerEvent: {}
+[4.634125] (-) TimerEvent: {}
+[4.735013] (-) TimerEvent: {}
+[4.836032] (-) TimerEvent: {}
+[4.937277] (-) TimerEvent: {}
+[5.017890] (sllidar_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.037467] (-) TimerEvent: {}
+[5.138373] (-) TimerEvent: {}
+[5.239239] (-) TimerEvent: {}
+[5.268466] (sllidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.286596] (sllidar_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.323772] (sllidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.339459] (-) TimerEvent: {}
+[5.379046] (sllidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.439681] (-) TimerEvent: {}
+[5.452800] (sllidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.539896] (-) TimerEvent: {}
+[5.640843] (-) TimerEvent: {}
+[5.650470] (sllidar_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.659000] (sllidar_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.741067] (-) TimerEvent: {}
+[5.841891] (-) TimerEvent: {}
+[5.942684] (-) TimerEvent: {}
+[6.043550] (-) TimerEvent: {}
+[6.145167] (-) TimerEvent: {}
+[6.247273] (-) TimerEvent: {}
+[6.349671] (-) TimerEvent: {}
+[6.423308] (arm_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/build/arm_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/build/arm_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/arm_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1827', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PBK772', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/build/arm_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/build/arm_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2'}, 'shell': False}
+[6.449988] (-) TimerEvent: {}
+[6.491581] (odometry_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odometry_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/build/odometry_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/build/odometry_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/odometry_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1827', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PBK772', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/build/odometry_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/build/odometry_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2'}, 'shell': False}
+[6.550556] (-) TimerEvent: {}
+[6.652544] (-) TimerEvent: {}
+[6.675541] (camera_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/build/camera_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/build/camera_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/camera_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1827', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PBK772', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/build/camera_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/build/camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2'}, 'shell': False}
+[6.752809] (-) TimerEvent: {}
+[6.853735] (-) TimerEvent: {}
+[6.857668] (sllidar_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.954026] (-) TimerEvent: {}
+[7.054943] (-) TimerEvent: {}
+[7.155912] (-) TimerEvent: {}
+[7.193686] (sllidar_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.256119] (-) TimerEvent: {}
+[7.356950] (-) TimerEvent: {}
+[7.369616] (sllidar_ros2) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[7.457225] (-) TimerEvent: {}
+[7.558077] (-) TimerEvent: {}
+[7.659002] (-) TimerEvent: {}
+[7.759836] (-) TimerEvent: {}
+[7.860870] (-) TimerEvent: {}
+[7.900615] (sllidar_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.961113] (-) TimerEvent: {}
+[8.039853] (sllidar_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[8.061331] (-) TimerEvent: {}
+[8.077286] (sllidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/ras4/nuc_ws/build/sllidar_ros2\n'}
+[8.161623] (-) TimerEvent: {}
+[8.236514] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_client\x1b[0m\n'}
+[8.252392] (arm_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.261839] (-) TimerEvent: {}
+[8.265950] (arm_pkg) StdoutLine: {'line': b'writing ../../build/arm_pkg/arm_pkg.egg-info/PKG-INFO\n'}
+[8.272547] (arm_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_pkg/arm_pkg.egg-info/dependency_links.txt\n'}
+[8.277710] (arm_pkg) StdoutLine: {'line': b'writing entry points to ../../build/arm_pkg/arm_pkg.egg-info/entry_points.txt\n'}
+[8.280655] (arm_pkg) StdoutLine: {'line': b'writing requirements to ../../build/arm_pkg/arm_pkg.egg-info/requires.txt\n'}
+[8.294563] (arm_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/arm_pkg/arm_pkg.egg-info/top_level.txt\n'}
+[8.328513] (arm_pkg) StdoutLine: {'line': b"reading manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[8.341139] (arm_pkg) StdoutLine: {'line': b"writing manifest file '../../build/arm_pkg/arm_pkg.egg-info/SOURCES.txt'\n"}
+[8.343008] (arm_pkg) StdoutLine: {'line': b'running build\n'}
+[8.344094] (arm_pkg) StdoutLine: {'line': b'running build_py\n'}
+[8.362017] (-) TimerEvent: {}
+[8.370095] (sllidar_ros2) StdoutLine: {'line': b'[ 10%] Built target sllidar_client\n'}
+[8.373400] (arm_pkg) StdoutLine: {'line': b'running install\n'}
+[8.375975] (arm_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[8.392479] (arm_pkg) StdoutLine: {'line': b'running install_data\n'}
+[8.409011] (camera_pkg) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead\n"}
+[8.410060] (camera_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.411385] (arm_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.415823] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_node\x1b[0m\n'}
+[8.422081] (arm_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.424388] (arm_pkg) StdoutLine: {'line': b'Copying ../../build/arm_pkg/arm_pkg.egg-info to /home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages/arm_pkg-0.0.0-py3.10.egg-info\n'}
+[8.444516] (arm_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[8.462227] (-) TimerEvent: {}
+[8.483874] (camera_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.488663] (camera_pkg) StdoutLine: {'line': b'writing ../../build/camera_pkg/camera_pkg.egg-info/PKG-INFO\n'}
+[8.496118] (camera_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_pkg/camera_pkg.egg-info/dependency_links.txt\n'}
+[8.498192] (camera_pkg) StdoutLine: {'line': b'writing entry points to ../../build/camera_pkg/camera_pkg.egg-info/entry_points.txt\n'}
+[8.500593] (camera_pkg) StdoutLine: {'line': b'writing requirements to ../../build/camera_pkg/camera_pkg.egg-info/requires.txt\n'}
+[8.508058] (camera_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/camera_pkg/camera_pkg.egg-info/top_level.txt\n'}
+[8.513287] (odometry_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.517757] (odometry_pkg) StdoutLine: {'line': b'writing ../../build/odometry_pkg/odometry_pkg.egg-info/PKG-INFO\n'}
+[8.519651] (camera_pkg) StdoutLine: {'line': b"reading manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'\n"}
+[8.534803] (odometry_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/odometry_pkg/odometry_pkg.egg-info/dependency_links.txt\n'}
+[8.535859] (odometry_pkg) StdoutLine: {'line': b'writing entry points to ../../build/odometry_pkg/odometry_pkg.egg-info/entry_points.txt\n'}
+[8.536915] (odometry_pkg) StdoutLine: {'line': b'writing requirements to ../../build/odometry_pkg/odometry_pkg.egg-info/requires.txt\n'}
+[8.537760] (odometry_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/odometry_pkg/odometry_pkg.egg-info/top_level.txt\n'}
+[8.538935] (camera_pkg) StdoutLine: {'line': b"writing manifest file '../../build/camera_pkg/camera_pkg.egg-info/SOURCES.txt'\n"}
+[8.539807] (camera_pkg) StdoutLine: {'line': b'running build\n'}
+[8.540652] (camera_pkg) StdoutLine: {'line': b'running build_py\n'}
+[8.547894] (odometry_pkg) StdoutLine: {'line': b"reading manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'\n"}
+[8.561257] (odometry_pkg) StdoutLine: {'line': b"writing manifest file '../../build/odometry_pkg/odometry_pkg.egg-info/SOURCES.txt'\n"}
+[8.562179] (odometry_pkg) StdoutLine: {'line': b'running build\n'}
+[8.562663] (-) TimerEvent: {}
+[8.563189] (odometry_pkg) StdoutLine: {'line': b'running build_py\n'}
+[8.565981] (camera_pkg) StdoutLine: {'line': b'running install\n'}
+[8.568235] (camera_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[8.569344] (arm_pkg) StdoutLine: {'line': b'Installing clicked_point_subscriber script to /home/ras4/nuc_ws/install/arm_pkg/lib/arm_pkg\n'}
+[8.579449] (arm_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/build/arm_pkg/install.log'\n"}
+[8.584047] (odometry_pkg) StdoutLine: {'line': b'running install\n'}
+[8.588109] (odometry_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[8.589334] (camera_pkg) StdoutLine: {'line': b'running install_data\n'}
+[8.608232] (camera_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.610480] (odometry_pkg) StdoutLine: {'line': b'running install_data\n'}
+[8.615901] (odometry_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.619907] (camera_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[8.623690] (camera_pkg) StdoutLine: {'line': b'Copying ../../build/camera_pkg/camera_pkg.egg-info to /home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages/camera_pkg-0.1.0-py3.10.egg-info\n'}
+[8.630257] (odometry_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.633459] (odometry_pkg) StdoutLine: {'line': b'Copying ../../build/odometry_pkg/odometry_pkg.egg-info to /home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages/odometry_pkg-0.0.0-py3.10.egg-info\n'}
+[8.644848] (camera_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[8.648184] (odometry_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[8.663008] (-) TimerEvent: {}
+[8.703144] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_node\n'}
+[8.763467] (-) TimerEvent: {}
+[8.786827] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[8.789533] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[8.810255] (odometry_pkg) StdoutLine: {'line': b'Installing imu_vesc_listener script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg\n'}
+[8.812298] (odometry_pkg) StdoutLine: {'line': b'Installing odometry_node script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg\n'}
+[8.813680] (odometry_pkg) StdoutLine: {'line': b'Installing rpm_test_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg\n'}
+[8.815033] (odometry_pkg) StdoutLine: {'line': b'Installing rpmtrue_publisher script to /home/ras4/nuc_ws/install/odometry_pkg/lib/odometry_pkg\n'}
+[8.816132] (camera_pkg) StdoutLine: {'line': b'Installing framepublisher script to /home/ras4/nuc_ws/install/camera_pkg/lib/camera_pkg\n'}
+[8.817171] (odometry_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/build/odometry_pkg/install.log'\n"}
+[8.818258] (camera_pkg) StdoutLine: {'line': b'Installing pixel_to_point3d script to /home/ras4/nuc_ws/install/camera_pkg/lib/camera_pkg\n'}
+[8.827803] (camera_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/build/camera_pkg/install.log'\n"}
+[8.863961] (-) TimerEvent: {}
+[8.877841] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ras4/nuc_ws/build/sllidar_ros2'], 'cwd': '/home/ras4/nuc_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ras4'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ras4'), ('OLDPWD', '/home/ras4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '1827'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ras4/nuc_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ras4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ras4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PBK772'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ras4/nuc_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble')]), 'shell': False}
+[8.890422] (arm_pkg) CommandEnded: {'returncode': 0}
+[8.964395] (-) TimerEvent: {}
+[8.968192] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.971130] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch\n'}
+[8.974711] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py\n'}
+[8.978636] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py\n'}
+[8.987089] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py\n'}
+[9.003705] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[9.005898] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[9.007849] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py\n'}
+[9.009563] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[9.011615] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[9.016564] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py\n'}
+[9.018453] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[9.020349] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[9.026679] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py\n'}
+[9.028382] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[9.030018] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[9.031300] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py\n'}
+[9.033575] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[9.034766] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py\n'}
+[9.037533] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[9.039784] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py\n'}
+[9.041464] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py\n'}
+[9.049212] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[9.051386] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[9.052311] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[9.056341] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py\n'}
+[9.058594] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/rviz\n'}
+[9.060127] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[9.065740] (-) TimerEvent: {}
+[9.066865] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[9.067738] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[9.068802] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[9.071239] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[9.072993] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[9.073526] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[9.073988] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[9.074352] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[9.075302] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[9.075755] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[9.076115] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[9.077506] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[9.078009] (sllidar_ros2) StdoutLine: {'line': b'-- Installing: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[9.078456] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[9.080064] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.082283] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.083347] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[9.086410] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[9.087070] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ras4/nuc_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[9.107850] (arm_pkg) JobEnded: {'identifier': 'arm_pkg', 'rc': 0}
+[9.114401] (xbox_control_pkg) JobStarted: {'identifier': 'xbox_control_pkg'}
+[9.146044] (camera_pkg) CommandEnded: {'returncode': 0}
+[9.166371] (-) TimerEvent: {}
+[9.180888] (camera_pkg) JobEnded: {'identifier': 'camera_pkg', 'rc': 0}
+[9.186032] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[9.254084] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[9.256410] (odometry_pkg) CommandEnded: {'returncode': 0}
+[9.266610] (-) TimerEvent: {}
+[9.290772] (odometry_pkg) JobEnded: {'identifier': 'odometry_pkg', 'rc': 0}
+[9.366920] (-) TimerEvent: {}
+[9.467768] (-) TimerEvent: {}
+[9.568554] (-) TimerEvent: {}
+[9.669551] (-) TimerEvent: {}
+[9.770239] (-) TimerEvent: {}
+[9.870907] (-) TimerEvent: {}
+[9.971556] (-) TimerEvent: {}
+[10.072215] (-) TimerEvent: {}
+[10.172876] (-) TimerEvent: {}
+[10.273524] (-) TimerEvent: {}
+[10.374159] (-) TimerEvent: {}
+[10.474917] (-) TimerEvent: {}
+[10.575978] (-) TimerEvent: {}
+[10.676612] (-) TimerEvent: {}
+[10.777257] (-) TimerEvent: {}
+[10.877899] (-) TimerEvent: {}
+[10.978611] (-) TimerEvent: {}
+[11.079259] (-) TimerEvent: {}
+[11.179869] (-) TimerEvent: {}
+[11.280483] (-) TimerEvent: {}
+[11.381124] (-) TimerEvent: {}
+[11.481743] (-) TimerEvent: {}
+[11.582364] (-) TimerEvent: {}
+[11.683130] (-) TimerEvent: {}
+[11.783877] (-) TimerEvent: {}
+[11.884486] (-) TimerEvent: {}
+[11.985230] (-) TimerEvent: {}
+[12.055992] (xbox_control_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xbox_control_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/build/xbox_control_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/build/xbox_control_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/xbox_control_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1827', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/1797,unix/ras4-desktop:/tmp/.ICE-unix/1797', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/afce7e6e_111b_4707_9e54_54258e04216d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PBK772', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/build/xbox_control_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2'}, 'shell': False}
+[12.085385] (-) TimerEvent: {}
+[12.186096] (-) TimerEvent: {}
+[12.286746] (-) TimerEvent: {}
+[12.387387] (-) TimerEvent: {}
+[12.488020] (-) TimerEvent: {}
+[12.588753] (-) TimerEvent: {}
+[12.689352] (-) TimerEvent: {}
+[12.789975] (-) TimerEvent: {}
+[12.890648] (-) TimerEvent: {}
+[12.991300] (-) TimerEvent: {}
+[13.091901] (-) TimerEvent: {}
+[13.156978] (xbox_control_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[13.159946] (xbox_control_pkg) StdoutLine: {'line': b'writing ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/PKG-INFO\n'}
+[13.162581] (xbox_control_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/dependency_links.txt\n'}
+[13.165114] (xbox_control_pkg) StdoutLine: {'line': b'writing entry points to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/entry_points.txt\n'}
+[13.166002] (xbox_control_pkg) StdoutLine: {'line': b'writing requirements to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/requires.txt\n'}
+[13.166686] (xbox_control_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/top_level.txt\n'}
+[13.176489] (xbox_control_pkg) StdoutLine: {'line': b"reading manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[13.180904] (xbox_control_pkg) StdoutLine: {'line': b"writing manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[13.181541] (xbox_control_pkg) StdoutLine: {'line': b'running build\n'}
+[13.182075] (xbox_control_pkg) StdoutLine: {'line': b'running build_py\n'}
+[13.184649] (xbox_control_pkg) StdoutLine: {'line': b'running install\n'}
+[13.185903] (xbox_control_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[13.192045] (-) TimerEvent: {}
+[13.192624] (xbox_control_pkg) StdoutLine: {'line': b'running install_data\n'}
+[13.193862] (xbox_control_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.201394] (xbox_control_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[13.203278] (xbox_control_pkg) StdoutLine: {'line': b'Copying ../../build/xbox_control_pkg/xbox_control_pkg.egg-info to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info\n'}
+[13.209284] (xbox_control_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[13.292219] (-) TimerEvent: {}
+[13.295619] (xbox_control_pkg) StdoutLine: {'line': b'Installing control_rizz_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[13.305376] (xbox_control_pkg) StdoutLine: {'line': b'Installing xbox_control_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[13.307283] (xbox_control_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/build/xbox_control_pkg/install.log'\n"}
+[13.392509] (-) TimerEvent: {}
+[13.440981] (xbox_control_pkg) CommandEnded: {'returncode': 0}
+[13.471081] (xbox_control_pkg) JobEnded: {'identifier': 'xbox_control_pkg', 'rc': 0}
+[13.474183] (-) EventReactorShutdown: {}

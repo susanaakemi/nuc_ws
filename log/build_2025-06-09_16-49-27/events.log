@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.001113] (-) JobUnselected: {'identifier': 'arm_pkg'}
+[0.002832] (-) JobUnselected: {'identifier': 'camera_pkg'}
+[0.003091] (-) JobUnselected: {'identifier': 'odometry_pkg'}
+[0.003315] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003617] (xbox_control_pkg) JobQueued: {'identifier': 'xbox_control_pkg', 'dependencies': OrderedDict()}
+[0.005810] (xbox_control_pkg) JobStarted: {'identifier': 'xbox_control_pkg'}
+[0.099769] (-) TimerEvent: {}
+[0.201172] (-) TimerEvent: {}
+[0.302432] (-) TimerEvent: {}
+[0.404324] (-) TimerEvent: {}
+[0.505661] (-) TimerEvent: {}
+[0.606995] (-) TimerEvent: {}
+[0.708410] (-) TimerEvent: {}
+[0.809743] (-) TimerEvent: {}
+[0.911044] (-) TimerEvent: {}
+[1.012390] (-) TimerEvent: {}
+[1.113604] (-) TimerEvent: {}
+[1.214854] (-) TimerEvent: {}
+[1.316174] (-) TimerEvent: {}
+[1.417451] (-) TimerEvent: {}
+[1.518941] (-) TimerEvent: {}
+[1.620298] (-) TimerEvent: {}
+[1.721870] (-) TimerEvent: {}
+[1.823127] (-) TimerEvent: {}
+[1.924453] (-) TimerEvent: {}
+[2.025697] (-) TimerEvent: {}
+[2.126957] (-) TimerEvent: {}
+[2.228323] (-) TimerEvent: {}
+[2.329533] (-) TimerEvent: {}
+[2.430764] (-) TimerEvent: {}
+[2.532122] (-) TimerEvent: {}
+[2.633370] (-) TimerEvent: {}
+[2.734675] (-) TimerEvent: {}
+[2.836034] (-) TimerEvent: {}
+[2.937408] (-) TimerEvent: {}
+[3.039032] (-) TimerEvent: {}
+[3.140316] (-) TimerEvent: {}
+[3.241722] (-) TimerEvent: {}
+[3.342947] (-) TimerEvent: {}
+[3.444323] (-) TimerEvent: {}
+[3.545712] (-) TimerEvent: {}
+[3.647767] (-) TimerEvent: {}
+[3.749499] (-) TimerEvent: {}
+[3.851218] (-) TimerEvent: {}
+[3.952655] (-) TimerEvent: {}
+[4.053936] (-) TimerEvent: {}
+[4.155162] (-) TimerEvent: {}
+[4.256501] (-) TimerEvent: {}
+[4.357724] (-) TimerEvent: {}
+[4.458895] (-) TimerEvent: {}
+[4.560370] (-) TimerEvent: {}
+[4.662122] (-) TimerEvent: {}
+[4.763409] (-) TimerEvent: {}
+[4.864721] (-) TimerEvent: {}
+[4.966008] (-) TimerEvent: {}
+[5.067261] (-) TimerEvent: {}
+[5.168600] (-) TimerEvent: {}
+[5.269864] (-) TimerEvent: {}
+[5.371105] (-) TimerEvent: {}
+[5.472424] (-) TimerEvent: {}
+[5.573683] (-) TimerEvent: {}
+[5.674923] (-) TimerEvent: {}
+[5.776271] (-) TimerEvent: {}
+[5.877485] (-) TimerEvent: {}
+[5.978648] (-) TimerEvent: {}
+[6.080033] (-) TimerEvent: {}
+[6.181308] (-) TimerEvent: {}
+[6.282802] (-) TimerEvent: {}
+[6.384439] (-) TimerEvent: {}
+[6.486037] (-) TimerEvent: {}
+[6.587764] (-) TimerEvent: {}
+[6.689098] (-) TimerEvent: {}
+[6.790420] (-) TimerEvent: {}
+[6.891769] (-) TimerEvent: {}
+[6.993019] (-) TimerEvent: {}
+[7.094240] (-) TimerEvent: {}
+[7.195500] (-) TimerEvent: {}
+[7.297117] (-) TimerEvent: {}
+[7.398461] (-) TimerEvent: {}
+[7.499920] (-) TimerEvent: {}
+[7.601265] (-) TimerEvent: {}
+[7.702544] (-) TimerEvent: {}
+[7.803843] (-) TimerEvent: {}
+[7.905291] (-) TimerEvent: {}
+[8.006672] (-) TimerEvent: {}
+[8.108002] (-) TimerEvent: {}
+[8.209440] (-) TimerEvent: {}
+[8.311606] (-) TimerEvent: {}
+[8.413294] (-) TimerEvent: {}
+[8.426169] (xbox_control_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xbox_control_pkg', 'build', '--build-base', '/home/ras4/nuc_ws/build/xbox_control_pkg/build', 'install', '--record', '/home/ras4/nuc_ws/build/xbox_control_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras4/nuc_ws/src/xbox_control_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras4', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ras4', 'OLDPWD': '/home/ras4', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1757', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ras4/nuc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ras4', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ras4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ras4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ras4-desktop:@/tmp/.ICE-unix/1720,unix/ras4-desktop:/tmp/.ICE-unix/1720', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/caa9fb11_9151_477d_9fc1_9d17e923dc1b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.P2UX72', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.84', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ras4/nuc_ws/install/xbox_control_pkg:/home/ras4/nuc_ws/install/sllidar_ros2:/home/ras4/nuc_ws/install/odometry_pkg:/home/ras4/nuc_ws/install/camera_pkg:/home/ras4/nuc_ws/install/arm_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ras4/nuc_ws/build/xbox_control_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras4/nuc_ws/build/xbox_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/odometry_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/camera_pkg/lib/python3.10/site-packages:/home/ras4/nuc_ws/install/arm_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ras4/nuc_ws/install/sllidar_ros2'}, 'shell': False}
+[8.513697] (-) TimerEvent: {}
+[8.614969] (-) TimerEvent: {}
+[8.716453] (-) TimerEvent: {}
+[8.817688] (-) TimerEvent: {}
+[8.918971] (-) TimerEvent: {}
+[9.020448] (-) TimerEvent: {}
+[9.121757] (-) TimerEvent: {}
+[9.223120] (-) TimerEvent: {}
+[9.324571] (-) TimerEvent: {}
+[9.425905] (-) TimerEvent: {}
+[9.527263] (-) TimerEvent: {}
+[9.628562] (-) TimerEvent: {}
+[9.729876] (-) TimerEvent: {}
+[9.831127] (-) TimerEvent: {}
+[9.932429] (-) TimerEvent: {}
+[10.033700] (-) TimerEvent: {}
+[10.134922] (-) TimerEvent: {}
+[10.236243] (-) TimerEvent: {}
+[10.337452] (-) TimerEvent: {}
+[10.438667] (-) TimerEvent: {}
+[10.539937] (-) TimerEvent: {}
+[10.641117] (-) TimerEvent: {}
+[10.742336] (-) TimerEvent: {}
+[10.843622] (-) TimerEvent: {}
+[10.944840] (-) TimerEvent: {}
+[11.046164] (-) TimerEvent: {}
+[11.147405] (-) TimerEvent: {}
+[11.248706] (-) TimerEvent: {}
+[11.350015] (-) TimerEvent: {}
+[11.451240] (-) TimerEvent: {}
+[11.552536] (-) TimerEvent: {}
+[11.653818] (-) TimerEvent: {}
+[11.739151] (xbox_control_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[11.746288] (xbox_control_pkg) StdoutLine: {'line': b'writing ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/PKG-INFO\n'}
+[11.748778] (xbox_control_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/dependency_links.txt\n'}
+[11.750963] (xbox_control_pkg) StdoutLine: {'line': b'writing entry points to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/entry_points.txt\n'}
+[11.752798] (xbox_control_pkg) StdoutLine: {'line': b'writing requirements to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/requires.txt\n'}
+[11.753912] (-) TimerEvent: {}
+[11.755120] (xbox_control_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/xbox_control_pkg/xbox_control_pkg.egg-info/top_level.txt\n'}
+[11.773715] (xbox_control_pkg) StdoutLine: {'line': b"reading manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[11.785952] (xbox_control_pkg) StdoutLine: {'line': b"writing manifest file '../../build/xbox_control_pkg/xbox_control_pkg.egg-info/SOURCES.txt'\n"}
+[11.788642] (xbox_control_pkg) StdoutLine: {'line': b'running build\n'}
+[11.792789] (xbox_control_pkg) StdoutLine: {'line': b'running build_py\n'}
+[11.793913] (xbox_control_pkg) StdoutLine: {'line': b'copying xbox_control_pkg/xbox_control_node.py -> /home/ras4/nuc_ws/build/xbox_control_pkg/build/lib/xbox_control_pkg\n'}
+[11.796291] (xbox_control_pkg) StdoutLine: {'line': b'running install\n'}
+[11.799657] (xbox_control_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[11.814570] (xbox_control_pkg) StdoutLine: {'line': b'copying /home/ras4/nuc_ws/build/xbox_control_pkg/build/lib/xbox_control_pkg/xbox_control_node.py -> /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg\n'}
+[11.818160] (xbox_control_pkg) StdoutLine: {'line': b'byte-compiling /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg/xbox_control_node.py to xbox_control_node.cpython-310.pyc\n'}
+[11.832335] (xbox_control_pkg) StdoutLine: {'line': b'running install_data\n'}
+[11.833985] (xbox_control_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.854309] (-) TimerEvent: {}
+[11.859736] (xbox_control_pkg) StdoutLine: {'line': b"removing '/home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.864222] (xbox_control_pkg) StdoutLine: {'line': b'Copying ../../build/xbox_control_pkg/xbox_control_pkg.egg-info to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/python3.10/site-packages/xbox_control_pkg-0.0.0-py3.10.egg-info\n'}
+[11.879082] (xbox_control_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[11.954589] (-) TimerEvent: {}
+[12.055947] (-) TimerEvent: {}
+[12.092975] (xbox_control_pkg) StdoutLine: {'line': b'Installing control_rizz_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[12.095436] (xbox_control_pkg) StdoutLine: {'line': b'Installing xbox_control_node script to /home/ras4/nuc_ws/install/xbox_control_pkg/lib/xbox_control_pkg\n'}
+[12.099254] (xbox_control_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ras4/nuc_ws/build/xbox_control_pkg/install.log'\n"}
+[12.156364] (-) TimerEvent: {}
+[12.259104] (-) TimerEvent: {}
+[12.342951] (xbox_control_pkg) CommandEnded: {'returncode': 0}
+[12.359423] (-) TimerEvent: {}
+[12.465652] (-) TimerEvent: {}
+[12.472482] (xbox_control_pkg) JobEnded: {'identifier': 'xbox_control_pkg', 'rc': 0}
+[12.478973] (-) EventReactorShutdown: {}
